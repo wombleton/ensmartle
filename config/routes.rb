@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :games
+
   map.resources :realms, :only => [:index, :show]
   map.character "/realms/:realm_id/:id", :controller => "characters", :action => "show"
   map.learn_spell "/realms/:realm_id/:id/learn/:spell_id", :controller => "characters", :action => "learn"
