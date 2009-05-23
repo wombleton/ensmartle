@@ -1,0 +1,19 @@
+%h1="Editing #{@spell.name}"
+-form_for(@spell) do |f|
+  =f.error_messages
+  %p
+    = f.label :icon_base
+    %br
+    =f.text_field :icon_base
+  %p
+    = f.label :category
+    %br
+    =f.text_field :category
+  %p
+    =f.submit "Update"
+    
+%a=link_to "Previous", edit_spell_path(@previous)
+%a=link_to "Next", edit_spell_path(@next)
+
+:javascript
+  $('spell_category').focus();

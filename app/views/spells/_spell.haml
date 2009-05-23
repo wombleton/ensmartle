@@ -1,0 +1,4 @@
+%li{:spell_id => spell.id, :class => "recipe #{spell.known ? " known" : "not_known"}"}
+  =link_to spell.name, spell
+  =link_to("Learn", :action => "learn", :realm_id => @character.realm, :id => @character, :spell_id => spell) unless spell.known
+  =link_to("Forget", :action => "forget", :realm_id => @character.realm, :id => @character, :spell_id => spell) if spell.known

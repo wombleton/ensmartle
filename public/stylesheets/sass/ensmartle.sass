@@ -1,0 +1,52 @@
+!width = "680px"
+!white = "#EDEBE6"
+!pale = "#D6E1C7"
+!blue = "#94C7B6"
+!dark = "#403B33"
+!orange = "#D3643B"
+!tl_path = "/images/tl.png"
+!tr_path = "/images/tr.png"
+!bl_path = "/images/bl.png"
+!br_path = "/images/br.png"
+!tip_path = "/images/tip.png"
+
+html
+  background-color = !pale
+  color = !dark
+
+body
+  padding: 10px
+  font-family: "Georgia"
+  input #item_search
+    width: 300px
+
+  #tt
+    td
+      .tl
+        background = url( !tl_path ) "no-repeat top right"
+        height: 6px
+        width: 6px
+      .tr
+        background = url( !tr_path ) "no-repeat top right"
+        height: 6px
+        width: 6px
+      .bl
+        background = url( !bl_path ) "no-repeat top right"
+        height: 6px
+        width: 6px
+      .br
+        background = url( !br_path ) "no-repeat top right"
+        height: 6px
+        width: 6px
+      .tip
+        background: url(!tip_path) + "no-repeat center left"
+        height: 10px
+    #tt-bd
+      background-color: !dark
+      color: white
+      padding: 10px
+      font-size: 9pt
+    table
+      width: 200px
+    .l, .r, .t, .b
+      background-color: !white

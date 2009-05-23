@@ -1,0 +1,37 @@
+html {
+  background-color: #d6e1c7;
+  color: #403b33; }
+
+body {
+  padding: 10px;
+  font-family: "Georgia"; }
+  body input #item_search {
+    width: 300px; }
+  body #tt td .tl {
+    background: url(/images/tl.png) no-repeat top right;
+    height: 6px;
+    width: 6px; }
+  body #tt td .tr {
+    background: url(/images/tr.png) no-repeat top right;
+    height: 6px;
+    width: 6px; }
+  body #tt td .bl {
+    background: url(/images/bl.png) no-repeat top right;
+    height: 6px;
+    width: 6px; }
+  body #tt td .br {
+    background: url(/images/br.png) no-repeat top right;
+    height: 6px;
+    width: 6px; }
+  body #tt td .tip {
+    background: url(!tip_path) + "no-repeat center left";
+    height: 10px; }
+  body #tt #tt-bd {
+    background-color: !dark;
+    color: white;
+    padding: 10px;
+    font-size: 9pt; }
+  body #tt table {
+    width: 200px; }
+  body #tt .l, body #tt .r, body #tt .t, body #tt .b {
+    background-color: !white; }

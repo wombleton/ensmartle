@@ -1,0 +1,249 @@
+<%
+  width = "680px"
+  white = "#EDEBE6"
+  pale = "#D6E1C7"
+  blue = "#94C7B6"
+  dark = "#403B33"
+  orange = "#D3643B"
+%>
+
+body {
+  background-color: <%=pale%>;
+  color: <%=white%>;
+  
+	padding: 10px;
+	font-family: Georgia;
+  
+  input#item_search {
+    width: 300px;
+  }
+}
+
+#tt {
+  td {
+    .tl {
+      background: url(<%=image_path "tl.png"%>) no-repeat top right;
+      height: 6px;
+      width: 6px;
+    }
+    .tr {
+      background: url(<%=image_path "tr.png"%>) no-repeat top right;
+      height: 6px;
+      width: 6px;
+    }
+    .bl {
+      background: url(<%=image_path "bl.png"%>) no-repeat bottom left;
+      height: 6px;
+      width: 6px;
+    }
+    .br {
+      background: url(<%=image_path "br.png"%>) no-repeat bottom right;
+      height: 6px;
+      width: 6px;
+    }
+    .tip {
+      background: url(<%=image_path "tip.png"%>) no-repeat center left;
+      height: 10px;
+    }
+    
+    #tt-bd {
+      background-color: <%=dark%>;
+      color: white;
+      padding: 10px;
+      font-size: 9pt;
+
+      table {
+        width: 200px;
+      }
+    }
+    .l, .r, .t, .b {
+      background-color: <%=white%>;
+    }
+  }
+}
+
+#header, #content {
+  background-color: <%=dark%>;
+  padding: 0 20px;
+  width: <%=width%>;
+  margin: 0 auto;
+  a {
+    color: <%=blue%>;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#header {
+  height: 140px;
+  text-align: right;
+  line-height: 2em;
+  h1 {
+    line-height: 140px;
+    font-size: 300%;
+  }
+  img {
+    float: left;
+    vertical-align: center;
+  }
+  input#search {
+    font-size: 180%;
+    width: 500px;
+  }
+}
+
+#content {
+  margin-top: 5px;
+  line-height: 1.5em;
+
+  div.armoury_fail {
+    text-align: center;
+    padding: 3em;
+  }
+
+  h1 {
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 120%;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 110%;
+
+  }
+
+  ul.skills {
+    li.skill {
+      display: inline-block;
+    }
+  }
+}
+
+div.autocomplete {
+  position:absolute;
+  width:250px;
+  background-color:white;
+  border:1px solid #888;
+  margin:0px;
+  padding:0px;
+  ul {
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    
+    li {
+      list-style-type:none;
+      margin: 1px 0;
+      cursor:pointer;
+      line-height: 21px;
+      font-size: 11px;
+      padding: 1px 0;
+      
+      div.icon {
+        display: inline-block;
+        vertical-align: top;
+      }
+      
+      div.name {
+        display: inline-block;
+        vertical-align: text-bottom;
+      }
+      
+     .selected {
+        background-color: #ffb;
+      } 
+    }
+  }
+}
+
+.characters {
+	li.character {
+		display: table-row;
+		cursor: pointer;
+		
+		div {
+			display: table-cell;
+			border-top: 1px solid black;
+			padding: 5px;
+		}
+	}
+}
+
+#professions {
+	li.profession {
+    position: relative;
+    width: <%=width%>;
+
+    h1 {
+      font-size: 150%;
+      background-color: <%=orange%>;
+      height: 2em;
+      line-height: 1.4em;
+      vertical-align: top;
+      
+      div.name {
+        padding: 0 5px;
+        font-weight: bold;
+      }
+
+      div.skill-level {
+        line-height: 1em;
+        font-weight: bold;
+        z-index: 1;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+      }
+
+      div.skill-max {
+        line-height: 1em;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        right: 3px;
+        font-size: 200%;
+        font-weight: bold;
+      }
+    }
+
+    ul.show_all {
+      text-align: right;
+    }
+
+    ul {
+      li {
+        .not_known {
+          opacity: 0.3;
+        }
+
+        .recipe {
+          margin: 10px;
+          height: 54px;
+          width: 43px;
+          line-height: 8pt;
+          font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+          cursor: pointer;
+          display: inline-block;
+
+          a {
+            text-decoration: none;
+          }
+          div.recipe_name {
+            vertical-align: top;
+            font-size: 8pt;
+            font-weight: normal;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+	}
+
+}

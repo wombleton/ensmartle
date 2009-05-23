@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Election Melee!</title>
+		<meta name="verify-v1" content="+61V2Pqmny1r0QooTVaUhvaFOvCom6WGJx0ZkLEkzKM=" />
+        <%= stylesheet_link_tag 'reset', 'election' %>
+        <%= javascript_include_tag 'prototype', 'effects', 'controls', 'dragdrop', 'election' %>
+		<link type="image/gif" href="<%=image_path 'melee.gif'%>" rel="shortcut icon"/>
+		<link rel="alternate" type="application/rss+xml" title="" href="<%=url_for :path_only => false, :action => 'rss'%>"/>
+    </head>
+    <body>
+    	<div id="main">
+    		<table id="main-table">
+    			<col width="700px"/>
+				<col width="220px"/>
+				<tbody>
+					<tr>
+						<td id="content">
+							<div id="header">
+					            <p id="by-line">
+					                powered by <a href="http://twitter.com/"><img alt="Twitter-logo" id="logo-image" src="http://assets0.twitter.com/images/election/twitter-logo.png" height="19" width="81"></a>
+					            </p>
+								<h1>
+									<%=link_to "#{image_tag 'melee.gif'} Election Melee" , '/08' %>
+								</h1>
+					        </div>
+							<div id="explanation">
+								<blockquote>
+									Want to know what <a href="http://twitter.com/">Twitter</a>'s saying about the <a href="http://www.elections.org.nz/">New Zealand 2008 Election</a>? Here it is!
+								</blockquote>
+							</div>
+							<div id="status">
+								<span id="status-img" style="display:none"><%=image_tag 'ajax-loader.gif'%> Scanning</span>
+							</div>
+							<table id="tweetTable">
+							<tbody id="twitter">
+							
+				            <%= yield %>
+							</tbody>
+							</table>
+						</td>
+						<td id="rhs">
+				        	<script type="text/javascript"><!--
+				google_ad_client = "pub-0140304226108924";
+				/* 200x200, created 21/10/08 */
+				google_ad_slot = "5265756118";
+				google_ad_width = 200;
+				google_ad_height = 200;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+								<div id="contact">
+									Tweet <%= link_to "@wombleton", "http://www.twitter.com/wombleton"%> if you any comments or queries, suggestions or theories.
+								</div>
+							
+						</td>
+					</tr>
+				</tbody>
+    		</table>			
+			</div>
+		</div>
+		<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-6038335-1");
+pageTracker._trackPageview();
+</script>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+=render :partial => "spells/spell", :collection => recipes[0,item_count-1]
+="None learnt so far!" if recipes.empty?
+=" #{link_to "show all", "#", :class => "more"}" if recipes.size > item_count
+=link_to "", "#", :class=>"more" if recipes.size < item_count

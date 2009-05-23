@@ -1,0 +1,4 @@
+%h1 Listing realms
+%ul
+- for realm in @realms
+  %li=link_to realm.name, realm_path(realm)

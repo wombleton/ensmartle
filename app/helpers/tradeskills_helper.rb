@@ -1,0 +1,2 @@
+module TradeskillsHelper
+end

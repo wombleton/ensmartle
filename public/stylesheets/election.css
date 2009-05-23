@@ -1,0 +1,126 @@
+html, body {
+	font-family: Georgia, serif;
+	background-color: #CCA95C;
+	color: #47181F;
+}
+
+td {
+	font-family: 'Lucida Grande',sans-serif;
+}
+
+body {
+	text-align: center;
+}
+a {
+	color: #CCA95C;
+}
+
+a:visited {
+	color: #CCA95C;
+}
+
+#main {
+	width: 900px;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 2em;
+}
+#main-table {
+	border-collapse: collapse;	
+}
+#content {
+	background-color: #ffffff;
+	width: 700px;
+}
+
+#main #rhs {
+	padding: 170px 0 0 10px;
+	vertical-align: top;
+	width: 220px;
+}
+
+#contact {
+	font-size: 0.8em;
+	background-color: white;
+	margin-top: 1em;
+	-moz-border-radius: 1em;
+	width: 174px;
+	text-align: center;
+	padding: 1em;
+}
+
+#content table {
+	width: 100%;
+}
+
+#content h1 {
+	font-size: 300%;
+	letter-spacing: -3px;
+	text-align: left;
+	vertical-align: text-bottom;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#content h1 a img {
+	vertical-align: bottom;
+}
+
+#content #header {
+	padding: 1.5em 0.5em 0 0.5em;
+}
+
+#explanation blockquote {
+	text-align: center;
+	font-style: italic;
+	padding: 1.5em;
+}
+
+#content #header #by-line {
+	float: right;
+	font-size: 80%;
+}
+
+#content #twitter .hentry {
+	border-top: 1px dashed #aaa;
+	font-size: 0.9em;
+	line-height: 1.1;
+}
+
+#content #twitter .hentry .content {
+	width: 608px;
+	vertical-align: middle;
+	padding: 0.5em;
+}
+
+#content #twitter .hentry a {
+}
+
+#content #twitter .hentry .icon {
+	width: 72px;
+	vertical-align: middle;
+	text-align: center;
+	height: 72px;
+}
+
+#content #twitter .hentry div.icon img {
+	margin: 1em;
+}
+
+#content #twitter .hentry .content strong {
+	font-weight: bold;
+}
+
+#content #status {
+	height: 24px;
+	line-height: 24px;
+	text-align: right;
+	padding: 0 1em;
+}
