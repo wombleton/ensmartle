@@ -1,0 +1,52 @@
+%h1=@mission.title
+%blockquote=@mission.summary
+%h2 New Roll
+-form_for @mission, :html => {:id => 'make_roll'} do |f|
+  =hidden_field_tag "roll", ""
+  =hidden_field_tag "latest", ""
+  %label
+    Name
+    =text_field_tag "by", session[:by], :size => 8
+  %label#dice
+    \# Dice
+    - for i in 1..12
+      =link_to i, "?roll=#{i}d6"
+%ul#rolls
+  =render :partial => "roll", :collection => @mission.rolls
+=link_to "Back to game #{@mission.game.permalink}", @mission.game
+-form_for @mission, :html => {:id=> "explode_form"} do |f|
+  =hidden_field_tag "explode", ""
+
+:javascript
+  Event.observe(window, 'load', function() {
+    Event.observe('dice', 'click', function(e) {
+      Event.stop(e);
+      $('roll').value = Event.findElement(e, 'a').innerHTML;
+      $('latest').value = ($$('#rolls .roll').first() || document.body).readAttribute('updated_at');
+      var form = $('make_roll');
+      new Ajax.Request(form.action, {
+        parameters: Form.serialize(form),
+        onComplete: function(o) {
+          $('rolls').insert({
+            top: o.responseText
+          });
+        }
+      });
+    });
+
+    Event.observe('rolls', 'click', function(e) {
+      var target = Event.findElement(e, 'a');
+      if (target) {
+        Event.stop(e);
+        $('explode').value = target.readAttribute('roll_id');
+        var form = $('explode_form');
+        var li = Event.findElement(e, 'li');
+        new Ajax.Request(form.action, {
+          parameters: Form.serialize(form),
+          onSuccess: function(o) {
+            li.replace(o.responseText);
+          }
+        });
+      }
+    });
+  });

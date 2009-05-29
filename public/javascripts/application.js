@@ -65,7 +65,9 @@
     });
 */
     Event.observe(window, 'load', function() {
-      $('q').activate();
+      if ($('q')) {
+        $('q').activate();
+      }
     });
 })();
 

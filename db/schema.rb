@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090523043731) do
+ActiveRecord::Schema.define(:version => 20090528230017) do
 
   create_table "categories", :force => true do |t|
     t.string   "search"
@@ -36,7 +36,9 @@ ActiveRecord::Schema.define(:version => 20090523043731) do
   end
 
   create_table "games", :force => true do |t|
-    t.string   "code"
+    t.string   "permalink"
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -51,6 +53,14 @@ ActiveRecord::Schema.define(:version => 20090523043731) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "armory_id"
+  end
+
+  create_table "missions", :force => true do |t|
+    t.string   "title"
+    t.text     "summary"
+    t.integer  "game_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "professions", :force => true do |t|
@@ -76,7 +86,6 @@ ActiveRecord::Schema.define(:version => 20090523043731) do
     t.string   "pseudo_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "locale"
   end
 
   create_table "recipes", :force => true do |t|
@@ -84,6 +93,17 @@ ActiveRecord::Schema.define(:version => 20090523043731) do
     t.datetime "updated_at"
     t.integer  "spell_id",      :null => false
     t.integer  "profession_id", :null => false
+  end
+
+  create_table "rolls", :force => true do |t|
+    t.string   "by"
+    t.integer  "number"
+    t.string   "value"
+    t.boolean  "exploded"
+    t.integer  "mission_id"
+    t.string   "ip_address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "sockpuppets", :force => true do |t|

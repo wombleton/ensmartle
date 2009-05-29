@@ -1,0 +1,104 @@
+class MissionsController < ApplicationController
+  layout "games"
+  # GET /missions
+  # GET /missions.xml
+  def index
+    @missions = Mission.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @missions }
+    end
+  end
+
+  # GET /missions/1
+  # GET /missions/1.xml
+  def show
+    @mission = Mission.find(params[:id], :include => :rolls)
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @mission }
+    end
+  end
+
+  # GET /missions/new
+  # GET /missions/new.xml
+  def new
+    @mission = Mission.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @mission }
+    end
+  end
+
+  # GET /missions/1/edit
+  def edit
+    @mission = Mission.find(params[:id])
+  end
+
+  # POST /missions
+  # POST /missions.xml
+  def create
+    @mission = Mission.new(params[:mission])
+    @mission.game = Game.find_by_permalink params[:game_id]
+
+    respond_to do |format|
+      if @mission.save
+        flash[:notice] = 'Mission was successfully created.'
+        format.html { redirect_to(@mission) }
+        format.xml  { render :xml => @mission, :status => :created, :location => @mission }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @mission.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /missions/1
+  # PUT /missions/1.xml
+  def update
+    puts params[:id]
+    @mission = Mission.find(params[:id])
+
+    roll and return if params[:roll] # don't edit but make a new roll
+    explode and return if params[:explode] # don't edit but explode an existing roll
+    
+    respond_to do |format|
+      if @mission.update_attributes(params[:mission])
+        flash[:notice] = 'Mission was successfully updated.'
+        format.html { redirect_to(@mission) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @mission.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /missions/1
+  # DELETE /missions/1.xml
+  def destroy
+    @mission = Mission.find(params[:id])
+    @mission.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(missions_url) }
+      format.xml  { head :ok }
+    end
+  end
+
+  def roll
+    session[:by] = params[:by]
+    roll = Roll.create(:mission => @mission, :by => params[:by], :exploded => false, :dice => params[:roll], :ip_address => request.remote_ip)
+    @mission.rolls << roll
+    render :partial => "roll", :collection => @mission.rolls.find(:all, :conditions => ["updated_at > ?", params[:latest] || 0])
+  end
+
+  def explode
+    roll = Roll.find(params[:explode])
+    roll.explode!
+    render :partial => "roll", :locals => { :roll => roll }
+  end
+end

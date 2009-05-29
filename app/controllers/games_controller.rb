@@ -2,8 +2,6 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.xml
   def index
-    @games = Game.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @games }
@@ -13,7 +11,7 @@ class GamesController < ApplicationController
   # GET /games/1
   # GET /games/1.xml
   def show
-    @game = Game.find(params[:id])
+    @game = Game.find_or_create_by_permalink(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,7 +32,7 @@ class GamesController < ApplicationController
 
   # GET /games/1/edit
   def edit
-    @game = Game.find(params[:id])
+    @game = Game.find_by_permalink(params[:id])
   end
 
   # POST /games
@@ -57,7 +55,7 @@ class GamesController < ApplicationController
   # PUT /games/1
   # PUT /games/1.xml
   def update
-    @game = Game.find(params[:id])
+    @game = Game.find_by_permalink(params[:id])
 
     respond_to do |format|
       if @game.update_attributes(params[:game])
@@ -68,18 +66,6 @@ class GamesController < ApplicationController
         format.html { render :action => "edit" }
         format.xml  { render :xml => @game.errors, :status => :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /games/1
-  # DELETE /games/1.xml
-  def destroy
-    @game = Game.find(params[:id])
-    @game.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(games_url) }
-      format.xml  { head :ok }
     end
   end
 end

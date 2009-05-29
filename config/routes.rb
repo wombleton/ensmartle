@@ -1,5 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :games
+  map.resources :games, :except => [:destroy], :shallow => true do |game|
+    game.resources :missions do |mission|
+      mission.resources :rolls, :only => [:create]
+    end
+  end
 
   map.resources :realms, :only => [:index, :show]
   map.character "/realms/:realm_id/:id", :controller => "characters", :action => "show"

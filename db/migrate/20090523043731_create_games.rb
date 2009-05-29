@@ -1,7 +1,9 @@
 class CreateGames < ActiveRecord::Migration
   def self.up
     create_table :games do |t|
-      t.string :code
+      t.string :permalink
+      t.string :name
+      t.text :description
 
       t.timestamps
     end

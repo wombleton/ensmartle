@@ -1,0 +1,6 @@
+- form_for(@game, game_path(@game)) do |f|
+  %h2 Name
+  =f.text_field :name
+  %h2 Description
+  =f.text_area :description
+  =submit_tag 'Update'

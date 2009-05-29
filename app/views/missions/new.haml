@@ -1,0 +1,7 @@
+-form_for [:game, @mission] do |f|
+  %h1 Mission Title
+  =f.text_field :title
+  %h1 Mission Summary
+  =f.text_area :summary
+  =submit_tag "Create New Mission"
+
