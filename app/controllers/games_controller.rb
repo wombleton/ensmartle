@@ -1,4 +1,5 @@
 class GamesController < ApplicationController
+  layout "mice"
   # GET /games
   # GET /games.xml
   def index

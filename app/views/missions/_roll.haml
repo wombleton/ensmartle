@@ -1,13 +1,17 @@
-%li.roll{:id => "#{roll.id}-roll", :updated_at => "#{roll.updated_at}"}
+%li.roll{:roll_id => roll.id, :updated_at => "#{roll.updated_at}"}
   .by=roll.by
-  - roll.dice.each_with_index do |die, i|
-    - if i < roll.number
-      - if die < 4
-        %span.traitor=die
-      - if die == 4 or die == 5 or (die == 6 and roll.exploded?)
-        %span.success=die
-      - if die == 6 and !roll.exploded?
-        %span.explodable=die
-    - else
-      %span.exploded=die
-  =link_to "explode", mission_path(roll.mission, :explode => roll.id), :class => "explode", :roll_id => roll.id if roll.explodable?
+  .at=roll.created_at.strftime('%I:%M%P %a %d %b %G')
+  .successes="(#{roll.successes})"
+  .dice
+    - roll.dice.each_with_index do |die, i|
+      - if i < roll.number
+        - if die < 4
+          %span.traitor=die
+        - if die == 4 or die == 5 or (die == 6 and roll.exploded?)
+          %span.success=die
+        - if die == 6 and !roll.exploded?
+          %span.explodable=die
+      - else
+        %span.exploded_failure=die if die < 4
+        %span.exploded_success=die if die >= 4
+  =link_to "asplode", mission_path(roll.mission, :explode => roll.id), :class => "explode", :roll_id => roll.id if roll.explodable?

@@ -1,0 +1,72 @@
+html {
+  /* http://www.flickr.com/photos/indykethdy/2530686902/ */
+  background-image: url(/images/micebg.jpg);
+  background-color: #fffba7;
+  background-repeat: no-repeat; }
+
+body {
+  padding: 0 10px;
+  font-family: Verdana, sans;
+  height: 100%; }
+
+a {
+  color: #b87f26; }
+
+#content {
+  background-color: #fff9e6;
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%; }
+  #content #header h1 {
+    padding: 30px;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center; }
+    #content #header h1 img {
+      vertical-align: middle; }
+  #content #body {
+    padding: 30px; }
+    #content #body h1 {
+      text-align: center;
+      font-size: 200%;
+      font-weight: bold; }
+    #content #body .new-game, #content #body .existing-game {
+      text-align: center;
+      font-size: 150%; }
+    #content #body form, #content #body form div {
+      display: inline; }
+    #content #body #rolls li {
+      position: relative;
+      line-height: 1.6;
+      border-bottom: 1px dotted #f0d53f; }
+      #content #body #rolls li .by {
+        display: inline-block;
+        width: 150px;
+        margin-right: 20px;
+        font-size: 120%; }
+      #content #body #rolls li .at {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 80%;
+        color: #b87f26; }
+      #content #body #rolls li .successes {
+        display: inline-block;
+        font-size: 160%;
+        font-weight: bold;
+        width: 80px; }
+      #content #body #rolls li .dice {
+        display: inline-block; }
+      #content #body #rolls li .traitor {
+        font-size: 120%;
+        color: #ccc; }
+      #content #body #rolls li .success {
+        font-size: 150%; }
+      #content #body #rolls li .explodable {
+        font-size: 160%;
+        color: #f88; }
+      #content #body #rolls li .exploded_failure {
+        color: #ccc;
+        font-size: 120%; }
+      #content #body #rolls li .exploded_success {
+        font-size: 120%; }

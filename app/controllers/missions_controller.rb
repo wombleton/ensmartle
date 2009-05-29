@@ -1,5 +1,5 @@
 class MissionsController < ApplicationController
-  layout "games"
+  layout "mice"
   # GET /missions
   # GET /missions.xml
   def index
@@ -14,7 +14,7 @@ class MissionsController < ApplicationController
   # GET /missions/1
   # GET /missions/1.xml
   def show
-    @mission = Mission.find(params[:id], :include => :rolls)
+    @mission = Mission.find_by_permalink(params[:id], :include => :rolls)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -59,8 +59,7 @@ class MissionsController < ApplicationController
   # PUT /missions/1
   # PUT /missions/1.xml
   def update
-    puts params[:id]
-    @mission = Mission.find(params[:id])
+    @mission = Mission.find_by_permalink(params[:id])
 
     roll and return if params[:roll] # don't edit but make a new roll
     explode and return if params[:explode] # don't edit but explode an existing roll
@@ -91,9 +90,12 @@ class MissionsController < ApplicationController
 
   def roll
     session[:by] = params[:by]
-    roll = Roll.create(:mission => @mission, :by => params[:by], :exploded => false, :dice => params[:roll], :ip_address => request.remote_ip)
-    @mission.rolls << roll
-    render :partial => "roll", :collection => @mission.rolls.find(:all, :conditions => ["updated_at > ?", params[:latest] || 0])
+    unless params[:roll] == ""
+      roll = Roll.create(:mission => @mission, :by => params[:by], :exploded => false, :dice => params[:roll], :ip_address => request.remote_ip)
+      @mission.rolls << roll
+    end
+    latest = Time.parse(params[:latest] || 0).utc
+    render :partial => "roll", :collection => @mission.rolls.find(:all, :conditions => ["updated_at > ?", latest])
   end
 
   def explode

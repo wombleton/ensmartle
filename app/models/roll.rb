@@ -32,4 +32,8 @@ class Roll < ActiveRecord::Base
   def explodable?
     not exploded? and dice.include?(6)
   end
+
+  def successes
+    dice.select{|d| d >= 4}.length
+  end
 end

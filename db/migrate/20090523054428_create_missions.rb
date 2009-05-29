@@ -4,6 +4,7 @@ class CreateMissions < ActiveRecord::Migration
       t.string :title
       t.text :summary
       t.integer :game_id
+      t.string :permalink
 
       t.timestamps
     end

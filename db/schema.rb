@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(:version => 20090528230017) do
     t.string   "title"
     t.text     "summary"
     t.integer  "game_id"
+    t.string   "permalink"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

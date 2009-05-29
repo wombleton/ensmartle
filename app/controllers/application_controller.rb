@@ -5,7 +5,9 @@ class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   
   include AuthenticatedSystem
-  
+
+  Time.zone = "Auckland"
+
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => 'aaa1d8b8e9dcf98811bcd2fca9b3a827'

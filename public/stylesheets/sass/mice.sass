@@ -1,0 +1,84 @@
+!bg = "url(/images/micebg.jpg)"
+!base = #FFFBA7
+!dark = #694F44
+!light = #FFF9E6
+!link = #B87F26
+!info = #F0D53F
+html
+  /* http://www.flickr.com/photos/indykethdy/2530686902/
+  :background-image = !bg
+  :background-color = !base
+  :background-repeat no-repeat
+
+body
+  :padding 0 10px
+  :font-family Verdana, sans
+  :height 100%
+a
+  :color = !link
+  &:visited = !dark
+  &:active = !dark
+#content
+  :background-color = !light
+  :margin 0 auto
+  :width 1000px
+  :height 100%
+
+  #header h1
+    :padding 30px
+    :font-size 300%
+    :font-weight bold
+    :text-align center
+
+    img
+      :vertical-align middle
+
+  #body
+    :padding 30px
+    h1
+      :text-align center
+      :font-size 200%
+      :font-weight bold
+    .new-game, .existing-game
+      :text-align center
+      :font-size 150%
+
+    form, form div
+      :display inline
+    #rolls
+      li
+        :position relative
+        :line-height 1.6
+        :border-bottom = "1px dotted" !info
+        .by
+          :display inline-block
+          :width 150px
+          :margin-right 20px
+          :font-size 120%
+        .at
+          :position absolute
+          :right 0
+          :top 0
+          :font-size 80%
+          :color = !link
+        .successes
+          :display inline-block
+          :font-size 160%
+          :font-weight bold
+          :width 80px
+
+        .dice
+          :display inline-block
+        .traitor
+          :font-size 120%
+          :color #ccc
+        .success
+          :font-size 150%
+        .explodable
+          :font-size 160%
+          :color #f88
+        .exploded_failure
+          :color #ccc
+          :font-size 120%
+        .exploded_success
+          :font-size 120%

@@ -18,20 +18,32 @@
   =hidden_field_tag "explode", ""
 
 :javascript
+  function poll(roll) {
+    $('roll').value = roll || '';
+    $('latest').value = ($$('#rolls .roll').first() || document.body).readAttribute('updated_at');
+    var form = $('make_roll');
+    new Ajax.Request(form.action, {
+      parameters: Form.serialize(form),
+      onComplete: function(o) {
+        $('rolls').insert({
+          top: o.responseText
+        });
+        var ids = {};
+        $$('#rolls .roll').each(function(r){
+          var id = r.readAttribute('roll_id');
+          if (ids[id]) {
+            r.remove();
+          }
+          ids[id] = r;
+        });
+      }
+    });
+  }
+
   Event.observe(window, 'load', function() {
     Event.observe('dice', 'click', function(e) {
       Event.stop(e);
-      $('roll').value = Event.findElement(e, 'a').innerHTML;
-      $('latest').value = ($$('#rolls .roll').first() || document.body).readAttribute('updated_at');
-      var form = $('make_roll');
-      new Ajax.Request(form.action, {
-        parameters: Form.serialize(form),
-        onComplete: function(o) {
-          $('rolls').insert({
-            top: o.responseText
-          });
-        }
-      });
+      poll(Event.findElement(e, 'a').innerHTML);
     });
 
     Event.observe('rolls', 'click', function(e) {
@@ -48,5 +60,7 @@
           }
         });
       }
+
     });
+    new PeriodicalExecuter(function() {poll('')}, 10);
   });
