@@ -1,72 +1,143 @@
 html {
-  /* http://www.flickr.com/photos/indykethdy/2530686902/ */
-  background-image: url(/images/micebg.jpg);
-  background-color: #fffba7;
-  background-repeat: no-repeat; }
+  background-color: #888888;
+  height: 100%; }
 
 body {
-  padding: 0 10px;
-  font-family: Verdana, sans;
-  height: 100%; }
+  font-family: Verdana, sans; }
 
 a {
+  text-decoration: none;
   color: #b87f26; }
+  a:hover {
+    text-decoration: underline; }
 
-#content {
-  background-color: #fff9e6;
-  margin: 0 auto;
+#wrap {
   width: 1000px;
-  height: 100%; }
-  #content #header h1 {
-    padding: 30px;
-    font-size: 300%;
-    font-weight: bold;
-    text-align: center; }
-    #content #header h1 img {
-      vertical-align: middle; }
-  #content #body {
-    padding: 30px; }
-    #content #body h1 {
-      text-align: center;
-      font-size: 200%;
-      font-weight: bold; }
-    #content #body .new-game, #content #body .existing-game {
-      text-align: center;
+  margin: 0 auto;
+  background: #fff9e6; }
+
+#footer {
+  clear: both;
+  padding: 20px;
+  background: #fff9e6; }
+  #footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    vertical-align: top; }
+  #footer li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-weight: bold; }
+
+#header {
+  /* http://www.flickr.com/photos/indykethdy/2530686902/ */
+  padding: 20px; }
+  #header img {
+    height: 50px; }
+  #header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    line-height: 50px;
+    vertical-align: top; }
+  #header li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 200%;
+    font-weight: bold; }
+
+#sidebar {
+  padding: 20px;
+  float: left;
+  width: 150px; }
+
+#main {
+  background-color: #fff9e6;
+  padding: 20px;
+  float: right;
+  width: 770px; }
+  #main #tracking {
+    font-size: 120%;
+    margin: 1em 0; }
+    #main #tracking .num {
+      color: #f0d53f;
       font-size: 150%; }
-    #content #body form, #content #body form div {
-      display: inline; }
-    #content #body #rolls li {
+  #main .created_at {
+    font-size: 90%;
+    color: #888888; }
+  #main h1 {
+    font-size: 200%;
+    font-weight: bold; }
+    #main h1 .default {
+      color: #888888; }
+  #main #new-roll {
+    border: 5px solid #888888;
+    padding: 5px;
+    background-color: #fffba7; }
+    #main #new-roll input {
+      width: 150px; }
+  #main h2 {
+    font-size: 160%;
+    font-weight: bold; }
+  #main #rolls {
+    padding: 10px; }
+    #main #rolls li {
       position: relative;
       line-height: 1.6;
       border-bottom: 1px dotted #f0d53f; }
-      #content #body #rolls li .by {
+      #main #rolls li .by {
         display: inline-block;
         width: 150px;
         margin-right: 20px;
         font-size: 120%; }
-      #content #body #rolls li .at {
+      #main #rolls li .at {
         position: absolute;
         right: 0;
         top: 0;
         font-size: 80%;
         color: #b87f26; }
-      #content #body #rolls li .successes {
+      #main #rolls li .successes {
         display: inline-block;
         font-size: 160%;
         font-weight: bold;
         width: 80px; }
-      #content #body #rolls li .dice {
+      #main #rolls li .dice {
         display: inline-block; }
-      #content #body #rolls li .traitor {
+      #main #rolls li .traitor {
         font-size: 120%;
         color: #ccc; }
-      #content #body #rolls li .success {
+      #main #rolls li .success {
         font-size: 150%; }
-      #content #body #rolls li .explodable {
+      #main #rolls li .explodable {
         font-size: 160%;
         color: #f88; }
-      #content #body #rolls li .exploded_failure {
+      #main #rolls li .exploded_failure {
         color: #ccc;
         font-size: 120%; }
-      #content #body #rolls li .exploded_success {
+      #main #rolls li .exploded_success {
         font-size: 120%; }
+  #main .bubble {
+    width: auto;
+    margin-bottom: 24px;
+    font-size: 0.8em; }
+    #main .bubble blockquote {
+      margin: 0;
+      padding: 0;
+      border: 1px solid #c9c2c1;
+      background-color: #fff;
+      font-size: 130%; }
+      #main .bubble blockquote p {
+        margin: 20px;
+        line-height: 1.6; }
+    #main .bubble cite {
+      position: relative;
+      margin: 0px;
+      padding: 7px 0px 0px 15px;
+      top: 6px;
+      background: transparent url(/images/tip.gif) no-repeat 20px 0;
+      font-style: normal; }

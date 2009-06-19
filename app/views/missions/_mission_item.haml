@@ -1,1 +1,3 @@
-%li=link_to "#{mission_item.title} [#{mission_item.created_at}]", mission_item
+%li
+  =link_to "#{mission_item.title}", mission_item
+  %span.created_at="(created at #{mission_item.created_at.strftime('%I:%M%P %a %d %b %G')})"

@@ -1,17 +1,17 @@
 %li.roll{:roll_id => roll.id, :updated_at => "#{roll.updated_at}"}
-  .by=roll.by
+  .by{:title => "This roll was made for #{roll.by}"}=roll.by
   .at=roll.created_at.strftime('%I:%M%P %a %d %b %G')
-  .successes="(#{roll.successes})"
+  .successes{:title => "#{roll.successes} successes"}="(#{roll.successes})"
   .dice
     - roll.dice.each_with_index do |die, i|
       - if i < roll.number
         - if die < 4
-          %span.traitor=die
+          %span.traitor{:title => "TRAITOR!"}=die
         - if die == 4 or die == 5 or (die == 6 and roll.exploded?)
-          %span.success=die
+          %span.success{:title => "Success!"}=die
         - if die == 6 and !roll.exploded?
-          %span.explodable=die
+          %span.explodable{:title => "This dice can be re-rolled if you spent a fate point."}=die
       - else
-        %span.exploded_failure=die if die < 4
-        %span.exploded_success=die if die >= 4
-  =link_to "asplode", mission_path(roll.mission, :explode => roll.id), :class => "explode", :roll_id => roll.id if roll.explodable?
+        %span.exploded_failure{:title => "A feelthy traitorish traitor."}=die if die < 4
+        %span.exploded_success{:title => "Another success!"}=die if die >= 4
+  =link_to "asplode", mission_path(roll.mission, :explode => roll.id), :class => "explode", :roll_id => roll.id, :title => "Click here to spend a fate point and make the roll open-ended." if roll.explodable?

@@ -1,7 +1,7 @@
 %h1=@game.name
 %h2="Game Code: #{link_to @game.permalink, @game}"
 %h2 Description
-%blockquote=@game.description
+%blockquote=textilize(@game.description)
 %h2 Missions
 %ul
   %li="No missions!" if @game.missions.empty?

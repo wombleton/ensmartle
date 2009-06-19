@@ -4,8 +4,6 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   
-  include AuthenticatedSystem
-
   Time.zone = "Auckland"
 
   # See ActionController::RequestForgeryProtection for details

@@ -94,8 +94,8 @@ class MissionsController < ApplicationController
       roll = Roll.create(:mission => @mission, :by => params[:by], :exploded => false, :dice => params[:roll], :ip_address => request.remote_ip)
       @mission.rolls << roll
     end
-    latest = Time.parse(params[:latest] || 0).utc
-    render :partial => "roll", :collection => @mission.rolls.find(:all, :conditions => ["updated_at > ?", latest])
+    latest = Time.parse(params[:latest]).utc unless params[:latest].empty?
+    render :partial => "roll", :collection => @mission.rolls.find(:all, :conditions => ["updated_at > ?", latest || 1.week.ago])
   end
 
   def explode

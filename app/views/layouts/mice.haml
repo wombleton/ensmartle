@@ -2,15 +2,23 @@
 %html
   %head
     %title Mice Ensmartle Me
-    =javascript_include_tag :defaults
+    =javascript_include_tag :defaults, "mice"
     =stylesheet_link_tag 'reset', 'mice'
-  %body.games
-    #content
+  %body
+    #wrap
       #header
-        %h1
-          / http://www.flickr.com/photos/gradin/333366686/
-          =image_tag "icon.png"
-          Mouse Guard
-      #body
-        =yield
+        =link_to image_tag("icon.png"), games_path
+        - @menu_items ||= []
+        - @menu_items.unshift(link_to "Home", games_path)
 
+        %ul
+          -for item in (@menu_items)
+            %li=item
+      #main
+        =yield
+      #sidebar
+        =image_tag "mouse_panel.jpg"
+      #footer
+        %ul
+          -for item in (@menu_items || [])
+            %li=item

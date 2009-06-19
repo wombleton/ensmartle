@@ -3,6 +3,9 @@ class GamesController < ApplicationController
   # GET /games
   # GET /games.xml
   def index
+    @games = Game.count(:all)
+    @missions = Mission.count(:all)
+    @rolls = Roll.count(:all)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @games }

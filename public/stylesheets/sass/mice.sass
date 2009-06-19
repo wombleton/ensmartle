@@ -4,81 +4,158 @@
 !light = #FFF9E6
 !link = #B87F26
 !info = #F0D53F
+!grey = #888
+!white = #fff
 html
-  /* http://www.flickr.com/photos/indykethdy/2530686902/
-  :background-image = !bg
-  :background-color = !base
-  :background-repeat no-repeat
+  :background-color = !grey
+  :height 100%
 
 body
-  :padding 0 10px
   :font-family Verdana, sans
-  :height 100%
 a
+  :text-decoration none
   :color = !link
   &:visited = !dark
   &:active = !dark
-#content
-  :background-color = !light
-  :margin 0 auto
+  &:hover
+    :text-decoration underline
+
+#wrap
   :width 1000px
-  :height 100%
+  :margin 0 auto
+  :background = !light
 
-  #header h1
-    :padding 30px
-    :font-size 300%
+#footer
+  :clear both
+  :padding 20px
+  :background = !light
+  ul
+    :margin 0
+    :padding 0
+    :list-style none
+    :display inline
+    :vertical-align top
+  li
+    :display inline
+    :margin 0
+    :padding 0
     :font-weight bold
-    :text-align center
 
-    img
-      :vertical-align middle
+#header
+  /* http://www.flickr.com/photos/indykethdy/2530686902/
+  :padding 20px
+  img
+    :height 50px
+  ul
+    :margin 0
+    :padding 0
+    :list-style none
+    :display inline
+    :line-height 50px
+    :vertical-align top
+  li
+    :display inline
+    :margin 0
+    :padding 0
+    :font-size 200%
+    :font-weight bold
 
-  #body
-    :padding 30px
-    h1
-      :text-align center
-      :font-size 200%
-      :font-weight bold
-    .new-game, .existing-game
-      :text-align center
+#sidebar
+  :padding 20px
+  :float left
+  :width 150px
+
+#main
+  :background-color = !light
+  :padding 20px
+  :float right
+  :width 770px
+
+  #tracking
+    :font-size 120%
+    :margin 1em 0
+    .num
+      :color = !info
       :font-size 150%
 
-    form, form div
-      :display inline
-    #rolls
-      li
-        :position relative
-        :line-height 1.6
-        :border-bottom = "1px dotted" !info
-        .by
-          :display inline-block
-          :width 150px
-          :margin-right 20px
-          :font-size 120%
-        .at
-          :position absolute
-          :right 0
-          :top 0
-          :font-size 80%
-          :color = !link
-        .successes
-          :display inline-block
-          :font-size 160%
-          :font-weight bold
-          :width 80px
+  .created_at
+    :font-size 90%
+    :color = !grey
+  h1
+    :font-size 200%
+    :font-weight bold
+    .default
+      :color = !grey
 
-        .dice
-          :display inline-block
-        .traitor
-          :font-size 120%
-          :color #ccc
-        .success
-          :font-size 150%
-        .explodable
-          :font-size 160%
-          :color #f88
-        .exploded_failure
-          :color #ccc
-          :font-size 120%
-        .exploded_success
-          :font-size 120%
+  #new-roll
+    :border = "5px solid" !grey
+    :padding 5px
+    :background-color = !base
+    input
+      :width 150px
+
+  h2
+    :font-size 160%
+    :font-weight bold
+
+  #rolls
+    :padding 10px
+    li
+      :position relative
+      :line-height 1.6
+      :border-bottom = "1px dotted" !info
+      .by
+        :display inline-block
+        :width 150px
+        :margin-right 20px
+        :font-size 120%
+      .at
+        :position absolute
+        :right 0
+        :top 0
+        :font-size 80%
+        :color = !link
+      .successes
+        :display inline-block
+        :font-size 160%
+        :font-weight bold
+        :width 80px
+
+      .dice
+        :display inline-block
+      .traitor
+        :font-size 120%
+        :color #ccc
+      .success
+        :font-size 150%
+      .explodable
+        :font-size 160%
+        :color #f88
+      .exploded_failure
+        :color #ccc
+        :font-size 120%
+      .exploded_success
+        :font-size 120%
+
+  .bubble
+    :width auto
+    :margin-bottom 24px
+    :font-size 0.8em
+
+    blockquote
+      :margin 0
+      :padding 0
+      :border 1px solid #c9c2c1
+      :background-color #fff
+      :font-size 130%
+      p
+        :margin 20px
+        :line-height 1.6
+
+    cite
+      :position relative
+      :margin 0px
+      :padding 7px 0px 0px 15px
+      :top 6px
+      :background transparent url(/images/tip.gif) no-repeat 20px 0
+      :font-style normal
