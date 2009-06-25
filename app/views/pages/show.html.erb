@@ -1,0 +1,18 @@
+<p>
+  <b>Image path:</b>
+  <%=h @page.image_path %>
+</p>
+
+<p>
+  <b>Page no:</b>
+  <%=h @page.page_no %>
+</p>
+
+<p>
+  <b>Document:</b>
+  <%=h @page.document_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
