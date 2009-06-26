@@ -1,0 +1,23 @@
+<p>
+  <b>User name:</b>
+  <%=h @detail.user_name %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @detail.comment %>
+</p>
+
+<p>
+  <b>Page:</b>
+  <%=h @detail.page_id %>
+</p>
+
+<p>
+  <b>Remote ip:</b>
+  <%=h @detail.remote_ip %>
+</p>
+
+
+<%= link_to 'Edit', edit_detail_path(@detail) %> |
+<%= link_to 'Back', details_path %>

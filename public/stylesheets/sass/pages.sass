@@ -1,0 +1,85 @@
+=med
+  :font-size 1.25em
+=lrg
+  :font-size 1.5em
+
+=sml
+  :font-size 0.8em
+=title
+  :text-align center
+  :padding 1em
+  :font-weight bold
+
+body
+  :background-color #F1F1C3
+
+body, td
+  :color #3C3D32
+  :font-family Verdana, Arial, Helvetica, sans-serif
+
+#wrap
+  :background-color #96A84A
+  :width 1000px
+  :padding 2em
+  :margin 0 auto
+  #header
+    :padding 10px 0
+    +lrg
+    +title
+
+#page
+  td
+    :vertical-align top
+  label
+    :display block
+  .hint
+    :font-style italic
+    +sml
+  textarea
+    :width 100%
+    :height 4em
+
+a
+  :color #573A2F
+  :text-decoration none
+  &:visited #3C3D32
+  &:hover
+    :text-decoration underline
+
+
+.pagination
+  +med
+  +title
+
+.notice
+  :background-color #B8B495
+  +med
+  :color red
+  :padding 1em
+
+.comment
+  :background-color #B8B495
+  :margin 1px 0
+  :padding 2px
+  .user
+    +sml
+
+h2
+  +lrg
+  :font-weight bold
+  :margin 0.5em 0 0.25em
+
+td
+  :padding 0.2em
+  :text-align middle
+.page-no
+  +med
+.page-total
+  +lrg
+.document-title
+  +med
+.document-type
+
+#footer
+  +med
+  +title

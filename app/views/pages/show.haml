@@ -1,0 +1,38 @@
+%table#page
+  %col
+  %col{:width => 300}
+  %tbody
+    %tr
+      %td
+        =link_to "Original document: #{@page.document.pdf_name}", @page.document.url
+        =image_tag @page.image_path
+      %td
+        %ul
+          %li=@page.document.title
+          %li
+            -unless @page.previous_page.nil?
+              =link_to "<< p#{@page.previous_page.number}", @page.previous_page
+            ="p#{@page.number}"
+            -unless @page.next_page.nil?
+              =link_to "p#{@page.next_page.number} >>", @page.next_page
+          %li=link_to 'Page Index', pages_path
+        %h2 Comments
+        %ul.comments
+          -for detail in @page.details
+            %li.comment
+              .user
+                - if detail.user_name.to_s.empty?
+                  Anonymous
+                - else
+                  =h detail.user_name
+                @
+                =distance_of_time_in_words_to_now detail.created_at
+              .comment=textilize(h detail.comment)
+        %h2 New Comment
+        -form_for :detail, :url => page_details_path(@page) do |f|
+          %label User Name
+          =f.text_field :user_name, session[:user_name]
+          .hint (Optional)
+          %label Comment
+          =f.text_area :comment, :rows => nil, :cols => nil
+          =f.submit "Comment"

@@ -1,0 +1,16 @@
+!!! Transitional
+%html
+  %head
+    %title Budget 2009 Documents
+    =stylesheet_link_tag 'reset', 'pages'
+  %body
+    #wrap
+      #header
+        =link_to "Budget 2009 Documents", pages_path
+      #main
+        - if flash[:notice]
+          .notice=flash[:notice]
+        =yield
+      #footer
+        Comments? Ideas? Corrections? Twitter
+        =link_to "@wombleton", "http://twitter.com/wombleton"

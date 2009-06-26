@@ -1,4 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :pages, :only => [:show, :index] do |pages|
+    pages.resources :details, :only => [:create]
+  end
+  map.resources :documents, :only => :none
+
   map.resources :games, :except => [:destroy], :shallow => true do |game|
     game.resources :missions do |mission|
       mission.resources :rolls, :only => [:create]

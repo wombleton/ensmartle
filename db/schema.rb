@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090528230017) do
+ActiveRecord::Schema.define(:version => 20090625224839) do
 
   create_table "categories", :force => true do |t|
     t.string   "search"
@@ -33,6 +33,16 @@ ActiveRecord::Schema.define(:version => 20090528230017) do
   create_table "components", :force => true do |t|
     t.integer "item_id"
     t.integer "reagent_id"
+  end
+
+  create_table "documents", :force => true do |t|
+    t.datetime "date"
+    t.string   "document_type"
+    t.string   "title"
+    t.string   "pdf_name"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "games", :force => true do |t|
@@ -60,6 +70,25 @@ ActiveRecord::Schema.define(:version => 20090528230017) do
     t.text     "summary"
     t.integer  "game_id"
     t.string   "permalink"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages", :force => true do |t|
+    t.string   "image_path"
+    t.integer  "page_no"
+    t.integer  "document_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "persisted_files", :force => true do |t|
+    t.datetime "question_date"
+    t.string   "parliament_name"
+    t.string   "parliament_url"
+    t.string   "status"
+    t.boolean  "persisted"
+    t.boolean  "downloaded"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -150,5 +179,23 @@ ActiveRecord::Schema.define(:version => 20090528230017) do
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+
+  create_table "written_questions", :force => true do |t|
+    t.text     "question"
+    t.text     "answer"
+    t.string   "status"
+    t.integer  "question_number"
+    t.integer  "question_year"
+    t.string   "asker_url"
+    t.string   "asker_name"
+    t.string   "portfolio_url"
+    t.string   "portfolio_name"
+    t.string   "respondent_url"
+    t.string   "respondent_name"
+    t.date     "date_asked"
+    t.string   "subject"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

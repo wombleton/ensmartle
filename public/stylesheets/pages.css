@@ -1,0 +1,79 @@
+body {
+  background-color: #F1F1C3; }
+
+body, td {
+  color: #3C3D32;
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+#wrap {
+  background-color: #96A84A;
+  width: 1000px;
+  padding: 2em;
+  margin: 0 auto; }
+  #wrap #header {
+    padding: 10px 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold; }
+
+#page td {
+  vertical-align: top; }
+#page label {
+  display: block; }
+#page .hint {
+  font-style: italic;
+  font-size: 0.8em; }
+#page textarea {
+  width: 100%;
+  height: 4em; }
+
+a {
+  color: #573A2F;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.pagination {
+  font-size: 1.25em;
+  text-align: center;
+  padding: 1em;
+  font-weight: bold; }
+
+.notice {
+  background-color: #B8B495;
+  font-size: 1.25em;
+  color: red;
+  padding: 1em; }
+
+.comment {
+  background-color: #B8B495;
+  margin: 1px 0;
+  padding: 2px; }
+  .comment .user {
+    font-size: 0.8em; }
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.5em 0 0.25em; }
+
+td {
+  padding: 0.2em;
+  text-align: middle; }
+
+.page-no {
+  font-size: 1.25em; }
+
+.page-total {
+  font-size: 1.5em; }
+
+.document-title {
+  font-size: 1.25em; }
+
+
+#footer {
+  font-size: 1.25em;
+  text-align: center;
+  padding: 1em;
+  font-weight: bold; }
