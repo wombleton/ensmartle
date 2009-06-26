@@ -3,4 +3,10 @@ namespace :budget do
   task :d => :environment do
     GenerateDocuments.new.download
   end
+
+  desc "download source pdfs"
+  task :dpdf => :environment do
+    GenerateDocuments.new.download_pdfs
+  end
+
 end

@@ -1,12 +1,13 @@
 body {
-  background-color: #F1F1C3; }
+  background-color: white; }
 
 body, td {
+  line-height: 1.6;
   color: #3C3D32;
   font-family: Verdana, Arial, Helvetica, sans-serif; }
 
 #wrap {
-  background-color: #96A84A;
+  background-color: #F1F1C3;
   width: 1000px;
   padding: 2em;
   margin: 0 auto; }
@@ -16,6 +17,13 @@ body, td {
     text-align: center;
     padding: 1em;
     font-weight: bold; }
+
+h3 {
+  font-size: 1.25em;
+  font-weight: bold; }
+
+.pages {
+  background-color: #B8B495; }
 
 #page td {
   vertical-align: top; }
@@ -29,7 +37,9 @@ body, td {
   height: 4em; }
 
 a {
+  background-color: #B8B495;
   color: #573A2F;
+  padding: 0 0.5em;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -41,17 +51,23 @@ a {
   font-weight: bold; }
 
 .notice {
+  padding: 0.5em;
+  font-style: italic; }
+
+.error {
   background-color: #B8B495;
   font-size: 1.25em;
   color: red;
   padding: 1em; }
 
 .comment {
-  background-color: #B8B495;
-  margin: 1px 0;
-  padding: 2px; }
+  margin: 1px 0; }
   .comment .user {
+    padding: 2px;
+    background-color: #B8B495;
     font-size: 0.8em; }
+  .comment .text {
+    padding: 2px; }
 
 h2 {
   font-size: 1.5em;

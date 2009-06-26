@@ -8,12 +8,12 @@ class DetailsController < ApplicationController
     session[:user_name] = @detail.user_name
 
     if @detail.comment.empty?
-      flash[:notice] = "Comment can't be empty"
+      flash[:error] = "Comment can't be empty"
       redirect_to @detail.page
     else
       respond_to do |format|
         if @detail.save
-          flash[:notice] = 'Detail was successfully created.'
+          flash[:notice] = 'Comment added!'
           format.html { redirect_to(@detail.page) }
           format.xml  { render :xml => @detail, :status => :created, :location => @detail }
         else

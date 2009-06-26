@@ -3,10 +3,9 @@ require 'open-uri'
 require 'hpricot'
 
 class GenerateDocuments
+  URLS = %W(http://www.treasury.govt.nz/publications/informationreleases/budget/2009/key http://www.treasury.govt.nz/publications/informationreleases/budget/2009/bilateral http://www.treasury.govt.nz/publications/informationreleases/budget/2009/letters http://www.treasury.govt.nz/publications/informationreleases/budget/2009/supportparty http://www.treasury.govt.nz/publications/informationreleases/budget/2009/cabinetminutes http://www.treasury.govt.nz/publications/informationreleases/budget/2009/fiscalstrategy http://www.treasury.govt.nz/publications/informationreleases/budget/2009/tax http://www.treasury.govt.nz/publications/informationreleases/budget/2009/linebylinereviews http://www.treasury.govt.nz/publications/informationreleases/budget/2009/informationrelease)
   def download
-    urls = %W(http://www.treasury.govt.nz/publications/informationreleases/budget/2009/key http://www.treasury.govt.nz/publications/informationreleases/budget/2009/bilateral http://www.treasury.govt.nz/publications/informationreleases/budget/2009/letters http://www.treasury.govt.nz/publications/informationreleases/budget/2009/supportparty http://www.treasury.govt.nz/publications/informationreleases/budget/2009/cabinetminutes http://www.treasury.govt.nz/publications/informationreleases/budget/2009/fiscalstrategy http://www.treasury.govt.nz/publications/informationreleases/budget/2009/tax http://www.treasury.govt.nz/publications/informationreleases/budget/2009/linebylinereviews http://www.treasury.govt.nz/publications/informationreleases/budget/2009/informationrelease)
-
-    urls.each{|url|
+    URLS.each{|url|
       download_page url
     }
   end
@@ -31,6 +30,23 @@ class GenerateDocuments
         page.image_path = File.join("files", File.basename(image))
         page.page_no = File.basename(image, ".png").split("-").last.to_i
         page.save!
+      }
+    }
+  end
+
+  def download_pdfs
+    URLS.each{|url|
+      doc = Hpricot open(url)
+      rows = (doc/('table.gallery tbody tr'))
+      rows.each{|r|
+        url = "http://www.treasury.govt.nz" + r.at('td[4] a').attributes['href']
+        puts "Opening #{url}"
+        open(url){|f|
+          pdf = File.open(File.join(RAILS_ROOT, "files", File.basename(url)), "wb")
+          pdf.write(f.read)
+          pdf.close
+          puts "Successfully written to #{pdf}"
+        }
       }
     }
   end

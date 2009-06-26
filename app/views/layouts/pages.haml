@@ -8,8 +8,8 @@
       #header
         =link_to "Budget 2009 Documents", pages_path
       #main
-        - if flash[:notice]
-          .notice=flash[:notice]
+        - if flash[:error]
+          .notice=flash[:error]
         =yield
       #footer
         Comments? Ideas? Corrections? Twitter

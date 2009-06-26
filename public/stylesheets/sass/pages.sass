@@ -11,14 +11,15 @@
   :font-weight bold
 
 body
-  :background-color #F1F1C3
+  :background-color white
 
 body, td
+  :line-height 1.6
   :color #3C3D32
   :font-family Verdana, Arial, Helvetica, sans-serif
 
 #wrap
-  :background-color #96A84A
+  :background-color #F1F1C3
   :width 1000px
   :padding 2em
   :margin 0 auto
@@ -26,6 +27,13 @@ body, td
     :padding 10px 0
     +lrg
     +title
+
+h3
+  +med
+  :font-weight bold
+
+.pages
+  :background-color #B8B495
 
 #page
   td
@@ -40,7 +48,9 @@ body, td
     :height 4em
 
 a
+  :background-color #B8B495
   :color #573A2F
+  :padding 0 0.5em
   :text-decoration none
   &:visited #3C3D32
   &:hover
@@ -52,17 +62,23 @@ a
   +title
 
 .notice
+  :padding 0.5em
+  :font-style italic
+
+.error
   :background-color #B8B495
   +med
   :color red
   :padding 1em
 
 .comment
-  :background-color #B8B495
   :margin 1px 0
-  :padding 2px
   .user
+    :padding 2px
+    :background-color #B8B495
     +sml
+  .text
+    :padding 2px
 
 h2
   +lrg
