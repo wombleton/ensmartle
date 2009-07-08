@@ -1,7 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :pages, :only => [:show, :index] do |pages|
-    pages.resources :details, :only => [:create]
-  end
+  map.resources :pages, :as => "budget-pages", :only => [:show, :index]
   map.resources :documents, :only => :none
 
   map.resources :games, :except => [:destroy], :shallow => true do |game|
@@ -9,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
       mission.resources :rolls, :only => [:create]
     end
   end
+
+  map.pagesearch "/pagesearch", :controller => "pages", :action => "pagesearch"
 
   map.resources :realms, :only => [:index, :show]
   map.character "/realms/:realm_id/:id", :controller => "characters", :action => "show"
@@ -34,6 +34,4 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
 
   map.connect 'professions/:profession', :controller => 'spells', :action => 'profession'
-
-  map.root :controller => 'election', :action => 'index'
 end

@@ -22,4 +22,9 @@ class PagesController < ApplicationController
       format.xml  { render :xml => @page }
     end
   end
+
+  def pagesearch
+    @pages = Page.paginate_search(params[:query], :page => params[:page], :per_page => 20)
+    render :template => "pages/index"
+  end
 end

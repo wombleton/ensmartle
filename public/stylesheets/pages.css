@@ -12,11 +12,14 @@ body, td {
   padding: 2em;
   margin: 0 auto; }
   #wrap #header {
+    position: relative;
     padding: 10px 0;
     font-size: 1.5em;
-    text-align: center;
-    padding: 1em;
+    padding: 0.25 1em 0.5em;
     font-weight: bold; }
+    #wrap #header #search {
+      float: right;
+      font-size: 0.66em; }
 
 h3 {
   font-size: 1.25em;
@@ -46,8 +49,7 @@ a {
 
 .pagination {
   font-size: 1.25em;
-  text-align: center;
-  padding: 1em;
+  padding: 0.25 1em 0.5em;
   font-weight: bold; }
 
 .notice {
@@ -90,6 +92,5 @@ td {
 
 #footer {
   font-size: 1.25em;
-  text-align: center;
-  padding: 1em;
+  padding: 0.25 1em 0.5em;
   font-weight: bold; }

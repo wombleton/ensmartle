@@ -6,8 +6,7 @@
 =sml
   :font-size 0.8em
 =title
-  :text-align center
-  :padding 1em
+  :padding 0.25 1em 0.5em
   :font-weight bold
 
 body
@@ -24,9 +23,13 @@ body, td
   :padding 2em
   :margin 0 auto
   #header
+    :position relative
     :padding 10px 0
     +lrg
     +title
+    #search
+      :float right
+      :font-size 0.66em
 
 h3
   +med

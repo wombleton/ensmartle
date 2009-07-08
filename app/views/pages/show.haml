@@ -31,9 +31,10 @@
                 .text=h detail.comment
         %h2 New Comment
         -form_for :detail, :url => page_details_path(@page) do |f|
-          %label User Name
+          %label 
+            User Name
+            %span.hint (Optional)
           =f.text_field :user_name, :value => session[:user_name]
-          .hint (Optional)
           %label Comment
           =f.text_area :comment, :rows => nil, :cols => nil
           =f.submit "Comment"

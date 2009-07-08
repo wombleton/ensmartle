@@ -1,0 +1,2365 @@
+--- 
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:08:11
+    pdf_name: b09-cabmin08-45-5.pdf
+    title: "CAB Min (08) 45/5: 2009 Budget Policy Statement"
+    updated_at: 2009-06-26 00:08:11
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin08-45-5.pdf
+    date: 2008-11-30 11:00:00
+    id: "1"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:08:35
+    pdf_name: b09-cab08-586.pdf
+    title: "CAB (08) 586: 2009 Budget Policy Statement"
+    updated_at: 2009-06-26 00:08:35
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cab08-586.pdf
+    date: 2008-12-04 11:00:00
+    id: "2"
+    document_type: Cabinet Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:09:03
+    pdf_name: b09-segp1.pdf
+    title: "[Senior Executives Group Paper 1:] Savings and Emergency Pressures Submitted in Budget 2009"
+    updated_at: 2009-06-26 00:09:03
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-segp1.pdf
+    date: 2009-02-10 11:00:00
+    id: "3"
+    document_type: Senior Executives Group Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:11:02
+    pdf_name: b09-segp2.pdf
+    title: "[Senior Executives Group Paper 2:] Savings and Emergency Pressures Submitted in Budget 2009"
+    updated_at: 2009-06-26 00:11:02
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-segp2.pdf
+    date: 2009-02-16 11:00:00
+    id: "4"
+    document_type: Senior Executives Group Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:12:31
+    pdf_name: b09-t2009-406.pdf
+    title: "T2009/406: Briefing For Expenditure Control Committee Tuesday 3 March 2009"
+    updated_at: 2009-06-26 00:12:31
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-406.pdf
+    date: 2009-02-26 11:00:00
+    id: "5"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:13:09
+    pdf_name: b09-segp3.pdf
+    title: "[Senior Executives Group Paper 3:] Final Paper to Senior Executives Group on Savings and Emergency Pressures"
+    updated_at: 2009-06-26 00:13:09
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-segp3.pdf
+    date: 2009-02-26 11:00:00
+    id: "6"
+    document_type: Senior Executives Group Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:14:36
+    pdf_name: b09-t2009-513.pdf
+    title: "T2009/513: Budget Ministers' Paper 1: Objectives and Priorities for the Budget Bilaterals"
+    updated_at: 2009-06-26 00:14:36
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-513.pdf
+    date: 2009-03-05 11:00:00
+    id: "7"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:16:07
+    pdf_name: b09-ecc09-12.pdf
+    title: "ECC (09) 12: Reversing Unfunded Budget 2008 Commitments for Economic Transformation: Innovation"
+    updated_at: 2009-06-26 00:16:07
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-ecc09-12.pdf
+    date: 2009-03-18 11:00:00
+    id: "8"
+    document_type: Cabinet Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:17:09
+    pdf_name: b09-eccmin09-6-2.pdf
+    title: "ECC Min (09) 6/2: Reversing Unfunded Budget 2008 Commitments for Economic Transformation: Innovation"
+    updated_at: 2009-06-26 00:17:09
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-eccmin09-6-2.pdf
+    date: 2009-03-23 11:00:00
+    id: "9"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:17:37
+    pdf_name: b09-t2009-723.pdf
+    title: "T2009/723: Budget Ministers' Paper 2: Confirming the 2009 Budget Package"
+    updated_at: 2009-06-26 00:17:37
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-723.pdf
+    date: 2009-03-26 11:00:00
+    id: "10"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:18:24
+    pdf_name: b09-strmin09-5-2.pdf
+    title: "STR Min (09) 5/2: 2009 Budget Package"
+    updated_at: 2009-06-26 00:18:24
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-strmin09-5-2.pdf
+    date: 2009-04-05 12:00:00
+    id: "11"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:18:39
+    pdf_name: b09-cabmem-6apr.pdf
+    title: "[Memorandum to Cabinet Discussed at Cabinet Strategy Committee on 6 April 2009] 2009 Budget Package"
+    updated_at: 2009-06-26 00:18:39
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmem-6apr.pdf
+    date: 2009-04-05 12:00:00
+    id: "12"
+    document_type: Cabinet Memo
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:18:58
+    pdf_name: b09-cab09-173.pdf
+    title: "CAB (09) 173: 2009 Budget Package"
+    updated_at: 2009-06-26 00:18:58
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cab09-173.pdf
+    date: 2009-04-15 12:00:00
+    id: "13"
+    document_type: Cabinet Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:19:22
+    pdf_name: b09-cabmin09-13-7.pdf
+    title: "CAB Min (09) 13/7: 2009 Budget Package"
+    updated_at: 2009-06-26 00:19:22
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-7.pdf
+    date: 2009-04-19 12:00:00
+    id: "14"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:20:13
+    pdf_name: b09-tr-mof-env-clim-17feb09.pdf
+    title: Bilateral Briefing for Votes Environment and Climate Change
+    updated_at: 2009-06-26 00:20:13
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-tr-mof-env-clim-17feb09.pdf
+    date: 2009-02-16 11:00:00
+    id: "15"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:20:54
+    pdf_name: b09-t2009-483.pdf
+    title: "T2009/483: Bilateral Briefing for Votes Defence, Defence Force and Research, Science & Technology"
+    updated_at: 2009-06-26 00:20:54
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-483.pdf
+    date: 2009-03-05 11:00:00
+    id: "16"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:22:16
+    pdf_name: b09-t2009-484.pdf
+    title: "T2009/484: Bilateral Briefing for Vote Commerce"
+    updated_at: 2009-06-26 00:22:16
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-484.pdf
+    date: 2009-03-05 11:00:00
+    id: "17"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:22:52
+    pdf_name: b09-t2009-486.pdf
+    title: "T2009/486: Bilateral Briefing for Votes Fisheries and Housing"
+    updated_at: 2009-06-26 00:22:52
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-486.pdf
+    date: 2009-03-05 11:00:00
+    id: "18"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:23:44
+    pdf_name: b09-t2009-495.pdf
+    title: "T2009/495: Bilateral Briefing for Votes Agriculture & Forestry and Biosecurity"
+    updated_at: 2009-06-26 00:23:44
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-495.pdf
+    date: 2009-03-05 11:00:00
+    id: "19"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:26:30
+    pdf_name: b09-t2009-503.pdf
+    title: "T2009/503: Bilateral Briefing for Votes Arts, Culture & Heritage, Attorney General, Serious Fraud and Treaty Negotiations"
+    updated_at: 2009-06-26 00:26:30
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-503.pdf
+    date: 2009-03-05 11:00:00
+    id: "20"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:27:24
+    pdf_name: b09-t2009-505.pdf
+    title: "T2009/505: Bilateral Briefing for Votes Economic Development, Energy and Resource"
+    updated_at: 2009-06-26 00:27:24
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-505.pdf
+    date: 2009-03-05 11:00:00
+    id: "21"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:28:06
+    pdf_name: b09-t2009-506.pdf
+    title: "T2009/506: Bilateral Briefing for Votes Labour (including ACC) and Food Safety"
+    updated_at: 2009-06-26 00:28:06
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-506.pdf
+    date: 2009-03-05 11:00:00
+    id: "22"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:28:52
+    pdf_name: b09-t2009-509.pdf
+    title: "T2009/509: Bilateral Briefing for Vote Finance"
+    updated_at: 2009-06-26 00:28:52
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-509.pdf
+    date: 2009-03-05 11:00:00
+    id: "23"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:29:27
+    pdf_name: b09-t2009-566.pdf
+    title: "T2009/566: Bilateral Briefing for Votes Transport and Communications"
+    updated_at: 2009-06-26 00:29:27
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-566.pdf
+    date: 2009-03-12 11:00:00
+    id: "24"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:30:12
+    pdf_name: b09-t2009-567.pdf
+    title: "T2009/567: Bilateral Briefing for Votes Tourism, Ministerial Services and Prime Minister and Cabinet"
+    updated_at: 2009-06-26 00:30:12
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-567.pdf
+    date: 2009-03-12 11:00:00
+    id: "25"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:31:09
+    pdf_name: b09-t2009-570.pdf
+    title: "T2009/570: Bilateral Briefing for Votes Foreign Affairs and Trade, Official Development Assistance and Sport & Recreation"
+    updated_at: 2009-06-26 00:31:09
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-570.pdf
+    date: 2009-03-12 11:00:00
+    id: "26"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:32:24
+    pdf_name: b09-t2009-574.pdf
+    title: "T2009/574: Bilateral Briefing for Votes Education"
+    updated_at: 2009-06-26 00:32:24
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-574.pdf
+    date: 2009-03-12 11:00:00
+    id: "27"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:33:58
+    pdf_name: b09-t2009-575.pdf
+    title: "T2009/575: Bilateral Briefing for Votes Health and States Services"
+    updated_at: 2009-06-26 00:33:58
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-575.pdf
+    date: 2009-03-12 11:00:00
+    id: "28"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:35:17
+    pdf_name: b09-t2009-622.pdf
+    title: "T2009/622: Bilateral Briefing for Votes Corrections, Courts, Justice and Police (Justice Sector Votes)"
+    updated_at: 2009-06-26 00:35:17
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-622.pdf
+    date: 2009-03-17 11:00:00
+    id: "29"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:37:41
+    pdf_name: b09-t2009-647.pdf
+    title: "T2009/647: Bilateral Briefing for Votes Employment and Social Development and Employment"
+    updated_at: 2009-06-26 00:37:41
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-647.pdf
+    date: 2009-03-25 11:00:00
+    id: "30"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:39:10
+    pdf_name: b09-t2009-545.pdf
+    title: "T2009/545: Confirmation of Ministers Who Will Receive Letter Rather than Bilateral in Budget 2009"
+    updated_at: 2009-06-26 00:39:10
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-545.pdf
+    date: 2009-03-11 11:00:00
+    id: "31"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:39:25
+    pdf_name: b09-l-mof-speaker-mar09.pdf
+    title: "[Letter to the Speaker] - Votes Office of the Clerk and Parliamentary Service"
+    updated_at: 2009-06-26 00:39:25
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-speaker-mar09.pdf
+    date: 2009-03-22 11:00:00
+    id: "32"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:39:38
+    pdf_name: b09-l-mof-wong-23mar.pdf
+    title: "[Letter to Hon Pansy Wong] - Women?s Affairs"
+    updated_at: 2009-06-26 00:39:38
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-wong-23mar.pdf
+    date: 2009-03-22 11:00:00
+    id: "33"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:39:47
+    pdf_name: b09-l-mof-teheuheu-23mar.pdf
+    title: "[Letter to Hon Georgina te Heuheu] - Vote Pacific Island Affairs"
+    updated_at: 2009-06-26 00:39:47
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-teheuheu-23mar.pdf
+    date: 2009-03-22 11:00:00
+    id: "34"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:40:00
+    pdf_name: b09-l-mof-coleman-23mar.pdf
+    title: "[Letter to Hon Jonathan Coleman] - Vote Immigration"
+    updated_at: 2009-06-26 00:40:00
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-coleman-23mar.pdf
+    date: 2009-03-22 11:00:00
+    id: "35"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:40:10
+    pdf_name: b09-l-mof-worth-23mar.pdf
+    title: "[Letter to Hon Richard Worth] - Votes Lands and Internal Affairs"
+    updated_at: 2009-06-26 00:40:10
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-worth-23mar.pdf
+    date: 2009-03-22 11:00:00
+    id: "36"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:40:25
+    pdf_name: b09-l-mof-williamson-23mar.pdf
+    title: "[Letter to Hon Maurice Williamson] - Votes Building, Housing, Customs and Statistics"
+    updated_at: 2009-06-26 00:40:25
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-williamson-23mar.pdf
+    date: 2009-03-22 11:00:00
+    id: "37"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:40:36
+    pdf_name: b09-l-mof-groser-23mar.pdf
+    title: "[Letter to Hon Tim Groser] - Vote Conservation"
+    updated_at: 2009-06-26 00:40:36
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-groser-23mar.pdf
+    date: 2009-03-22 11:00:00
+    id: "38"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:40:46
+    pdf_name: b09-l-mof-carter-25mar.pdf
+    title: "[Letter to Hon John Carter] - Votes Racing and Emergency Management"
+    updated_at: 2009-06-26 00:40:46
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-carter-25mar.pdf
+    date: 2009-03-24 11:00:00
+    id: "39"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:40:56
+    pdf_name: b09-l-mof-heatley-25mar09.pdf
+    title: "[Letter from Minister of Finance to Minister of Housing:] Budget 2009: Budget Submission for Housing"
+    updated_at: 2009-06-26 00:40:56
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-heatley-25mar09.pdf
+    date: 2009-03-24 11:00:00
+    id: "40"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:41:05
+    pdf_name: b09-l-mof-collins-23mar.pdf
+    title: "[Letter to Hon Judith Collins] - Vote Veterans? Affairs - Defence Force"
+    updated_at: 2009-06-26 00:41:05
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-collins-23mar.pdf
+    date: 2009-03-24 11:00:00
+    id: "41"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:41:16
+    pdf_name: b09-l-mof-finlayson-30mar.pdf
+    title: "[Letter to Hon Christopher Finlayson] - Vote Parliamentary Counsel"
+    updated_at: 2009-06-26 00:41:16
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-finlayson-30mar.pdf
+    date: 2009-03-29 11:00:00
+    id: "42"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:41:59
+    pdf_name: b09-t2009-671.pdf
+    title: "T2009/671: Support Party Budget Briefing for Votes Local Government"
+    updated_at: 2009-06-26 00:41:59
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-671.pdf
+    date: 2009-03-23 11:00:00
+    id: "43"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:42:41
+    pdf_name: b09-t2009-713.pdf
+    title: "T2009/713: Support Party Budget Briefing for Votes Maori Affairs and Community and Voluntary Sector"
+    updated_at: 2009-06-26 00:42:41
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-713.pdf
+    date: 2009-03-26 11:00:00
+    id: "44"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:43:24
+    pdf_name: b09-t2009-707.pdf
+    title: "T2009/707: Support Party Budget Briefing for Vote Revenue"
+    updated_at: 2009-06-26 00:43:24
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-707.pdf
+    date: 2009-03-26 11:00:00
+    id: "45"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:44:41
+    pdf_name: b09-cabmin09-13-81.pdf
+    title: "CAB Min (09) 13/8 (1): Budget 2009: Vote ACC"
+    updated_at: 2009-06-26 00:44:41
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-81.pdf
+    date: 2009-04-19 12:00:00
+    id: "46"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:45:01
+    pdf_name: b09-cabmin09-13-82.pdf
+    title: "CAB Min (09) 13/8 (2): Budget 2009: Vote Agriculture and Forestry"
+    updated_at: 2009-06-26 00:45:01
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-82.pdf
+    date: 2009-04-19 12:00:00
+    id: "47"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:45:30
+    pdf_name: b09-cabmin09-13-83.pdf
+    title: "CAB Min (09) 13/8 (3): Budget 2009: Vote Arts, Culture and Heritage"
+    updated_at: 2009-06-26 00:45:30
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-83.pdf
+    date: 2009-04-19 12:00:00
+    id: "48"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:45:45
+    pdf_name: b09-cabmin09-13-84.pdf
+    title: "CAB Min (09) 13/8 (4): Budget 2009: Vote Attorney-General"
+    updated_at: 2009-06-26 00:45:45
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-84.pdf
+    date: 2009-04-19 12:00:00
+    id: "49"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:45:58
+    pdf_name: b09-cabmin09-13-85.pdf
+    title: "CAB Min (09) 13/8 (5): Budget 2009: Vote Treaty Negotiations"
+    updated_at: 2009-06-26 00:45:58
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-85.pdf
+    date: 2009-04-19 12:00:00
+    id: "50"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:46:11
+    pdf_name: b09-cabmin09-13-86.pdf
+    title: "CAB Min (09) 13/8 (6): AMENDED MINUTE: Budget 2009: Vote Biosecurity"
+    updated_at: 2009-06-26 00:46:11
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-86.pdf
+    date: 2009-04-19 12:00:00
+    id: "51"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:46:27
+    pdf_name: b09-cabmin09-13-87.pdf
+    title: "CAB Min (09) 13/8 (7): Budget 2009: Vote Climate Change"
+    updated_at: 2009-06-26 00:46:27
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-87.pdf
+    date: 2009-04-19 12:00:00
+    id: "52"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:46:45
+    pdf_name: b09-cabmin09-13-88.pdf
+    title: "CAB Min (09) 13/8 (8): Budget 2009: Vote Commerce"
+    updated_at: 2009-06-26 00:46:45
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-88.pdf
+    date: 2009-04-19 12:00:00
+    id: "53"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:47:08
+    pdf_name: b09-cabmin09-13-89.pdf
+    title: "CAB Min (09) 13/8 (9): Budget 2009: Vote Communications"
+    updated_at: 2009-06-26 00:47:08
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-89.pdf
+    date: 2009-04-19 12:00:00
+    id: "54"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:47:24
+    pdf_name: b09-cabmin09-13-811.pdf
+    title: "CAB Min (09) 13/8 (11): Budget 2009: Vote Community and Voluntary Sector"
+    updated_at: 2009-06-26 00:47:24
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-811.pdf
+    date: 2009-04-19 12:00:00
+    id: "55"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:47:38
+    pdf_name: b09-cabmin09-13-812.pdf
+    title: "CAB Min (09) 13/8 (12): Budget 2009: Vote Conservation"
+    updated_at: 2009-06-26 00:47:38
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-812.pdf
+    date: 2009-04-19 12:00:00
+    id: "56"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:47:51
+    pdf_name: b09-cabmin09-13-813.pdf
+    title: "CAB Min (09) 13/8 (13): Budget 2009: Vote Consumer Affairs"
+    updated_at: 2009-06-26 00:47:51
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-813.pdf
+    date: 2009-04-19 12:00:00
+    id: "57"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:48:05
+    pdf_name: b09-cabmin09-13-814.pdf
+    title: "CAB Min (09) 13/8 (14): Budget 2009: Vote Corrections"
+    updated_at: 2009-06-26 00:48:05
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-814.pdf
+    date: 2009-04-19 12:00:00
+    id: "58"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:48:25
+    pdf_name: b09-cabmin09-13-815.pdf
+    title: "CAB Min (09) 13/8 (15): Budget 2009: Vote Courts"
+    updated_at: 2009-06-26 00:48:25
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-815.pdf
+    date: 2009-04-19 12:00:00
+    id: "59"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:48:47
+    pdf_name: b09-cabmin09-13-816.pdf
+    title: "CAB Min (09) 13/8 (16): Budget 2009: Vote Customs"
+    updated_at: 2009-06-26 00:48:47
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-816.pdf
+    date: 2009-04-19 12:00:00
+    id: "60"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:48:59
+    pdf_name: b09-cabmin09-13-817.pdf
+    title: "CAB Min (09) 13/8 (17): Budget 2009: Vote Defence"
+    updated_at: 2009-06-26 00:48:59
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-817.pdf
+    date: 2009-04-19 12:00:00
+    id: "61"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:49:13
+    pdf_name: b09-cabmin09-13-818.pdf
+    title: "CAB Min (09) 13/8 (18): Budget 2009: Vote Defence Force"
+    updated_at: 2009-06-26 00:49:13
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-818.pdf
+    date: 2009-04-19 12:00:00
+    id: "62"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:49:34
+    pdf_name: b09-cabmin09-13-819.pdf
+    title: "CAB Min (09) 13/8 (19): Budget 2009: Vote Economic Development"
+    updated_at: 2009-06-26 00:49:34
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-819.pdf
+    date: 2009-04-19 12:00:00
+    id: "63"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:49:51
+    pdf_name: b09-cabmin09-13-820.pdf
+    title: "CAB Min (09) 13/8 (20): Budget 2009: Vote Education"
+    updated_at: 2009-06-26 00:49:51
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-820.pdf
+    date: 2009-04-19 12:00:00
+    id: "64"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:50:32
+    pdf_name: b09-cabmin09-13-821.pdf
+    title: "CAB Min (09) 13/8 (21): Budget 2009: Vote Education Review Office"
+    updated_at: 2009-06-26 00:50:32
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-821.pdf
+    date: 2009-04-19 12:00:00
+    id: "65"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:50:46
+    pdf_name: b09-cabmin09-13-822.pdf
+    title: "CAB Min (09) 13/8 (22): Budget 2009: Vote Emergency Management"
+    updated_at: 2009-06-26 00:50:46
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-822.pdf
+    date: 2009-04-19 12:00:00
+    id: "66"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:51:01
+    pdf_name: b09-cabmin09-13-823.pdf
+    title: "CAB Min (09) 13/8 (23): Budget 2009: Vote Employment"
+    updated_at: 2009-06-26 00:51:01
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-823.pdf
+    date: 2009-04-19 12:00:00
+    id: "67"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:51:17
+    pdf_name: b09-cabmin09-13-824.pdf
+    title: "CAB Min (09) 13/8 (24): Budget 2009: Vote Energy"
+    updated_at: 2009-06-26 00:51:17
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-824.pdf
+    date: 2009-04-19 12:00:00
+    id: "68"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:51:37
+    pdf_name: b09-cabmin09-13-825.pdf
+    title: "CAB Min (09) 13/8 (25): Budget 2009: Vote Environment"
+    updated_at: 2009-06-26 00:51:37
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-825.pdf
+    date: 2009-04-19 12:00:00
+    id: "69"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:52:01
+    pdf_name: b09-cabmin09-13-826.pdf
+    title: "CAB Min (09) 13/8 (26): Budget 2009: Vote Finance"
+    updated_at: 2009-06-26 00:52:01
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-826.pdf
+    date: 2009-04-19 12:00:00
+    id: "70"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:52:17
+    pdf_name: b09-cabmin09-13-8-27-am.pdf
+    title: "CAB Min (09) 13/8 (27) Amended Minute: Budget 2009: Vote Fisheries"
+    updated_at: 2009-06-26 00:52:17
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-8-27-am.pdf
+    date: 2009-04-19 12:00:00
+    id: "71"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:52:34
+    pdf_name: b09-cabmin09-13-828.pdf
+    title: "CAB Min (09) 13/8 (28): Budget 2009: Vote Food Safety"
+    updated_at: 2009-06-26 00:52:34
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-828.pdf
+    date: 2009-04-19 12:00:00
+    id: "72"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:52:51
+    pdf_name: b09-cabmin09-13-829.pdf
+    title: "CAB Min (09) 13/8 (29): Budget 2009: Vote Foreign Affairs and Trade"
+    updated_at: 2009-06-26 00:52:51
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-829.pdf
+    date: 2009-04-19 12:00:00
+    id: "73"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:53:04
+    pdf_name: b09-cabmin09-13-830.pdf
+    title: "CAB Min (09) 13/8 (30): Budget 2009: Vote Health"
+    updated_at: 2009-06-26 00:53:04
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-830.pdf
+    date: 2009-04-19 12:00:00
+    id: "74"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:53:46
+    pdf_name: b09-cabmin09-13-831.pdf
+    title: "CAB Min (09) 13/8 (31): AMENDED MINUTE: Budget 2009: Vote Housing"
+    updated_at: 2009-06-26 00:53:46
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-831.pdf
+    date: 2009-04-19 12:00:00
+    id: "75"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:54:11
+    pdf_name: b09-cabmin09-13-832.pdf
+    title: "CAB Min (09) 13/8 (32): AMENDED MINUTE: Budget 2009: Vote Immigration"
+    updated_at: 2009-06-26 00:54:11
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-832.pdf
+    date: 2009-04-19 12:00:00
+    id: "76"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:54:28
+    pdf_name: b09-cabmin09-13-833.pdf
+    title: "CAB Min (09) 13/8 (33): Budget 2009: Vote Internal Affairs"
+    updated_at: 2009-06-26 00:54:28
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-833.pdf
+    date: 2009-04-19 12:00:00
+    id: "77"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:54:48
+    pdf_name: b09-cabmin09-13-834.pdf
+    title: "CAB Min (09) 13/8 (34): Budget 2009: Vote Justice"
+    updated_at: 2009-06-26 00:54:48
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-834.pdf
+    date: 2009-04-19 12:00:00
+    id: "78"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:55:15
+    pdf_name: b09-cabmin09-13-835.pdf
+    title: "CAB Min (09) 13/8 (35): Budget 2009: Vote Labour"
+    updated_at: 2009-06-26 00:55:15
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-835.pdf
+    date: 2009-04-19 12:00:00
+    id: "79"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:55:32
+    pdf_name: b09-cabmin09-13-836.pdf
+    title: "CAB Min (09) 13/8 (36): Budget 2009: Vote Lands"
+    updated_at: 2009-06-26 00:55:32
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-836.pdf
+    date: 2009-04-19 12:00:00
+    id: "80"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:55:50
+    pdf_name: b09-cabmin09-13-837.pdf
+    title: "CAB Min (09) 13/8 (37): Budget 2009: Vote Local Government"
+    updated_at: 2009-06-26 00:55:50
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-837.pdf
+    date: 2009-04-19 12:00:00
+    id: "81"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:56:08
+    pdf_name: b09-cabmin09-13-838.pdf
+    title: "CAB Min (09) 13/8 (38): Budget 2009: Vote Maori Affairs"
+    updated_at: 2009-06-26 00:56:08
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-838.pdf
+    date: 2009-04-19 12:00:00
+    id: "82"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:56:39
+    pdf_name: b09-cabmin09-13-839.pdf
+    title: "CAB Min (09) 13/8 (39): Budget 2009: Vote Ministerial Services"
+    updated_at: 2009-06-26 00:56:39
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-839.pdf
+    date: 2009-04-19 12:00:00
+    id: "83"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:56:52
+    pdf_name: b09-cabmin09-13-840.pdf
+    title: "CAB Min (09) 13/8 (40): Budget 2009: Vote Veterans' Affairs - Defence"
+    updated_at: 2009-06-26 00:56:52
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-840.pdf
+    date: 2009-04-19 12:00:00
+    id: "84"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:57:13
+    pdf_name: b09-cabmin09-13-841.pdf
+    title: "CAB Min (09) 13/8 (41): Budget 2009: Vote National Library"
+    updated_at: 2009-06-26 00:57:13
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-841.pdf
+    date: 2009-04-19 12:00:00
+    id: "85"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:57:28
+    pdf_name: b09-cabmin09-13-842.pdf
+    title: "CAB Min (09) 13/8 (42): Budget 2009: Vote Office of the Clerk"
+    updated_at: 2009-06-26 00:57:28
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-842.pdf
+    date: 2009-04-19 12:00:00
+    id: "86"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:57:40
+    pdf_name: b09-cabmin09-13-843.pdf
+    title: "CAB Min (09) 13/8 (43): Budget 2009: Vote Official Development Assistance"
+    updated_at: 2009-06-26 00:57:40
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-843.pdf
+    date: 2009-04-19 12:00:00
+    id: "87"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:58:01
+    pdf_name: b09-cabmin09-13-844.pdf
+    title: "CAB Min (09) 13/8 (44): Budget 2009: Vote Veterans' Affairs - Social Development"
+    updated_at: 2009-06-26 00:58:01
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-844.pdf
+    date: 2009-04-19 12:00:00
+    id: "88"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:58:13
+    pdf_name: b09-cabmin09-13-845.pdf
+    title: "CAB Min (09) 13/8 (45): Budget 2009: Vote Pacific Island Affairs"
+    updated_at: 2009-06-26 00:58:13
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-845.pdf
+    date: 2009-04-19 12:00:00
+    id: "89"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:58:27
+    pdf_name: b09-cabmin09-13-846.pdf
+    title: "CAB Min (09) 13/8 (46): Budget 2009: Vote Parliamentary Counsel"
+    updated_at: 2009-06-26 00:58:27
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-846.pdf
+    date: 2009-04-19 12:00:00
+    id: "90"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:58:50
+    pdf_name: b09-cabmin09-13-847.pdf
+    title: "CAB Min (09) 13/8 (47): Budget 2009: Vote Parliamentary Service"
+    updated_at: 2009-06-26 00:58:50
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-847.pdf
+    date: 2009-04-19 12:00:00
+    id: "91"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:59:03
+    pdf_name: b09-cabmin09-13-848.pdf
+    title: "CAB Min (09) 13/8 (48): AMENDED MINUTE: Budget 2009: Vote Police"
+    updated_at: 2009-06-26 00:59:03
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-848.pdf
+    date: 2009-04-19 12:00:00
+    id: "92"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:59:24
+    pdf_name: b09-cabmin09-13-849.pdf
+    title: "CAB Min (09) 13/8 (49): Budget 2009: Vote Prime Minister and Cabinet"
+    updated_at: 2009-06-26 00:59:24
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-849.pdf
+    date: 2009-04-19 12:00:00
+    id: "93"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:59:40
+    pdf_name: b09-cabmin09-13-850.pdf
+    title: "CAB Min (09) 13/8 (50): Budget 2009: Vote Racing"
+    updated_at: 2009-06-26 00:59:40
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-850.pdf
+    date: 2009-04-19 12:00:00
+    id: "94"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 00:59:54
+    pdf_name: b09-cabmin09-13-851.pdf
+    title: "CAB Min (09) 13/8 (51): Budget 2009: Vote Research, Science and Technology"
+    updated_at: 2009-06-26 00:59:54
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-851.pdf
+    date: 2009-04-19 12:00:00
+    id: "95"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:00:12
+    pdf_name: b09-cabmin09-13-852.pdf
+    title: "CAB Min (09) 13/8 (52): AMENDED MINUTE: Budget 2009: Vote Revenue"
+    updated_at: 2009-06-26 01:00:12
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-852.pdf
+    date: 2009-04-19 12:00:00
+    id: "96"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:00:38
+    pdf_name: b09-cabmin09-13-854.pdf
+    title: "CAB Min (09) 13/8 (54): Budget 2009: Vote Women's Affairs"
+    updated_at: 2009-06-26 01:00:38
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-854.pdf
+    date: 2009-04-19 12:00:00
+    id: "97"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:00:52
+    pdf_name: b09-cabmin09-13-855.pdf
+    title: "CAB Min (09) 13/8 (55): Budget 2009: Vote Serious Fraud"
+    updated_at: 2009-06-26 01:00:52
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-855.pdf
+    date: 2009-04-19 12:00:00
+    id: "98"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:01:09
+    pdf_name: b09-cabmin09-13-856.pdf
+    title: "CAB Min (09) 13/8 (56): Budget 2009: Vote Social Development"
+    updated_at: 2009-06-26 01:01:09
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-856.pdf
+    date: 2009-04-19 12:00:00
+    id: "99"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:01:50
+    pdf_name: b09-cabmin09-13-857.pdf
+    title: "CAB Min (09) 13/8 (57): Budget 2009: Vote Sport and Recreation"
+    updated_at: 2009-06-26 01:01:50
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-857.pdf
+    date: 2009-04-19 12:00:00
+    id: "100"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:02:04
+    pdf_name: b09-cabmin09-13-858.pdf
+    title: "CAB Min (09) 13/8 (58): Budget 2009: Vote State Services"
+    updated_at: 2009-06-26 01:02:04
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-858.pdf
+    date: 2009-04-19 12:00:00
+    id: "101"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:02:27
+    pdf_name: b09-cabmin09-13-859.pdf
+    title: "CAB Min (09) 13/8 (59): Budget 2009: Vote Youth Development"
+    updated_at: 2009-06-26 01:02:27
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-859.pdf
+    date: 2009-04-19 12:00:00
+    id: "102"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:02:50
+    pdf_name: b09-cabmin09-13-860.pdf
+    title: "CAB Min (09) 13/8 (60): Budget 2009: Vote Statistics"
+    updated_at: 2009-06-26 01:02:50
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-860.pdf
+    date: 2009-04-19 12:00:00
+    id: "103"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:03:04
+    pdf_name: b09-cabmin09-13-861.pdf
+    title: "CAB Min (09) 13/8 (61): Budget 2009: Vote Tourism"
+    updated_at: 2009-06-26 01:03:04
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-861.pdf
+    date: 2009-04-19 12:00:00
+    id: "104"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:03:18
+    pdf_name: b09-cabmin09-13-862.pdf
+    title: "CAB Min (09) 13/8 (62): Budget 2009: Vote Transport"
+    updated_at: 2009-06-26 01:03:18
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-13-862.pdf
+    date: 2009-04-19 12:00:00
+    id: "105"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:04:00
+    pdf_name: b09-t2008-2187.pdf
+    title: "T2008/2187: Preparing a Budget Policy Statement"
+    updated_at: 2009-06-26 01:04:00
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2008-2187.pdf
+    date: 2008-11-23 11:00:00
+    id: "106"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:04:32
+    pdf_name: b09-t2009-418.pdf
+    title: "T2009/418: Addressing the Fiscal Outlook: Consolidation Option"
+    updated_at: 2009-06-26 01:04:32
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-418.pdf
+    date: 2009-02-26 11:00:00
+    id: "107"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:05:14
+    pdf_name: b09-t2009-569.pdf
+    title: "T2009/569: Balance Sheet Management"
+    updated_at: 2009-06-26 01:05:14
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-569.pdf
+    date: 2009-03-12 11:00:00
+    id: "108"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:05:56
+    pdf_name: b09-bn-tsy-mof-mar09.pdf
+    title: Setting a Fiscal Strategy under Uncertainty
+    updated_at: 2009-06-26 01:05:56
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-bn-tsy-mof-mar09.pdf
+    date: 2009-03-24 11:00:00
+    id: "109"
+    document_type: Briefing Note
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:06:14
+    pdf_name: b09-bn-tsy-mof-mar09-ann.pdf
+    title: Setting a Fiscal Strategy under Uncertainty [Annex - Fiscal Matrix Debt Charts]
+    updated_at: 2009-06-26 01:06:14
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-bn-tsy-mof-mar09-ann.pdf
+    date: 2009-03-24 11:00:00
+    id: "110"
+    document_type: Annex to Briefing Note
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:06:45
+    pdf_name: b09-cab09-164.pdf
+    title: "CAB (09) 164: Setting a Fiscal Strategy"
+    updated_at: 2009-06-26 01:06:45
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cab09-164.pdf
+    date: 2009-04-02 11:00:00
+    id: "111"
+    document_type: Cabinet Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:07:07
+    pdf_name: b09-cabmin09-12-9.pdf
+    title: "CAB Min (09) 12/9: Setting a Fiscal Strategy"
+    updated_at: 2009-06-26 01:07:07
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-12-9.pdf
+    date: 2009-04-05 12:00:00
+    id: "112"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:07:18
+    pdf_name: b09-t2009-927.pdf
+    title: "T2009/927: Net Debt as a Fiscal Anchor - Balance Sheet Management"
+    updated_at: 2009-06-26 01:07:18
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-927.pdf
+    date: 2009-04-16 12:00:00
+    id: "113"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:07:58
+    pdf_name: b09-cab09-234.pdf
+    title: "CAB (09) 234: 2009 Fiscal Strategy Report and Executive Summary to the 2009 Budget Economic and Fiscal Update"
+    updated_at: 2009-06-26 01:07:58
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cab09-234.pdf
+    date: 2009-05-06 12:00:00
+    id: "114"
+    document_type: Cabinet Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:08:10
+    pdf_name: b09-cabmin09-16-10.pdf
+    title: "CAB Min (09) 16/10: 2009 Fiscal Strategy Report and Executive Summary to the 2009 Budget Economic and Fiscal Update"
+    updated_at: 2009-06-26 01:08:10
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-16-10.pdf
+    date: 2009-05-10 12:00:00
+    id: "115"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:08:47
+    pdf_name: b09-t2009-418.pdf
+    title: "T2009/418: Addressing the Fiscal Outlook: Consolidation Option"
+    updated_at: 2009-06-26 01:08:47
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-418.pdf
+    date: 2009-02-26 11:00:00
+    id: "116"
+    document_type: Treasury Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:09:29
+    pdf_name: b09-cab09-164.pdf
+    title: "CAB (09) 164: Setting a Fiscal Strategy"
+    updated_at: 2009-06-26 01:09:29
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cab09-164.pdf
+    date: 2009-04-02 11:00:00
+    id: "117"
+    document_type: Cabinet Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:09:52
+    pdf_name: b09-cabmin09-12-9.pdf
+    title: "CAB Min (09) 12/9: Setting a Fiscal Strategy"
+    updated_at: 2009-06-26 01:09:52
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-12-9.pdf
+    date: 2009-04-05 12:00:00
+    id: "118"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:10:03
+    pdf_name: b09-am-tsy-mof-17apr09.pdf
+    title: Draft Revenue Strategy 2009
+    updated_at: 2009-06-26 01:10:03
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-am-tsy-mof-17apr09.pdf
+    date: 2009-04-16 12:00:00
+    id: "119"
+    document_type: Aide Memoire
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:10:16
+    pdf_name: b09-t2009-992.pdf
+    title: "T2009/992: Revenue Strategy 2009"
+    updated_at: 2009-06-26 01:10:16
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-992.pdf
+    date: 2009-04-22 12:00:00
+    id: "120"
+    document_type: Tax Policy Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:10:32
+    pdf_name: b09-cab09-234.pdf
+    title: "CAB (09) 234: 2009 Fiscal Strategy Report and Executive Summary to the 2009 Budget Economic and Fiscal Update"
+    updated_at: 2009-06-26 01:10:32
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cab09-234.pdf
+    date: 2009-05-06 12:00:00
+    id: "121"
+    document_type: Cabinet Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:10:44
+    pdf_name: b09-t2009-1234.pdf
+    title: "T2009/1234: Cabinet Paper - Taxation (Budget Tax Measures) Bill - Approval for Introduction"
+    updated_at: 2009-06-26 01:10:44
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-1234.pdf
+    date: 2009-05-18 12:00:00
+    id: "122"
+    document_type: Tax Policy Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:10:58
+    pdf_name: b09-cab09-279.pdf
+    title: "CAB (09) 279: Memorandum to Cabinet - Taxation (Budget Tax Measures Bill) - Approval for Introduction"
+    updated_at: 2009-06-26 01:10:58
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cab09-279.pdf
+    date: 2009-05-20 12:00:00
+    id: "123"
+    document_type: Cabinet Paper
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:11:18
+    pdf_name: b09-cabmin09-18-2.pdf
+    title: "CAB Min (09) 18/2: Taxation (Budget Tax Measures) Bill: Approval for Introduction"
+    updated_at: 2009-06-26 01:11:18
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-cabmin09-18-2.pdf
+    date: 2009-05-24 12:00:00
+    id: "124"
+    document_type: Cabinet Minute
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:12:00
+    pdf_name: b09-llr-am-tsy-mof-23jan09.pdf
+    title: Value for Money Guidance for Vote Ministers
+    updated_at: 2009-06-26 01:12:00
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-am-tsy-mof-23jan09.pdf
+    date: 2009-01-22 11:00:00
+    id: "125"
+    document_type: Aide Memoire
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:12:15
+    pdf_name: b09-llr-ird.pdf
+    title: "IRD Report: Value for Money - Line-by-Line Review of Expenditure"
+    updated_at: 2009-06-26 01:12:15
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-ird.pdf
+    date: 2009-02-19 11:00:00
+    id: "126"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:12:41
+    pdf_name: b09-llr-educ.pdf
+    title: Vote Education - 2009 Budget Line By Line Review
+    updated_at: 2009-06-26 01:12:41
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-educ.pdf
+    date: 2009-01-31 11:00:00
+    id: "127"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:14:07
+    pdf_name: b09-llr-non-hous.pdf
+    title: Line by Line Savings Non-Departmental for Vote Housing
+    updated_at: 2009-06-26 01:14:07
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-non-hous.pdf
+    date: 2009-02-01 11:00:00
+    id: "128"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:14:33
+    pdf_name: b09-llr-pmcab.pdf
+    title: "Vote: Prime Minister and Cabinet: Budget Review 2009"
+    updated_at: 2009-06-26 01:14:33
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-pmcab.pdf
+    date: 2009-02-01 11:00:00
+    id: "129"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:14:49
+    pdf_name: b09-llr-maf.pdf
+    title: "Ministry of Agriculture and Forestry: Review of Expenditure in Vote Agriculture and Forestry and Vote Biosecurity"
+    updated_at: 2009-06-26 01:14:49
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-maf.pdf
+    date: 2009-02-02 11:00:00
+    id: "130"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:15:27
+    pdf_name: b09-llr-mod-nzdf.pdf
+    title: "[Ministry of Defence and New Zealand Defence Force (less Veterans' Affairs) Line by Line Review]"
+    updated_at: 2009-06-26 01:15:27
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-mod-nzdf.pdf
+    date: 2009-02-02 11:00:00
+    id: "131"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:15:43
+    pdf_name: b09-llr-nzcs.pdf
+    title: "Improving Value for Money in the State Sector: Report from New Zealand Customs Service"
+    updated_at: 2009-06-26 01:15:43
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-nzcs.pdf
+    date: 2009-02-02 11:00:00
+    id: "132"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:16:09
+    pdf_name: b09-llr-police.pdf
+    title: "[New Zealand Police] Value for Money and Budgt 09 Line By Line Review"
+    updated_at: 2009-06-26 01:16:09
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-police.pdf
+    date: 2009-02-02 11:00:00
+    id: "133"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:16:28
+    pdf_name: b09-llr-stat-ann.pdf
+    title: Statistics New Zealand's Line-by-Line Review Annex to Summary Report
+    updated_at: 2009-06-26 01:16:28
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-stat-ann.pdf
+    date: 2009-02-02 11:00:00
+    id: "134"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:19:03
+    pdf_name: b09-llr-revenue.pdf
+    title: Value for Money - Line-by-Line Review of Expenditure
+    updated_at: 2009-06-26 01:19:03
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-revenue.pdf
+    date: 2009-02-02 11:00:00
+    id: "135"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:19:28
+    pdf_name: b09-llr-dol.pdf
+    title: "Department of Labour Line-by-Line Reviews: Budget 2009 - Report on Departmental Overheads and Corporate Services"
+    updated_at: 2009-06-26 01:19:28
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-dol.pdf
+    date: 2009-02-03 11:00:00
+    id: "136"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:19:43
+    pdf_name: b09-llr-dol-acc.pdf
+    title: "Department of Labour Line-by-Line Reviews: Budget 2009 - Expenditure Review Vote ACC"
+    updated_at: 2009-06-26 01:19:43
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-dol-acc.pdf
+    date: 2009-02-03 11:00:00
+    id: "137"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:20:02
+    pdf_name: b09-llr-dol-emp.pdf
+    title: "Department of Labour Line-by-Line Reviews: Budget 2009: Expenditure Review Vote Employment"
+    updated_at: 2009-06-26 01:20:02
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-dol-emp.pdf
+    date: 2009-02-03 11:00:00
+    id: "138"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:20:41
+    pdf_name: b09-llr-dol-lab.pdf
+    title: "Department of Labour Line-by-Line Reviews: Budget 2009 - Expenditure Review Vote Labour"
+    updated_at: 2009-06-26 01:20:41
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-dol-lab.pdf
+    date: 2009-02-03 11:00:00
+    id: "139"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:21:09
+    pdf_name: b09-llr-dol-imm.pdf
+    title: "Department of Labour Line-by-Line Reviews: Budget 2009 - Expenditure Review Vote Immigration"
+    updated_at: 2009-06-26 01:21:09
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-dol-imm.pdf
+    date: 2009-02-03 11:00:00
+    id: "140"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:21:34
+    pdf_name: b09-llr-health.pdf
+    title: Budget 2009 and Line by Line Review of Vote Health
+    updated_at: 2009-06-26 01:21:34
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-health.pdf
+    date: 2009-02-03 11:00:00
+    id: "141"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:22:02
+    pdf_name: b09-llr-ssc.pdf
+    title: State Services Commission Line by Line Expenditure Review
+    updated_at: 2009-06-26 01:22:02
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-ssc.pdf
+    date: 2009-02-03 11:00:00
+    id: "142"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:22:17
+    pdf_name: b09-llr-ooc.pdf
+    title: "Improving Value for Money in the State Sector: Report on Review of Expenditure in Vote Office of the Clerk"
+    updated_at: 2009-06-26 01:22:17
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-ooc.pdf
+    date: 2009-02-03 11:00:00
+    id: "143"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:22:56
+    pdf_name: b09-llr-moj.pdf
+    title: Ministry of Justice Line by Line Review of Expenditure
+    updated_at: 2009-06-26 01:22:56
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-moj.pdf
+    date: 2009-02-04 11:00:00
+    id: "144"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:24:28
+    pdf_name: b09-llr-trans.pdf
+    title: Line by Line [Review] for Vote Transport
+    updated_at: 2009-06-26 01:24:28
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-trans.pdf
+    date: 2009-02-04 11:00:00
+    id: "145"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:24:47
+    pdf_name: b09-llr-vetaff.pdf
+    title: "Minister of Veterans' Affairs: Review of the Appropriations that form Vote Veterans' Affairs - Defence Force"
+    updated_at: 2009-06-26 01:24:47
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-vetaff.pdf
+    date: 2009-02-04 11:00:00
+    id: "146"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:25:00
+    pdf_name: b09-llr-mfat-oda.pdf
+    title: Vote Foreign Affairs and Trade and Vote Official Development Assistance 'Line-By-Line' Expenditure Review - Budget 2009
+    updated_at: 2009-06-26 01:25:00
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-mfat-oda.pdf
+    date: 2009-02-04 11:00:00
+    id: "147"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:26:23
+    pdf_name: b09-llr-dept-hous.pdf
+    title: Line by Line Savings Departmental for Vote Housing
+    updated_at: 2009-06-26 01:26:23
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-dept-hous.pdf
+    date: 2009-02-04 11:00:00
+    id: "148"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:26:46
+    pdf_name: b09-llr-mpia.pdf
+    title: "[Ministry of Pacific Island Affairs] MPIA Line by Line Review"
+    updated_at: 2009-06-26 01:26:46
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-mpia.pdf
+    date: 2009-02-04 11:00:00
+    id: "149"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:27:32
+    pdf_name: b09-llr-energy.pdf
+    title: "[Line by Line Review for Vote Energy]"
+    updated_at: 2009-06-26 01:27:32
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-energy.pdf
+    date: 2009-02-04 11:00:00
+    id: "150"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:27:44
+    pdf_name: b09-llr-natarc.pdf
+    title: Line by Line Review for Vote National Archives
+    updated_at: 2009-06-26 01:27:44
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-natarc.pdf
+    date: 2009-02-04 11:00:00
+    id: "151"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:28:04
+    pdf_name: b09-llr-natlib.pdf
+    title: Line by Line Review for Vote National Library
+    updated_at: 2009-06-26 01:28:04
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-natlib.pdf
+    date: 2009-02-04 11:00:00
+    id: "152"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:28:44
+    pdf_name: b09-llr-commer.pdf
+    title: "[Vote Commerce Line-by-line Review]"
+    updated_at: 2009-06-26 01:28:44
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-commer.pdf
+    date: 2009-02-04 11:00:00
+    id: "153"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:28:57
+    pdf_name: b09-llr-consum.pdf
+    title: Improving Value for Money in the State sector - Outcome of Line-by-Line Review of Vote Consumer Affairs
+    updated_at: 2009-06-26 01:28:57
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-consum.pdf
+    date: 2009-02-04 11:00:00
+    id: "154"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:29:20
+    pdf_name: b09-llr-commun.pdf
+    title: "Value for Money and Budget 2009: Communications and Information Technology Portfolio"
+    updated_at: 2009-06-26 01:29:20
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-commun.pdf
+    date: 2009-02-04 11:00:00
+    id: "155"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:29:31
+    pdf_name: b09-llr-tour.pdf
+    title: "Value for Money and Budget 2009: Vote Tourism"
+    updated_at: 2009-06-26 01:29:31
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-tour.pdf
+    date: 2009-02-04 11:00:00
+    id: "156"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:29:43
+    pdf_name: b09-llr-ecodev.pdf
+    title: "Value for Money and Budget 2009: Vote Economic Development"
+    updated_at: 2009-06-26 01:29:43
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-ecodev.pdf
+    date: 2009-02-04 11:00:00
+    id: "157"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:30:12
+    pdf_name: b09-llr-conser.pdf
+    title: "Vote Conservation: Value for Money and Budget 2009"
+    updated_at: 2009-06-26 01:30:12
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-conser.pdf
+    date: 2009-02-04 11:00:00
+    id: "158"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:30:50
+    pdf_name: b09-llr-ps.pdf
+    title: Line by Line Review Parliamentary Service
+    updated_at: 2009-06-26 01:30:50
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-ps.pdf
+    date: 2009-02-04 11:00:00
+    id: "159"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:31:47
+    pdf_name: b09-llr-parcou.pdf
+    title: Line by line Review Parliamentary Counsel
+    updated_at: 2009-06-26 01:31:47
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-parcou.pdf
+    date: 2009-02-04 11:00:00
+    id: "160"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:31:58
+    pdf_name: b09-llr-mfe.pdf
+    title: "[Ministry for the Environment] Value for Money and Budget 2009"
+    updated_at: 2009-06-26 01:31:58
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-mfe.pdf
+    date: 2009-02-04 11:00:00
+    id: "161"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:32:15
+    pdf_name: b09-llr-offcle.pdf
+    title: Line by Line Review Office of the Clerk
+    updated_at: 2009-06-26 01:32:15
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-offcle.pdf
+    date: 2009-02-04 11:00:00
+    id: "162"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:32:40
+    pdf_name: b09-llr-foosaf.pdf
+    title: "Budget 2009 - Report on Review of Vote: Food Safety"
+    updated_at: 2009-06-26 01:32:40
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-foosaf.pdf
+    date: 2009-02-04 11:00:00
+    id: "163"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:32:51
+    pdf_name: b09-llr-linz.pdf
+    title: "Value for Money and Budget 2009: Identified Savings in Land Information New Zealand"
+    updated_at: 2009-06-26 01:32:51
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-linz.pdf
+    date: 2009-02-04 11:00:00
+    id: "164"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:33:03
+    pdf_name: b09-llr-fish.pdf
+    title: Vote Fisheries - Budget 2009
+    updated_at: 2009-06-26 01:33:03
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-fish.pdf
+    date: 2009-02-04 11:00:00
+    id: "165"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:33:19
+    pdf_name: b09-llr-health-ann3.pdf
+    title: "Budget 2009 and Line by Line Review of Vote Health: Annex 3: Savings from NDE Line by Line Review"
+    updated_at: 2009-06-26 01:33:19
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-health-ann3.pdf
+    date: 2009-02-04 11:00:00
+    id: "166"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:33:49
+    pdf_name: b09-llr-health-ann2.pdf
+    title: "Budget 2009 and Line by Line Review of Vote Health: Annex 2"
+    updated_at: 2009-06-26 01:33:49
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-health-ann2.pdf
+    date: 2009-02-04 11:00:00
+    id: "167"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:33:57
+    pdf_name: b09-llr-health-ann4.pdf
+    title: "Budget 2009 and Line by Line Review of Vote Health: Annex 4"
+    updated_at: 2009-06-26 01:33:57
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-health-ann4.pdf
+    date: 2009-02-04 11:00:00
+    id: "168"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:34:06
+    pdf_name: b09-llr-health-ann5.pdf
+    title: "Budget 2009 and Line by Line Review of Vote Health: Annex 5"
+    updated_at: 2009-06-26 01:34:06
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-health-ann5.pdf
+    date: 2009-02-04 11:00:00
+    id: "169"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:34:14
+    pdf_name: b09-llr-treasury.pdf
+    title: 2009 Line-by-Line Review - Treasury Response
+    updated_at: 2009-06-26 01:34:14
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-treasury.pdf
+    date: 2009-02-04 11:00:00
+    id: "170"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:35:08
+    pdf_name: b09-llr-morst-xls.pdf
+    title: MoRST Line-by-Line Review
+    updated_at: 2009-06-26 01:35:08
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-morst-xls.pdf
+    date: 2009-02-04 11:00:00
+    id: "171"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:35:27
+    pdf_name: b09-lll-morst.pdf
+    title: Vote RS&T Savings and Value for Money Reviews
+    updated_at: 2009-06-26 01:35:27
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-lll-morst.pdf
+    date: 2009-02-04 11:00:00
+    id: "172"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:35:37
+    pdf_name: b09-lll-morst-ann.pdf
+    title: "[Vote RS&T Savings and Value for Money Reviews: Annex]"
+    updated_at: 2009-06-26 01:35:37
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-lll-morst-ann.pdf
+    date: 2009-02-04 11:00:00
+    id: "173"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:35:45
+    pdf_name: b09-llr-cl.pdf
+    title: Crown Law Line by Line Review
+    updated_at: 2009-06-26 01:35:45
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-cl.pdf
+    date: 2009-02-04 11:00:00
+    id: "174"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:35:58
+    pdf_name: b09-llr-intaff.pdf
+    title: Line by Line Review for Vote Internal Affairs
+    updated_at: 2009-06-26 01:35:58
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-intaff.pdf
+    date: 2009-02-04 11:00:00
+    id: "175"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:36:47
+    pdf_name: b09-lll-intaff.pdf
+    title: Line by Line Letter for Vote Internal Affairs
+    updated_at: 2009-06-26 01:36:47
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-lll-intaff.pdf
+    date: 2009-02-04 11:00:00
+    id: "176"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:36:58
+    pdf_name: b09-llr-locgov.pdf
+    title: Line by Line Review for Vote Local Government
+    updated_at: 2009-06-26 01:36:58
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-locgov.pdf
+    date: 2009-02-04 11:00:00
+    id: "177"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:37:37
+    pdf_name: b09-lll-locgov.pdf
+    title: Line by Line Letter for Vote Local Government
+    updated_at: 2009-06-26 01:37:37
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-lll-locgov.pdf
+    date: 2009-02-04 11:00:00
+    id: "178"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:37:48
+    pdf_name: b09-llr-minser.pdf
+    title: Line by Line Review for Vote Ministerial Services
+    updated_at: 2009-06-26 01:37:48
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-minser.pdf
+    date: 2009-02-04 11:00:00
+    id: "179"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:38:31
+    pdf_name: b09-lll-minser.pdf
+    title: Line by Line Letter for Vote Ministerial Services
+    updated_at: 2009-06-26 01:38:31
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-lll-minser.pdf
+    date: 2009-02-04 11:00:00
+    id: "180"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:38:42
+    pdf_name: b09-llr-racing.pdf
+    title: Line by Line Review for Vote Racing
+    updated_at: 2009-06-26 01:38:42
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-racing.pdf
+    date: 2009-02-04 11:00:00
+    id: "181"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:39:20
+    pdf_name: b09-lll-racing.pdf
+    title: Line by Line Letter for Vote Racing
+    updated_at: 2009-06-26 01:39:20
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-lll-racing.pdf
+    date: 2009-02-04 11:00:00
+    id: "182"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:39:30
+    pdf_name: b09-llr-emerg.pdf
+    title: Line by Line Review for Vote Emergency Management
+    updated_at: 2009-06-26 01:39:30
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-emerg.pdf
+    date: 2009-02-04 11:00:00
+    id: "183"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:40:11
+    pdf_name: b09-lll-emerg.pdf
+    title: Line by Line Letter for Vote Emergency Management
+    updated_at: 2009-06-26 01:40:11
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-lll-emerg.pdf
+    date: 2009-02-04 11:00:00
+    id: "184"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:40:23
+    pdf_name: b09-llr-comvol.pdf
+    title: Line by Line Review for Vote Community and Voluntary Sector
+    updated_at: 2009-06-26 01:40:23
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-comvol.pdf
+    date: 2009-02-04 11:00:00
+    id: "185"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:41:01
+    pdf_name: b09-lll-comvol.pdf
+    title: Line by Line Letter for Vote Community and Voluntary Sector
+    updated_at: 2009-06-26 01:41:01
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-lll-comvol.pdf
+    date: 2009-02-04 11:00:00
+    id: "186"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:41:11
+    pdf_name: b09-llr-stat.pdf
+    title: Statistics Line by Line Review 2009
+    updated_at: 2009-06-26 01:41:11
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-stat.pdf
+    date: 2009-02-04 11:00:00
+    id: "187"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:42:01
+    pdf_name: b09-llr-womaff.pdf
+    title: Women's Affairs Line by Line Review 2009
+    updated_at: 2009-06-26 01:42:01
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-womaff.pdf
+    date: 2009-02-04 11:00:00
+    id: "188"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:42:30
+    pdf_name: b09-llr-msd.pdf
+    title: "[Ministry of Social Development] Value for Money and Budget 2009"
+    updated_at: 2009-06-26 01:42:30
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-msd.pdf
+    date: 2009-02-04 11:00:00
+    id: "189"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:43:00
+    pdf_name: b09-llr-sfo.pdf
+    title: Serious Fraud Office Line by Line Review 5 February 2009
+    updated_at: 2009-06-26 01:43:00
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-sfo.pdf
+    date: 2009-02-04 11:00:00
+    id: "190"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:43:32
+    pdf_name: b09-llr-tpk.pdf
+    title: Te Puni Kokiri Line by Line Review 5 February 2009
+    updated_at: 2009-06-26 01:43:32
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-tpk.pdf
+    date: 2009-02-04 11:00:00
+    id: "191"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:45:14
+    pdf_name: b09-llr-artcul.pdf
+    title: Line by Line Review for Vote Arts, Culture and Heritage
+    updated_at: 2009-06-26 01:45:14
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-artcul.pdf
+    date: 2009-02-04 11:00:00
+    id: "192"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:45:48
+    pdf_name: b09-llr-corr.pdf
+    title: Department of Corrections Line-By-Line Review of Expenditure
+    updated_at: 2009-06-26 01:45:48
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-corr.pdf
+    date: 2009-02-04 11:00:00
+    id: "193"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:47:16
+    pdf_name: b09-llr-health-ann1.pdf
+    title: "Budget 2009 and Line by Line Review of Vote Health: Annex 1"
+    updated_at: 2009-06-26 01:47:16
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-health-ann1.pdf
+    date: 2009-02-04 11:00:00
+    id: "194"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:47:32
+    pdf_name: b09-llr-ero.pdf
+    title: Education Review Office Line-by-Line Expenditure Review
+    updated_at: 2009-06-26 01:47:32
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-llr-ero.pdf
+    date: 2009-02-04 11:00:00
+    id: "195"
+    document_type: Departmental Report
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:48:53
+    pdf_name: b09-l-mof-mins-14may09.pdf
+    title: "[Letter from Minister of Finance to Ministers:] Proactive Release of Budget 2009 Documents"
+    updated_at: 2009-06-26 01:48:53
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-l-mof-mins-14may09.pdf
+    date: 2009-05-13 12:00:00
+    id: "196"
+    document_type: Letter to Ministers
+  attributes_cache: {}
+
+- !ruby/object:Document 
+  attributes: 
+    created_at: 2009-06-26 01:49:06
+    pdf_name: b09-t2009-1048.pdf
+    title: "T2009/1048: Proactive Release of Budget 2009 Documents"
+    updated_at: 2009-06-26 01:49:06
+    url: http://www.treasury.govt.nz/publications/informationreleases/budget/2009/pdfs/b09-t2009-1048.pdf
+    date: 2009-04-27 12:00:00
+    id: "197"
+    document_type: Treasury Report
+  attributes_cache: {}
+

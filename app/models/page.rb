@@ -1,6 +1,8 @@
 class Page < ActiveRecord::Base
   belongs_to :document
   has_many :details, :order => "created_at desc"
+
+  acts_as_ferret :fields => [:keywords]
   
   def to_param
     "#{self.id}-#{self.document.name}-p#{self.page_no + 1}"
@@ -21,4 +23,5 @@ class Page < ActiveRecord::Base
   def count
     self.document.pages.count
   end
+
 end

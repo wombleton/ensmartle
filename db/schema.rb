@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090625224839) do
+ActiveRecord::Schema.define(:version => 20090702103905) do
 
   create_table "categories", :force => true do |t|
     t.string   "search"
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(:version => 20090625224839) do
   create_table "components", :force => true do |t|
     t.integer "item_id"
     t.integer "reagent_id"
+  end
+
+  create_table "details", :force => true do |t|
+    t.string   "user_name"
+    t.string   "comment"
+    t.integer  "budgetpage_id"
+    t.string   "remote_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "documents", :force => true do |t|
@@ -80,6 +89,8 @@ ActiveRecord::Schema.define(:version => 20090625224839) do
     t.integer  "document_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "keywords"
+    t.text     "page_html"
   end
 
   create_table "persisted_files", :force => true do |t|

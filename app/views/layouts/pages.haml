@@ -6,6 +6,11 @@
   %body
     #wrap
       #header
+        #search
+          %form#searchForm{ :action => pagesearch_path, :method => "get"}
+            =text_field_tag :query, params[:query], :autocomplete => "off"
+            =submit_tag "Search", :name => nil
+
         =link_to "Budget 2009 Documents", pages_path
       #main
         - if flash[:error]
