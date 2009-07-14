@@ -1,5 +1,11 @@
-Original document:
-=link_to @page.document.pdf_name, @page.document.url
+%h2
+  Original document:
+  =link_to @page.document.pdf_name, @page.document.url
+.pagination
+  %ul.alt-text
+    - for page in @page.document.pages
+      =link_to_unless @page == page, "p#{page.number}", page
+    %li=link_to "Documents for #{@page.document.formatted_date}", :controller => "pages", :year => @page.document.date.year, :month => @page.document.date.month, :day => @page.document.date.day
 #page
   =@page.page_html
   .reset
@@ -7,9 +13,3 @@ Original document:
       =render :partial => "section", :collection => @page.sections
 #controls
   %h3=@page.document.title
-  -unless @page.previous_page.nil?
-    =link_to "<< p#{@page.previous_page.number}", @page.previous_page
-  ="p#{@page.number}"
-  -unless @page.next_page.nil?
-    =link_to "p#{@page.next_page.number} >>", @page.next_page
-  %p=link_to 'Page Index', pages_path

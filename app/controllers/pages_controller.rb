@@ -3,7 +3,8 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.xml
   def index
-    @documents = Document.paginate(:per_page => 20, :page => (params[:page] || 1), :include => :pages, :order => "documents.date desc, title")
+    @documents = Document.paginate_by_date(params[:year], params[:month], params[:day], params[:page])
+    @documents_by_date = @documents.group_by(&:date)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,7 +15,11 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.xml
   def show
-    @page = Page.find(params[:id])
+    @page = Page.find(params[:id], :include => :document)
+
+    doc = @page.document
+    @prev_page = @page.page_no > 0 ? doc.pages[@page.page_no - 1] : nil
+    @next_page = @page.number < doc.pages.size ? doc.pages[@page.number] : nil
 
     respond_to do |format|
       format.html # show.html.erb

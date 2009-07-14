@@ -1,6 +1,5 @@
-%li.document
-  .date=document.date.strftime('%d %b %Y')
+%li.document.post.hentry
   .title=document.title
-  %ul.pages
+  %ul.pages.alt-font
     - for page in document.pages
       %li.page=link_to "p#{page.number}", page

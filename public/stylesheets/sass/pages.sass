@@ -15,6 +15,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline
   background: transparent
 
+.alt-font
+  color: #999
+  font-family: Georgia, Palatino, "Palatino Linotype", Baskerville, serif
+  font-style: italic
+  a
+    font-family:helvetica, arial, sans-serif
+    font-style:normal
+
+#page
+  :position relative
+
+.document
+  :padding-bottom 0.3em
+  .title
+    :font-size 14px
+  .pages
+    :background-color = #e9eaea + #080808
+    :margin 5px 0
+    .page
+      :display inline
+      :padding 0 2px
+
 body
   background: #fff
   color: #51555c
@@ -146,7 +168,9 @@ h1.page-title
 .pagination
   :background-color #e9eaea
   :overflow hidden
-  :margin 5px 0
+  :margin 0.2em 0 1em
+  :padding 0.3em 0
+  :font-size 16px
 
   .prev_page
     :padding 18px
@@ -448,6 +472,7 @@ h1.page-title
 
 
 .full
+  :padding 0 0 1em 0
   .full-content
     :clear both
     :padding-top 9px
@@ -475,6 +500,7 @@ h1.page-title
 
 a
   :text-decoration none
+  :color #a00004
   &.page-numbers
     :border 1px solid #cecfd1
     :font-weight normal
@@ -664,78 +690,11 @@ form.comment-form
   li
     :margin 0
 
+h2, .h2
+  font-size: 18px
+  :font-weight bold
 
 h2.widget-title
   :font-size 1.16666667em
   :line-height 1.28571429
   :margin 0 0 .58333334em 0
-
-
-.widget_search
-  label
-    :font-size 1.16666667em
-    :line-height 1.28571429
-    :margin 0 0 .58333334em 0
-    :display block
-    :font-weight bold
-
-  input
-    :margin-bottom 6px
-
-
-#carrington-subscribe h2.widget-title
-  :color #999
-  :float left
-  :font normal 1.16666667em/1.28571429 helvetica, arial, sans-serif
-  :margin 7px 0 0
-  :text-transform uppercase
-
-
-#carrington-about
-  :padding-bottom 24px
-
-  .about
-    :background-color #fff
-    :overflow hidden
-    :padding 12px
-
-  p
-    :margin 0
-
-  a.more
-    :float right
-
-    &:visited
-      :float right
-
-
-#carrington-archives
-  ul
-    :border-top 1px dotted #cecfd1
-
-  li
-    :background-position left 6px
-    :border-bottom 1px dotted #cecfd1
-
-    a
-      :display block
-      :padding 6px 0
-
-
-#TB_secondLine
-  :color #999
-  :font-family Georgia, Palatino, "Palatino Linotype", Baskerville, serif
-  :font-style italic
-
-
-#TB_title
-  :background-color #51555c
-  :color #fff
-  :font-size 11.5px
-  :line-height 18px
-
-  a
-    :color #fff
-
-    &:visited
-      :color #fff

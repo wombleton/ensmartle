@@ -14,6 +14,25 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   background: transparent; }
 
+.alt-font {
+  color: #999;
+  font-family: Georgia, Palatino, "Palatino Linotype", Baskerville, serif;
+  font-style: italic; }
+
+#page {
+  position: relative; }
+
+.document {
+  padding-bottom: 0.3em; }
+  .document .title {
+    font-size: 14px; }
+  .document .pages {
+    background-color: #f1f2f2;
+    margin: 5px 0; }
+    .document .pages .page {
+      display: inline;
+      padding: 0 2px; }
+
 body {
   background: #fff;
   color: #51555c;
@@ -116,7 +135,9 @@ h1.page-title {
 .pagination {
   background-color: #e9eaea;
   overflow: hidden;
-  margin: 5px 0; }
+  margin: 0.2em 0 1em;
+  padding: 0.3em 0;
+  font-size: 16px; }
   .pagination .prev_page {
     padding: 18px; }
   .pagination .next_page {
@@ -352,28 +373,31 @@ h1.page-title {
   .edit a:visited, .edit a:hover {
     color: #fff; }
 
-.full .full-content {
-  clear: both;
-  padding-top: 9px;
-  width: 510px; }
-.full .pages-link {
-  font-weight: bold; }
-  .full .pages-link a {
-    border: 1px solid #cecfd1;
-    font-weight: normal;
-    padding: 2px 6px; }
-    .full .pages-link a:hover {
-      text-decoration: none;
-      border-color: #999; }
-.full p.comments-link {
-  float: right; }
+.full {
+  padding: 0 0 1em 0; }
+  .full .full-content {
+    clear: both;
+    padding-top: 9px;
+    width: 510px; }
+  .full .pages-link {
+    font-weight: bold; }
+    .full .pages-link a {
+      border: 1px solid #cecfd1;
+      font-weight: normal;
+      padding: 2px 6px; }
+      .full .pages-link a:hover {
+        text-decoration: none;
+        border-color: #999; }
+  .full p.comments-link {
+    float: right; }
 
 .page-numbers {
   font-weight: bold;
   padding: 2px 6px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #a00004; }
   a.page-numbers {
     border: 1px solid #cecfd1;
     font-weight: normal; }
@@ -527,60 +551,11 @@ form.comment-form {
   .widget li {
     margin: 0; }
 
+h2, .h2 {
+  font-size: 18px;
+  font-weight: bold; }
+
 h2.widget-title {
   font-size: 1.16666667em;
   line-height: 1.28571429;
   margin: 0 0 .58333334em 0; }
-
-.widget_search label {
-  font-size: 1.16666667em;
-  line-height: 1.28571429;
-  margin: 0 0 .58333334em 0;
-  display: block;
-  font-weight: bold; }
-.widget_search input {
-  margin-bottom: 6px; }
-
-#carrington-subscribe h2.widget-title {
-  color: #999;
-  float: left;
-  font: normal 1.16666667em/1.28571429 helvetica, arial, sans-serif;
-  margin: 7px 0 0;
-  text-transform: uppercase; }
-
-#carrington-about {
-  padding-bottom: 24px; }
-  #carrington-about .about {
-    background-color: #fff;
-    overflow: hidden;
-    padding: 12px; }
-  #carrington-about p {
-    margin: 0; }
-  #carrington-about a.more {
-    float: right; }
-    #carrington-about a.more:visited {
-      float: right; }
-
-#carrington-archives ul {
-  border-top: 1px dotted #cecfd1; }
-#carrington-archives li {
-  background-position: left 6px;
-  border-bottom: 1px dotted #cecfd1; }
-  #carrington-archives li a {
-    display: block;
-    padding: 6px 0; }
-
-#TB_secondLine {
-  color: #999;
-  font-family: Georgia, Palatino, "Palatino Linotype", Baskerville, serif;
-  font-style: italic; }
-
-#TB_title {
-  background-color: #51555c;
-  color: #fff;
-  font-size: 11.5px;
-  line-height: 18px; }
-  #TB_title a {
-    color: #fff; }
-    #TB_title a:visited {
-      color: #fff; }
