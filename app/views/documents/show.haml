@@ -1,9 +1,0 @@
-%h1=@document.title
-%p
-  Original:
-  =link_to @document.pdf_name, @document.url
-%ul
-  - for page in @document.pages
-    %li=link_to "Page #{page.page_no + 1}", page_path(page)
-
-= link_to 'Back', documents_path
