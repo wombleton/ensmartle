@@ -1,13 +1,4 @@
-%table.pages
-  %col{:width=> 100}
-  %col
-  %col{:width=> 150}
-  %tbody
-  -for page in @pages
-    %tr
-      %td
-        %span.page-no=page.number
-        %span.page-total="/#{page.count}"
-      %td.document-title=link_to page.document.title, page
-      %td.document-type=page.document.document_type
-=will_paginate @pages
+=will_paginate @documents
+%ul.documents
+  =render :partial => @documents
+=will_paginate @documents

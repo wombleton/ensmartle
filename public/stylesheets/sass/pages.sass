@@ -1,104 +1,741 @@
-=med
-  :font-size 1.25em
-=lrg
-  :font-size 1.5em
+.accessibility
+  :left -32000px
+  :position absolute
 
-=sml
-  :font-size 0.8em
-=title
-  :padding 0.25 1em 0.5em
-  :font-weight bold
+
+.lofi
+  :display none
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, hr
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
 
 body
-  :background-color white
+  background: #fff
+  color: #51555c
+  font: 12px/18px helvetica, arial, sans-serif
 
-body, td
-  :line-height 1.6
-  :color #3C3D32
-  :font-family Verdana, Arial, Helvetica, sans-serif
-
-#wrap
-  :background-color #F1F1C3
-  :width 1000px
-  :padding 2em
-  :margin 0 auto
-  #header
-    :position relative
-    :padding 10px 0
-    +lrg
-    +title
-    #search
-      :float right
-      :font-size 0.66em
-
-h3
-  +med
-  :font-weight bold
-
-.pages
-  :background-color #B8B495
-
-#page
-  td
-    :vertical-align top
-  label
+html body
+  div.clear, span.clear
+    :background none
+    :border 0
+    :clear both
     :display block
-  .hint
-    :font-style italic
-    +sml
-  textarea
-    :width 100%
-    :height 4em
+    :float none
+    :font-size 0
+    :margin 0
+    :padding 0
+    :overflow hidden
+    :visibility hidden
+    :width 0
+    :height 0
 
-a
-  :background-color #B8B495
-  :color #573A2F
-  :padding 0 0.5em
-  :text-decoration none
-  &:visited #3C3D32
-  &:hover
-    :text-decoration underline
+
+.clearfix
+  :display inline-block
+  :display block
+
+  &:after
+    :clear both
+    :content '.'
+    :display block
+    :visibility hidden
+    :height 0
+
+
+* html .clearfix
+  :height 1%
+
+
+h1.page-title
+  :color #999
+  :font italic 14px Georgia, serif
+
+
+.nav
+  :background transparent
+  :list-style none
+  :margin 0
+  :padding 0
+
+  ul
+    :background transparent
+    :list-style none
+    :margin 0
+    :padding 0
+    :background #e9eaea
+    :border 1px solid #cecfd1
+    :border-color #cecfd1 #aaa #aaa #cecfd1
+    :z-index 9999
+
+  li
+    :background transparent
+    :list-style none
+    :margin 0
+    :padding 0
+    :float left
+    :margin-right 12px
+
+    a
+      :display block
+
+    li
+      :margin-right 0
+      :width 200px
+
+      a
+        :color #a00004 !important
+        :padding 6px 9px
+
+      ul
+        :margin -31px 0 0 200px
+
+      &:hover
+        li ul
+          :left -32697px
+          :position absolute
+
+        ul
+          :left auto
+
+      &.hover
+        li ul
+          :left -32697px
+          :position absolute
+
+        ul
+          :left auto
+
+      li
+        &:hover ul, &.hover ul
+          :left auto
+
+    ul
+      :margin-right 0
+      :width 200px
+      :left -32697px
+      :position absolute
+
+    &.secondary
+      :float right
+      :margin-left 12px
+      :margin-right 0
+
+    &:hover
+      li ul
+        :left -32697px
+        :position absolute
+
+      ul
+        :left auto
+
+    &.hover
+      li ul
+        :left -32697px
+        :position absolute
+
+      ul
+        :left auto
 
 
 .pagination
-  +med
-  +title
+  :background-color #e9eaea
+  :overflow hidden
+  :margin 5px 0
 
-.notice
-  :padding 0.5em
-  :font-style italic
+  .prev_page
+    :padding 18px
 
-.error
-  :background-color #B8B495
-  +med
-  :color red
-  :padding 1em
+  .next_page
+    :padding 18px
 
-.comment
-  :margin 1px 0
-  .user
-    :padding 2px
-    :background-color #B8B495
-    +sml
-  .text
-    :padding 2px
 
-h2
-  +lrg
-  :font-weight bold
-  :margin 0.5em 0 0.25em
+.pagination-single
+  :background-color #e9eaea
+  :margin-top 20px
+  :overflow hidden
 
-td
-  :padding 0.2em
-  :text-align middle
-.page-no
-  +med
-.page-total
-  +lrg
-.document-title
-  +med
-.document-type
+  .previous_page
+    :float left
+    :padding 18px
+
+  .next_page
+    :float right
+    :padding 18px
+
+
+.loading
+  :background url(../img/spinner.gif) 10px 17px no-repeat
+  :clear both
+  :color #ccc
+  :height 50px
+
+  span
+    :display block
+    :padding 17px 32px 0
+
+
+.close
+  :background-color #e9eaea
+  :border-bottom 1px solid #ddd
+  :padding 8px 0 6px
+  :text-align center
+
+
+.alignleft
+  :float left
+  :margin-right 1em
+  :margin-bottom 1em
+
+
+.alignright
+  :float right
+  :margin-left 1em
+  :margin-bottom 1em
+
+
+.aligncenter
+  :display block
+  :margin-left auto
+  :margin-right auto
+
+
+.wp-caption
+  :border 1px solid #ddd
+  :text-align center
+  :background-color #f3f3f3
+  :padding-top 4px
+  :margin 10px
+  :-moz-border-radius 3px
+  :-khtml-border-radius 3px
+  :-webkit-border-radius 3px
+  :border-radius 3px
+
+  img
+    :margin 0
+    :padding 0
+    :border 0 none
+
+  p.wp-caption-text
+    :font-size 11px
+    :line-height 17px
+    :padding 0 4px 5px
+    :margin 0
+
+
+.section
+  :min-width 980px
+
+
+.wrapper
+  :clear both
+  :margin 0 auto
+  :width 960px
+
+
+#header
+  :background-color #51555c
+  :background-repeat repeat-x
+  :background-position left bottom
+  :color #cecfd1
+
+  .wrapper
+    :background-repeat repeat-x
+    :background-position center bottom
+    :padding 13px 10px 10px
+
+  a
+    :color #fff
+
+    &:visited
+      :color #fff
+
+  #page-title
+    :font-family "Avenir Light", "Futura Light", helvetica, arial, sans-serif
+    :font-size 36px
+    :font-weight normal
+    :line-height 1
+    :margin-bottom 9px
+
+    a
+      :text-decoration none
+
+
+#navigation
+  a
+    :font-weight bold
+    :text-transform uppercase
+
+    &:visited
+      :font-weight bold
+      :text-transform uppercase
+
+  .secondary a
+    :font-weight normal
+    :text-transform none
+
+    &:visited
+      :font-weight normal
+      :text-transform none
+
+  li li a
+    :font-weight normal
+    :text-transform none
+
+    &:visited
+      :font-weight normal
+      :text-transform none
+
+
+#sub-header
+  :background-color #e9eaea
+  :padding 9px 0
+
+  form#searchForm
+    :float right
+
+
+#all-categories
+  :padding 2px 0 0
+  :width 760px
+
+
+#all-categories-title
+  :float left
+  :font-weight normal
+  :margin-right 12px
+
+
+#main
+  :margin 24px 0
+
+
+#content
+  :float left
+  :padding-bottom 24px
+  :width 550px
+  &.full
+    :width 960px
+
+
+#sidebar
+  :background-color #e9eaea
+  :float left
+  :margin-left 24px
+  :padding 14px
+  :width 358px
+
+  #primary-sidebar
+    :float left
+    :width 173px
+    :margin-right 12px
+
+  #secondary-sidebar
+    :float left
+    :width 173px
+
 
 #footer
-  +med
-  +title
+  :background-color #51555c
+  :background-repeat repeat-x
+  :background-position left top
+  :clear both
+  :color #999
+  :padding 32px 0 64px
+
+  a
+    :color #CECFD1
+
+    &:visited
+      :color #CECFD1
+
+  .wrapper
+    :overflow hidden
+    :padding-bottom 28px
+
+  p
+    &#generator-link
+      :float left
+      :padding-top 12px
+
+    &#developer-link
+      :display block
+      :text-indent -32697px
+
+      a
+        :background url(../img/footer/by-crowd-favorite-light.png) no-repeat left top
+        :float right
+        :height 30px
+        :text-indent -32697px
+        :width 270px
+
+        &:visited
+          :background url(../img/footer/by-crowd-favorite-light.png) no-repeat left top
+          :float right
+          :height 30px
+          :text-indent -32697px
+          :width 270px
+
+
+.entry-content, .entry-summary
+  :overflow auto
+
+
+.hentry
+  :position relative
+
+  .edit
+    :background-color #900
+    :border-radius 4px
+    :-webkit-border-radius 4px
+    :-khtml-border-radius 4px
+    :-moz-border-radius 4px
+    :font-size 11.5px
+    :opacity .60
+    :padding 3px 5px 1px
+    :left -32697px
+    :position absolute
+    :top 0
+
+  &:hover
+    .edit
+      :left auto
+      :right 0
+
+    .edit-comment
+      :left -32697px
+      :right auto
+
+
+.post:hover .edit-post
+  :left auto
+  :right 0
+
+
+.comment
+  &.hentry
+    &:hover .edit-comment
+      :left auto
+      :right 0
+
+    &.bypostauthor:hover .edit-comment
+      :top 2px
+      :right 2px
+
+  cite.fn
+    :font-size 14px
+    :font-weight bold
+
+  .comment-content
+    :overflow hidden
+    :margin-bottom 4px
+
+    p
+      &:last-child, &.last-child
+        :margin-bottom 0
+
+
+.edit a
+  :color #fff
+
+  &:visited, &:hover
+    :color #fff
+
+
+.full
+  .full-content
+    :clear both
+    :padding-top 9px
+    :width 510px
+
+  .pages-link
+    :font-weight bold
+
+    a
+      :border 1px solid #cecfd1
+      :font-weight normal
+      :padding 2px 6px
+
+      &:hover
+        :text-decoration none
+        :border-color #999
+
+  p.comments-link
+    :float right
+
+
+.page-numbers
+  :font-weight bold
+  :padding 2px 6px
+
+a
+  :text-decoration none
+  &.page-numbers
+    :border 1px solid #cecfd1
+    :font-weight normal
+
+  &#TB_prev:hover
+    :height 100%
+    :background url(../img/lightbox/prevlabel.gif) no-repeat left center
+
+  &#TB_next:hover
+    :height 100%
+    :background url(../img/lightbox/nextlabel.gif) no-repeat right center
+
+.archive
+  :border-top 1px dotted #cecfd1
+  :list-style none
+  :margin 1.5em 0 0
+
+  li
+    :margin-bottom 0
+
+  .full
+    :margin-top 18px
+
+.excerpt
+  :background url(../img/arrow-bullet.gif) no-repeat 0 12px
+  :border-bottom 1px dotted #cecfd1
+  :color #999
+  :padding 12px 146px 12px 20px
+  :position relative
+
+  strong.entry-title
+    :font-size 14px
+
+    a
+      :color #51555c
+
+      &:visited
+        :color #51555c
+
+      &:hover
+        :color #a00004
+        :text-decoration none
+
+  .date
+    :margin-top 1.5em
+    :display block
+    :width 140px
+    :position absolute
+    :right 0
+    :top 14px
+
+  p
+    :margin 0
+
+  .comments-link
+    :position absolute
+    :right 0
+    :top 14px
+
+    a
+      :display block
+      :width 140px
+
+      &:visited
+        :display block
+        :width 140px
+
+    span
+      :display block
+      :width 140px
+
+
+.search
+  :border-top 1px dotted #cecfd1
+  :padding-top 18px
+
+
+.commentlist
+  :clear both
+  :list-style none
+  :margin 0 0 18px
+
+  .comment
+    :margin-bottom 8px
+    :overflow hidden
+    :padding 0 0 0 60px
+
+    .photo img
+      :margin-left -60px
+      :position absolute
+
+  .bypostauthor
+    :background-color #efeff1
+    :padding 8px 12px 6px 72px
+
+
+li.li-comment
+  :background transparent
+  :margin 0
+  :padding 0
+  :position relative
+
+  li.li-comment
+    :background url(../img/comment-thread.gif) no-repeat 0 3px
+    :padding-left 24px
+
+
+.comment-meta
+  :color #999
+  :font-size 10.5px
+
+  .date
+    :float right
+
+
+.comment-reply-link
+  :background #900
+  :border-radius 4px
+  :-webkit-border-radius 4px
+  :-khtml-border-radius 4px
+  :-moz-border-radius 4px
+  :color #fff
+  :font-size 9.5px
+  :opacity .7
+  :padding 3px 5px 2px
+
+  &:visited, &:hover
+    :background #900
+    :border-radius 4px
+    :-webkit-border-radius 4px
+    :-khtml-border-radius 4px
+    :-moz-border-radius 4px
+    :color #fff
+    :font-size 9.5px
+    :opacity .7
+    :padding 3px 5px 2px
+
+
+.ping
+  :border-top 1px dotted #cecfd1
+  :padding 9px
+
+  .entry-summary
+    :border 0
+    :margin 0
+    :padding 0
+
+    p
+      :border 0
+      :margin 0
+      :padding 0
+
+
+form.comment-form
+  :background-color #efeff1
+  :border 1px solid #e9eaea
+  :margin-bottom 8px
+  :padding 9px 9px 0
+
+
+.comment-form
+  label
+    :color #51555c
+    :font-weight bold
+
+  em
+    :color #999
+    :font-weight normal
+    :font-style normal
+    :font-size 12px
+
+  textarea
+    :height 9em
+    :width 95%
+
+
+.comment-form-user-info input
+  :margin-right 9px
+  :width 200px
+
+
+.widget
+  :margin-bottom 18px
+  :overflow hidden
+  :width 100%
+
+  li
+    :margin 0
+
+
+h2.widget-title
+  :font-size 1.16666667em
+  :line-height 1.28571429
+  :margin 0 0 .58333334em 0
+
+
+.widget_search
+  label
+    :font-size 1.16666667em
+    :line-height 1.28571429
+    :margin 0 0 .58333334em 0
+    :display block
+    :font-weight bold
+
+  input
+    :margin-bottom 6px
+
+
+#carrington-subscribe h2.widget-title
+  :color #999
+  :float left
+  :font normal 1.16666667em/1.28571429 helvetica, arial, sans-serif
+  :margin 7px 0 0
+  :text-transform uppercase
+
+
+#carrington-about
+  :padding-bottom 24px
+
+  .about
+    :background-color #fff
+    :overflow hidden
+    :padding 12px
+
+  p
+    :margin 0
+
+  a.more
+    :float right
+
+    &:visited
+      :float right
+
+
+#carrington-archives
+  ul
+    :border-top 1px dotted #cecfd1
+
+  li
+    :background-position left 6px
+    :border-bottom 1px dotted #cecfd1
+
+    a
+      :display block
+      :padding 6px 0
+
+
+#TB_secondLine
+  :color #999
+  :font-family Georgia, Palatino, "Palatino Linotype", Baskerville, serif
+  :font-style italic
+
+
+#TB_title
+  :background-color #51555c
+  :color #fff
+  :font-size 11.5px
+  :line-height 18px
+
+  a
+    :color #fff
+
+    &:visited
+      :color #fff

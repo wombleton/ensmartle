@@ -1,40 +1,15 @@
-%table#page
-  %col
-  %col{:width => 300}
-  %tbody
-    %tr
-      %td
-        =link_to "Original document: #{@page.document.pdf_name}", @page.document.url
-        =image_tag @page.image_path
-      %td
-        -if flash[:notice]
-          .notice=flash[:notice]
-        %h3=@page.document.title
-        -unless @page.previous_page.nil?
-          =link_to "<< p#{@page.previous_page.number}", @page.previous_page
-        ="p#{@page.number}"
-        -unless @page.next_page.nil?
-          =link_to "p#{@page.next_page.number} >>", @page.next_page
-        %p=link_to 'Page Index', pages_path
-        - unless @page.details.empty?
-          %h2 Comments
-          %ul.comments
-            -for detail in @page.details
-              %li.comment
-                .user
-                  - if detail.user_name.to_s.empty?
-                    Anonymous
-                  - else
-                    =h detail.user_name
-                  @
-                  =distance_of_time_in_words_to_now detail.created_at
-                .text=h detail.comment
-        %h2 New Comment
-        -form_for :detail, :url => page_details_path(@page) do |f|
-          %label 
-            User Name
-            %span.hint (Optional)
-          =f.text_field :user_name, :value => session[:user_name]
-          %label Comment
-          =f.text_area :comment, :rows => nil, :cols => nil
-          =f.submit "Comment"
+Original document:
+=link_to @page.document.pdf_name, @page.document.url
+#page
+  =@page.page_html
+  .reset
+    .sections
+      =render :partial => "section", :collection => @page.sections
+#controls
+  %h3=@page.document.title
+  -unless @page.previous_page.nil?
+    =link_to "<< p#{@page.previous_page.number}", @page.previous_page
+  ="p#{@page.number}"
+  -unless @page.next_page.nil?
+    =link_to "p#{@page.next_page.number} >>", @page.next_page
+  %p=link_to 'Page Index', pages_path

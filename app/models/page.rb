@@ -1,6 +1,6 @@
 class Page < ActiveRecord::Base
   belongs_to :document
-  has_many :details, :order => "created_at desc"
+  has_many :sections, :order => "position"
 
   acts_as_ferret :fields => [:keywords]
   

@@ -1,21 +1,30 @@
 !!! Transitional
 %html
   %head
-    %title Budget 2009 Documents
+    %title New Zealand Governmental Documents
     =stylesheet_link_tag 'reset', 'pages'
   %body
-    #wrap
-      #header
-        #search
+    #page
+      #header.section
+        .wrapper
+          %strong#page-title=link_to "New Zealand Governmental Documents", pages_path, :rel => "home"
+          %p#page-description Making government documents searchable, linkable and connectable
+      #sub-header.section.clearfix
+        .wrapper
           %form#searchForm{ :action => pagesearch_path, :method => "get"}
             =text_field_tag :query, params[:query], :autocomplete => "off"
             =submit_tag "Search", :name => nil
-
-        =link_to "Budget 2009 Documents", pages_path
-      #main
-        - if flash[:error]
-          .notice=flash[:error]
-        =yield
+          #all-categories
+            %strong#all-categories-title Pages
+            %ul.nav
+              %li=link_to "Budget Pages", pages_path
+      #main.section
+        .wrapper
+          - if flash[:error]
+            .notice=flash[:error]
+          #content.full.themes
+            =yield
       #footer
-        Comments? Ideas? Corrections? Twitter
-        =link_to "@wombleton", "http://twitter.com/wombleton"
+        .wrapper
+          Comments? Ideas? Corrections? Twitter
+          =link_to "@wombleton", "http://twitter.com/wombleton"

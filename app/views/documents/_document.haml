@@ -1,0 +1,6 @@
+%li.document
+  .date=document.date.strftime('%d %b %Y')
+  .title=document.title
+  %ul.pages
+    - for page in document.pages
+      %li.page=link_to "p#{page.number}", page
