@@ -29,6 +29,5 @@ class PagesController < ApplicationController
 
   def pagesearch
     @pages = Page.paginate_search(params[:query], :page => params[:page], :per_page => 20)
-    render :template => "pages/index"
   end
 end
