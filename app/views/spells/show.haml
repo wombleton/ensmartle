@@ -1,6 +1,0 @@
-.tt=@spell.tooltip
--unless @spell.professions.empty?
-  %h2 Known By
-  %ul
-    -for p in @spell.professions
-      %li=link_to p.character.name, p.character

@@ -1,8 +1,0 @@
-%h1 Listing Recipes
--for t in @tradeskills
-  %h2=t.name
-  -for c in t.categories
-    %h3=c.name
-    %ul.skills
-      -for spell in c.spells
-        %li.skill=link_to image_tag(spell.icon_base.nil? ? "dunno2.png" : "items/#{spell.icon_base}.png"), edit_spell_path(spell), :class => "spell"

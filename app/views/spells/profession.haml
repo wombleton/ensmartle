@@ -1,6 +1,0 @@
-%h2=@tradeskill.name
--for c in @tradeskill.categories
-  %h3=c.name.pluralize
-  %ul.skills
-    =render :partial => "spells/spell", :collection => c.spells[0..9]
-    =link_to "more ...", "#" if c.spells.size > 10
