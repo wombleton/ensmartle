@@ -2,8 +2,10 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'documents/:year/:month/:day', :controller => 'documents',
      :month => nil, :day=> nil, :requirements => { :year => /\d{4}/ }
 
-  map.resources :documents, :only => :index
+  map.resources :documents, :only => [:create, :index, :new, :show]
   map.resources :pages, :only => :show
+
+  map.connect "budget-pages", :controller => "documents", :action => "redirect"
 
   map.resources :games, :except => [:destroy], :shallow => true do |game|
     game.resources :missions do |mission|

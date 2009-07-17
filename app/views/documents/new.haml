@@ -1,0 +1,19 @@
+%error=@document.errors.on(:url)
+-form_for :document, :url => @document do |f|
+  %ul
+    %li
+      %label Date Published
+      =f.date_select :date
+    %li
+      %label Document Type
+      =f.text_field :document_type
+    %li
+      %label Title
+      =f.text_field :title
+    %li
+      %label Url
+      =f.text_field :url
+
+
+  =f.submit "Add"
+

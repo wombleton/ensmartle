@@ -7,7 +7,7 @@
     #page
       #header.section
         .wrapper
-          %strong#page-title=link_to "New Zealand Government Documents", pages_path, :rel => "home"
+          %strong#page-title=link_to "New Zealand Government Documents", documents_path, :rel => "home"
           %p#page-description Making government documents searchable, linkable and connectable
       #sub-header.section.clearfix
         .wrapper
@@ -17,7 +17,8 @@
           #all-categories
             %strong#all-categories-title Pages
             %ul.nav
-              %li=link_to "Budget Pages", pages_path
+              %li=link_to "Add", new_document_path
+              %li=link_to "Documents", documents_path
       #main.section
         .wrapper
           - if flash[:error]
