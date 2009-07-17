@@ -1,16 +1,5 @@
 class PagesController < ApplicationController
   layout "pages"
-  # GET /pages
-  # GET /pages.xml
-  def index
-    @documents = Document.paginate_by_date(params[:year], params[:month], params[:day], params[:page])
-    @documents_by_date = @documents.group_by(&:date)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @pages }
-    end
-  end
 
   # GET /pages/1
   # GET /pages/1.xml
