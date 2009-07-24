@@ -9,4 +9,6 @@ namespace :parliament do
     require File.dirname(__FILE__) + '/../written_question_downloader.rb'
     WrittenQuestionDownloader.new.download
   end
+
+  task :update => [:download, :parse]
 end
