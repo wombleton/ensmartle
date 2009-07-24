@@ -32,6 +32,11 @@ class DocumentsController < ApplicationController
   end
 
   def redirect
-    redirect_to documents_path
+    if params[:id].nil?
+      redirect_to documents_path
+    else
+      @page = Page.find(params[:id])
+      redirect_to @page
+    end
   end
 end

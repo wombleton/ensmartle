@@ -21,7 +21,7 @@ class WrittenQuestionParser
 
     asker_name = matches[3]
     q.asker_name = asker_name
-    q.asker_url = asker_name.parameterize
+    q.asker_url = unhonorofic(asker_name)
 
     q_text = @doc.at(".qandaset .question").inner_html.gsub(/[\t\n]/, " ").squeeze(" ")
     q.question = /.+\(\d{1,2} \w{3} \d{4}\):(.+)/.match(q_text)[1].strip
@@ -40,7 +40,7 @@ class WrittenQuestionParser
     if q.status == "reply"
       respondent_name = answer.at(".Minister").inner_html.gsub(/[\n\t]/, "").squeeze(" ").strip
       q.respondent_name = respondent_name
-      q.respondent_url = respondent_name.parameterize
+      q.respondent_url = unhonorofic(respondent_name)
     end
     q
   end
@@ -68,11 +68,22 @@ class WrittenQuestionParser
       "speaker_of_house_of_representatives" => "the_house",
     }
 
-    url = WordTokenizer.unpunctuate(name).gsub(/\b((the)|(and))\b/, '').gsub(/[ -]/ , "_").downcase
+    url = unpunctuate(name).gsub(/\b((the)|(and))\b/, '').gsub(/[ -]/ , "_").downcase
     excisions.each{|e|
       url = url.gsub(e, '').squeeze("_")
     }
     url = substitutions[url] if substitutions.has_key?(url)
     url
+  end
+
+  def unhonorofic s
+    tokens = %W(hon dr h v)
+    re = Regexp.new(tokens.map{|key| "\\b#{key}\\b"}.join("|"))
+
+    unpunctuate(s).downcase.gsub(re, '').split(' ').join('_')
+  end
+
+  def unpunctuate s
+    s.tr("().,:;?!*'’",'') unless s.nil?
   end
 end

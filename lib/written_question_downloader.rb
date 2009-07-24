@@ -103,15 +103,20 @@ class WrittenQuestionDownloader
   end
 
   def download_this_question persisted_file
-    contents = question_contents(persisted_file.parliament_url)
-
-    unless contents.include? 'Server Error'
-      FileUtils.mkdir_p File.dirname(persisted_file.file_path)
-      File.open(persisted_file.file_path, 'w') do |file|
-        file.write(contents)
-        persisted_file.downloaded = true
-      end
+    if File.exist?(persisted_file.file_path)
+      puts "Using already downloaded version at #{persisted_file.file_path}."
+      persisted_file.downloaded = true
       persisted_file.save!
+    else
+      contents = question_contents(persisted_file.parliament_url)
+      unless contents.include? 'Server Error'
+        FileUtils.mkdir_p File.dirname(persisted_file.file_path)
+        File.open(persisted_file.file_path, 'w') do |file|
+          file.write(contents)
+          persisted_file.downloaded = true
+        end
+        persisted_file.save!
+      end
     end
   end
 
@@ -139,5 +144,33 @@ class WrittenQuestionDownloader
     content = question.at('.attrPublicationDate').inner_html
     date = Date.parse("#{content[0,6]} 20#{content[7,2]}")
     date
+  end
+
+  def fetch person
+    begin
+      unless @people.include? person
+        @people << person
+        open(person){|f| @response = f.read }
+        doc = Hpricot(@response)
+        u = "http://theyworkforyou.co.nz#{(doc/'img.portrait').first.attributes['src']}"
+        out = open(File.join(RAILS_ROOT, "public", "images", person.split("/").last + ".jpg"), "wb")
+        out.write(open(u).read)
+        out.close
+      end
+    rescue
+      puts "couldn't download #{person}"
+    end
+  end
+
+  def download_images
+    @urls = []
+    @people = []
+    WrittenQuestion.find(:all).each{|q|
+      fetch "http://theyworkforyou.co.nz/mps/#{q.asker_url}"
+      fetch "http://theyworkforyou.co.nz/mps/#{q.respondent_url}" unless q.respondent_url.nil?
+    }
+
+    @urls.each{|u|
+    }
   end
 end

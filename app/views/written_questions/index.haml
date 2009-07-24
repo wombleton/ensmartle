@@ -1,0 +1,7 @@
+.top
+  =will_paginate @questions
+-@questions.in_groups(2) do |g|
+  .half
+    =render :partial => g
+.bottom
+  =will_paginate @questions

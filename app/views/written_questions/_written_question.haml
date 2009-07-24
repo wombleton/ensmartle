@@ -1,0 +1,4 @@
+.qna
+  %h1=link_to "Question #{written_question.question_number} / #{written_question.question_year}", written_question
+  =render :partial => "question", :locals => { :type => "question", :name => written_question.asker_name, :url => written_question.asker_url, :text => written_question.question, :date => written_question.date_asked }
+  =render :partial => "question", :locals => { :type => "answer", :name => written_question.respondent_name, :url => written_question.respondent_url, :text => written_question.answer, :date => nil }

@@ -143,6 +143,13 @@ h1.page-title {
   .pagination .next_page {
     padding: 18px; }
 
+#html .ui-selectee {
+  cursor: pointer; }
+#html .ui-selected {
+  background-color: #e9eaea; }
+#html .ui-selecting {
+  background-color: #ddd; }
+
 .pagination-single {
   background-color: #e9eaea;
   margin-top: 20px;
@@ -211,6 +218,13 @@ h1.page-title {
   clear: both;
   margin: 0 auto;
   width: 960px; }
+  .wrapper .bottom {
+    clear: both; }
+  .wrapper .half {
+    float: left;
+    width: 439px;
+    margin: 0 20px;
+    border-right: 1px dotted #ccc; }
 
 #header {
   background-color: #51555c;
@@ -274,7 +288,7 @@ h1.page-title {
 #content {
   float: left;
   padding-bottom: 24px;
-  width: 550px; }
+  width: 640px; }
   #content.full {
     width: 960px; }
 
@@ -283,7 +297,7 @@ h1.page-title {
   float: left;
   margin-left: 24px;
   padding: 14px;
-  width: 358px; }
+  width: 268px; }
   #sidebar #primary-sidebar {
     float: left;
     width: 173px;
@@ -306,24 +320,6 @@ h1.page-title {
   #footer .wrapper {
     overflow: hidden;
     padding-bottom: 28px; }
-  #footer p#generator-link {
-    float: left;
-    padding-top: 12px; }
-  #footer p#developer-link {
-    display: block;
-    text-indent: -32697px; }
-    #footer p#developer-link a {
-      background: url(../img/footer/by-crowd-favorite-light.png) no-repeat left top;
-      float: right;
-      height: 30px;
-      text-indent: -32697px;
-      width: 270px; }
-      #footer p#developer-link a:visited {
-        background: url(../img/footer/by-crowd-favorite-light.png) no-repeat left top;
-        float: right;
-        height: 30px;
-        text-indent: -32697px;
-        width: 270px; }
 
 .entry-content, .entry-summary {
   overflow: auto; }
@@ -352,26 +348,6 @@ h1.page-title {
 .post:hover .edit-post {
   left: auto;
   right: 0; }
-
-.comment.hentry:hover .edit-comment {
-  left: auto;
-  right: 0; }
-.comment.hentry.bypostauthor:hover .edit-comment {
-  top: 2px;
-  right: 2px; }
-.comment cite.fn {
-  font-size: 14px;
-  font-weight: bold; }
-.comment .comment-content {
-  overflow: hidden;
-  margin-bottom: 4px; }
-  .comment .comment-content p:last-child, .comment .comment-content p.last-child {
-    margin-bottom: 0; }
-
-.edit a {
-  color: #fff; }
-  .edit a:visited, .edit a:hover {
-    color: #fff; }
 
 .full {
   padding: 0 0 1em 0; }
@@ -426,82 +402,10 @@ a {
     background-color: #efeff1;
     padding: 8px 12px 6px 72px; }
 
-li.li-comment {
-  background: transparent;
-  margin: 0;
-  padding: 0;
-  position: relative; }
-  li.li-comment li.li-comment {
-    background: url(../img/comment-thread.gif) no-repeat 0 3px;
-    padding-left: 24px; }
-
-.comment-meta {
-  color: #999;
-  font-size: 10.5px; }
-  .comment-meta .date {
-    float: right; }
-
-.comment-reply-link {
-  background: #900;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  -moz-border-radius: 4px;
-  color: #fff;
-  font-size: 9.5px;
-  opacity: .7;
-  padding: 3px 5px 2px; }
-  .comment-reply-link:visited, .comment-reply-link:hover {
-    background: #900;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    -moz-border-radius: 4px;
-    color: #fff;
-    font-size: 9.5px;
-    opacity: .7;
-    padding: 3px 5px 2px; }
-
-.ping {
-  border-top: 1px dotted #cecfd1;
-  padding: 9px; }
-  .ping .entry-summary {
-    border: 0;
-    margin: 0;
-    padding: 0; }
-    .ping .entry-summary p {
-      border: 0;
-      margin: 0;
-      padding: 0; }
-
-form.comment-form {
-  background-color: #efeff1;
-  border: 1px solid #e9eaea;
-  margin-bottom: 8px;
-  padding: 9px 9px 0; }
-
-.comment-form label {
-  color: #51555c;
-  font-weight: bold; }
-.comment-form em {
-  color: #999;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 12px; }
-.comment-form textarea {
-  height: 9em;
-  width: 95%; }
-
-.comment-form-user-info input {
-  margin-right: 9px;
-  width: 200px; }
-
-.widget {
-  margin-bottom: 18px;
-  overflow: hidden;
-  width: 100%; }
-  .widget li {
-    margin: 0; }
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1em 0 0.5em; }
 
 h2, .h2 {
   font-size: 18px;
@@ -511,3 +415,82 @@ h2.widget-title {
   font-size: 1.16666667em;
   line-height: 1.28571429;
   margin: 0 0 .58333334em 0; }
+
+.qna {
+  clear: both;
+  padding-top: 1em; }
+  .qna .question {
+    clear: both;
+    padding-top: 15px; }
+    .qna .question .text {
+      background-color: #e9eaea;
+      float: left;
+      padding: 5px; }
+    .qna .question .info {
+      width: 100px;
+      text-align: center; }
+      .qna .question .info img {
+        display: inline-block;
+        height: 59px;
+        width: 49px; }
+      .qna .question .info a {
+        display: block;
+        font-weight: bold; }
+      .qna .question .info .date {
+        font-style: italic; }
+    .qna .question .text {
+      font-weight: bold;
+      width: 319px;
+      margin-right: 10px; }
+    .qna .question .info {
+      float: left; }
+  .qna .answer {
+    clear: both;
+    padding-top: 15px; }
+    .qna .answer .text {
+      background-color: #e9eaea;
+      float: left;
+      padding: 5px; }
+    .qna .answer .info {
+      width: 100px;
+      text-align: center; }
+      .qna .answer .info img {
+        display: inline-block;
+        height: 59px;
+        width: 49px; }
+      .qna .answer .info a {
+        display: block;
+        font-weight: bold; }
+      .qna .answer .info .date {
+        font-style: italic; }
+    .qna .answer .text {
+      font-style: italic;
+      width: 329px; }
+    .qna .answer .info {
+      float: right; }
+
+.bubble {
+  width: auto;
+  max-width: 600px;
+  margin-bottom: 12px;
+  font-size: 0.8em; }
+  .bubble blockquote {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #c9c2c1;
+    background-color: #fff;
+    font-size: 1.25em; }
+    .bubble blockquote p {
+      margin: 10px;
+      padding: 0; }
+  .bubble blockquote.answer {
+    font-style: italic; }
+  .bubble blockquote.question {
+    font-weight: bold; }
+  .bubble cite {
+    position: relative;
+    margin: 0px;
+    padding: 7px 0px 0px 15px;
+    top: 4px;
+    background: transparent url(/images/tip.gif) no-repeat 20px 0;
+    font-style: normal; }

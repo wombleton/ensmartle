@@ -13,6 +13,20 @@ class PersistedFile < ActiveRecord::Base
       File.join(RAILS_ROOT, 'nz-hansard')
     end
 
+    def parse_all
+      PersistedFile.find(:all).each{|f| f.parse }
+    end
+  end
+
+  def parse
+    open(self.file_path, 'r'){|f| @content = f.read}
+    question = WrittenQuestionParser.new.parse(@content)
+
+    if question.save
+      puts "Question with id #{question.id} saved!"
+    else
+      puts "Didn't save due to: #{question.errors.inspect}"
+    end
   end
 
   def exists?

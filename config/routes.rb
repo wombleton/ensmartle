@@ -5,7 +5,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :documents, :only => [:create, :index, :new, :show]
   map.resources :pages, :only => :show
 
-  map.connect "budget-pages", :controller => "documents", :action => "redirect"
+  map.resources :written_questions, :only => [:index, :show]
+
+  map.connect "budget-pages/:id", :controller => "documents", :action => "redirect", :id => nil
 
   map.resources :games, :except => [:destroy], :shallow => true do |game|
     game.resources :missions do |mission|

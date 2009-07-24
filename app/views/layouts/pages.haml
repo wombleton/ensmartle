@@ -2,7 +2,8 @@
 %html
   %head
     %title New Zealand Government Documents
-    =stylesheet_link_tag 'reset', 'pages'
+    =stylesheet_link_tag 'reset', 'pages', 'jquery'
+    =javascript_include_tag :defaults, 'documents'
   %body
     #page
       #header.section
@@ -17,14 +18,13 @@
           #all-categories
             %strong#all-categories-title Pages
             %ul.nav
-              %li=link_to "Add", new_document_path
               %li=link_to "Documents", documents_path
+              %li=link_to "Questions", written_questions_path
       #main.section
         .wrapper
           - if flash[:error]
             .notice=flash[:error]
-          #content.full.themes
-            =yield
+          =yield
       #footer
         .wrapper
           Comments? Ideas? Corrections? Twitter
