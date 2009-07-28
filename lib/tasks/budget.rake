@@ -19,4 +19,9 @@ namespace :budget do
     GenerateDocuments.new.parse_xml
   end
 
+
+  desc "Parse pages for parts"
+  task :pp  => :environment do
+    GenerateDocuments.new.parse_parts
+  end
 end

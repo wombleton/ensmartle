@@ -74,22 +74,35 @@ class GenerateDocuments
     }
   end
 
+  def parse_parts
+    Page.find(:all).each{|page|
+      parse_page_parts(page)
+    }
+  end
+
   def parse_page_parts page
+    puts "handling page ##{page.id}"
     f = File.join(RAILS_ROOT, "files", "complex", "#{page.document.pdf_name}-#{page.number}.html")
     content = File.open(f, "r").read
     doc = Hpricot.parse(content)
-    (doc/'div').each{|div|
-      unless div.inner_html.strip.empty?
-        style = div.attributes['style']
-        unless /position:relative/.match(style)
-          x, y = /top:(\d+)/.match(style)[1], /left:(\d+)/.match(style)[1]
-          section = Section.new
-          section.page = page
-          section.x = x
-          section.y = y
-        end
+    (doc/'div div').each{|div|
+      style = div.attributes['style']
+      unless /^(&nbsp;|\s+)$/.match(div.inner_text)
+        x, y = /left:(\d+)/.match(style)[1], /top:(\d+)/.match(style)[1]
+        section = Section.new
+        section.page = page
+        section.x = x
+        section.y = y
+        section.content = div.inner_html
+        section.save!
       end
     }
+    (doc/'div div').remove
+    (doc/'img').each do |img|
+      img.set_attribute('src', '/images/complex/' + img.attributes['src'])
+    end
+    page.page_html = doc.inner_html.gsub("\r"," ").gsub("\n"," ").split(" ").join(" ")
+    page.save!
   end
 
   def parse_xml
@@ -109,6 +122,13 @@ class GenerateDocuments
         page.keywords = p.inner_text.gsub("\r"," ").gsub("\n"," ").split(" ").join(" ")
         page.save!
       }
+    }
+  end
+
+  def update_pagehtml
+    pages = Page.find(:all)
+    pages.each{|p|
+      p.update_attribute("page_html", p.page_html.gsub(/images\/complex\/\//, ''))
     }
   end
 end

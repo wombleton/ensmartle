@@ -1,8 +1,16 @@
-=will_paginate @documents
-%ul.documents
-  - @documents_by_date.keys.sort.reverse.each do |date|
-    %li.full
-      %h2=date.strftime('%d %b %Y')
-      %ul
-        =render :partial => @documents_by_date[date]
-=will_paginate @documents
+#main.section
+  .wrapper
+    - if flash[:error]
+      .notice=flash[:error]
+
+    =will_paginate @documents
+    %ul.documents
+      - @documents_by_date.keys.sort.reverse.each do |date|
+        %li
+          %h2=date.strftime('%d %b %Y')
+          %ul
+            =render :partial => @documents_by_date[date]
+    =will_paginate @documents
+#sidebar.section
+  .wrapper
+    whut

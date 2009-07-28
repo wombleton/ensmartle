@@ -6,13 +6,32 @@ class WrittenQuestionDownloader
   STATUSES = ["Question", "Reply"]
 
   def download
+    PersistedFile.git_pull
+    
     finished = false
     page = 0
     questions = questions_in_index(page)
-    latest = get_question_number questions.first
 
-    last_persisted = WrittenQuestion.find(:first, :limit => 1, :conditions => ['status = ?', 'question'], :order => 'question_year desc, question_number desc')
+    bad_pages = bad_pages()
+
+    while !questions.empty? and !finished
+      finished = download_questions(questions)
+      begin
+        page = page.next
+      end while bad_pages.include?(page)
+      questions = questions_in_index(page)
+    end
+
+    PersistedFile.git_push
+  end
+
+  def bad_pages
+    questions = questions_in_index(0)
+    latest = get_question_number questions.first
     earliest_query = WrittenQuestion.find(:first, :limit => 1, :conditions => ['status = ?', 'question'], :order => 'question_year, question_number')
+    last_persisted = WrittenQuestion.find(:first, :limit => 1, :conditions => ['status = ?', 'question'], :order => 'question_year desc, question_number desc')
+
+    last_question = last_persisted.nil? ? 0 : last_persisted.question_number
 
     if earliest_query.nil?
       @earliest = 0
@@ -24,27 +43,16 @@ class WrittenQuestionDownloader
       @earliest = (earliest_query.question_year * 100000) + earliest_query.question_number
     end
 
-    last_question = last_persisted.nil? ? 0 : last_persisted.question_number
-
     unanswereds = WrittenQuestion.find(:all, :conditions => ['question_year >= ? and question_number >= ? and status = ?', after_year, after_question, 'question'], :order => "question_year desc, question_number desc").map{|q| q.question_number}
     bad_pages = []
     p = 0
     while latest > 0
       range = (latest-19..latest).to_a
       latest = latest - 20
-      bad_pages << p unless (range & unanswereds).length > 0 or latest > last_question || 0
+      bad_pages << p if (range & unanswereds).length > 0 or latest < last_question or latest == 0
       p = p.next
     end
-
-    while !questions.empty? and !finished
-      finished = download_questions(questions)
-      begin
-        page = page.next
-      end while bad_pages.include?(page)
-      questions = questions_in_index(page)
-    end
-
-    PersistedFile.git_push
+    bad_pages
   end
 
   def open_index_page page

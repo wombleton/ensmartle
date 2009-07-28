@@ -6,28 +6,53 @@
     <title>Ensmartle Me</title>
     <link href="/stylesheets/reset.css?1223896966" media="screen" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/pages.css?1223896966" media="screen" rel="stylesheet" type="text/css" />
+    <style>
+      #main .wrapper{
+        font-size: 150%;
+        line-height: 2;
+      }
+
+      #main .wrapper h2 {
+        font-size: 150%;
+      }
+
+      #main .wrapper ul {
+        margin-left: 1em;
+      }
+
+      #main .wrapper li {
+        list-style: inside circle;
+      }
+    </style>
+
+
   </head>
   <body>
-    <div id="wrap">
-      <div id="main">
-        <div id="header">
-          <h2>Ensmartle Me</h2>
-        </div>
-
-        <div id="content">
-          <h2>What's This</h2>
-          <p>This is a site for <a href="http://twitter.com/wombleton">Rowan Crawford's</a> software.</p>
-          <p>You might be after:</p>
-          <ul>
-            <li>The <a href="http://cj.ensmartle.me">Carpe Jugulum message board</a>
-            <li>The (defunct) <a href="http://politically.ensmartle.me/08">2008 Election twitter scraper</a>
-            <li>The <a href="http://mice.ensmartle.me/games">Mouse Guard roller</a>
-            <li>The <a href="http://ensmartle.me/budget-pages">Budget 2009 documents</a>
-          </ul>
+    <div id="page">
+      <div id="header" class="section">
+        <div class="wrapper">
+          <strong id="page-title">Ensmartle Me</strong>
         </div>
       </div>
-      
-      <div id="footer"></div>
+
+      <div id="main" class="section">
+         <div class="wrapper">
+            <h2>What's This</h2>
+            <p>This is a site for <a href="http://twitter.com/wombleton">Rowan Crawford's</a> software.</p>
+            <p>You might be after:</p>
+            <ul>
+              <li>The <a href="http://cj.ensmartle.me">Carpe Jugulum message board</a>
+              <li>The <a href="http://mice.ensmartle.me/games">Mouse Guard roller</a>
+              <li>The <a href="http://ensmartle.me/budget-pages">Budget 2009 documents</a>
+            </ul>
+         </div>
+      </div>
+      <div id="footer">
+        <div class="wrapper">
+          Comments? Ideas? Corrections? Twitter
+          <a href="http://twitter.com/wombleton">@wombleton</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

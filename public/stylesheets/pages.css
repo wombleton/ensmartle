@@ -416,6 +416,10 @@ h2.widget-title {
   line-height: 1.28571429;
   margin: 0 0 .58333334em 0; }
 
+#cse {
+  width: 300px;
+  float: right; }
+
 .qna {
   clear: both;
   padding-top: 1em; }

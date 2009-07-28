@@ -1,14 +1,15 @@
+-title = "Questions For Written Answer"
 !!! Transitional
 %html
   %head
-    %title New Zealand Government Documents
+    %title=title
     =stylesheet_link_tag 'reset', 'pages', 'jquery'
     =javascript_include_tag :defaults, 'documents'
   %body
     #page
       #header.section
         .wrapper
-          %strong#page-title=link_to "New Zealand Government Documents", documents_path, :rel => "home"
+          %strong#page-title=link_to title, documents_path, :rel => "home"
           %p#page-description Making government documents searchable, linkable and connectable
       #sub-header.section.clearfix
         .wrapper

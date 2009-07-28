@@ -9,20 +9,27 @@ class PersistedFile < ActiveRecord::Base
       puts `git push`
     end
 
+    def git_pull
+      Dir.chdir storage_path
+      puts `git pull origin master`
+    end
+
     def storage_path
       File.join(RAILS_ROOT, 'nz-hansard')
     end
 
     def parse_all
-      PersistedFile.find(:all).each{|f| f.parse }
+      PersistedFile.find(:all, :conditions => {:persisted => nil}).each{|f| f.parse }
     end
   end
 
   def parse
-    open(self.file_path, 'r'){|f| @content = f.read}
+    File.open(self.file_path, 'r'){|f| @content = f.read}
     question = WrittenQuestionParser.new.parse(@content)
 
     if question.save
+      self.persisted = true
+      self.save
       puts "Question with id #{question.id} saved!"
     else
       puts "Didn't save due to: #{question.errors.inspect}"
