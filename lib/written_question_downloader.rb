@@ -46,7 +46,7 @@ class WrittenQuestionDownloader
     while latest > 0
       range = (latest-19..latest).to_a
       latest = latest - 20
-      bad_pages << p if (range & unanswereds).length == 0
+      bad_pages << p if (range & unanswereds).length == 0 and latest.id < last_persisted.id
       p = p.next
     end
     puts bad_pages.inspect
