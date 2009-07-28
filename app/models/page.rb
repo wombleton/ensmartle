@@ -2,8 +2,6 @@ class Page < ActiveRecord::Base
   belongs_to :document
   has_many :sections, :order => "position"
 
-  acts_as_ferret :fields => [:keywords]
-  
   def to_param
     "#{self.id}-#{self.document.name}-p#{self.page_no + 1}"
   end
