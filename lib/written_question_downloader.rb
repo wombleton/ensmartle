@@ -12,8 +12,8 @@ class WrittenQuestionDownloader
     page = 0
     questions = questions_in_index(page)
 
-    bad_pages = bad_pages()
-
+    bad_pages = bad_pages questions
+    
     while !questions.empty? and !finished
       finished = download_questions(questions)
       begin
@@ -25,13 +25,10 @@ class WrittenQuestionDownloader
     PersistedFile.git_push
   end
 
-  def bad_pages
-    questions = questions_in_index(0)
+  def bad_pages questions
     latest = get_question_number questions.first
     earliest_query = WrittenQuestion.find(:first, :limit => 1, :conditions => ['status = ?', 'question'], :order => 'question_year, question_number')
     last_persisted = WrittenQuestion.find(:first, :limit => 1, :conditions => ['status = ?', 'question'], :order => 'question_year desc, question_number desc')
-
-    last_question = last_persisted.nil? ? 0 : last_persisted.question_number
 
     if earliest_query.nil?
       @earliest = 0
@@ -49,9 +46,10 @@ class WrittenQuestionDownloader
     while latest > 0
       range = (latest-19..latest).to_a
       latest = latest - 20
-      bad_pages << p if (range & unanswereds).length > 0 or latest < last_question or latest == 0
+      bad_pages << p if (range & unanswereds).length == 0
       p = p.next
     end
+    puts bad_pages.inspect
     bad_pages
   end
 

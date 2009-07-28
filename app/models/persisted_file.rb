@@ -27,13 +27,19 @@ class PersistedFile < ActiveRecord::Base
     File.open(self.file_path, 'r'){|f| @content = f.read}
     question = WrittenQuestionParser.new.parse(@content)
 
-    if question.save
-      self.persisted = true
-      self.save
-      puts "Question with id #{question.id} saved!"
+    existing = WrittenQuestion.find(:first, :conditions => {:question_year => question.question_year, :question_number => question.question_number})
+    if existing.nil?
+      if question.save
+        self.persisted = true
+        self.save
+        puts "Question with id #{question.id} saved!"
+      else
+        puts "Didn't save due to: #{question.errors.inspect}"
+      end
     else
-      puts "Didn't save due to: #{question.errors.inspect}"
+      existing.update_attributes(:answer => question.answer, :respondent_name => question.respondent_name, :respondent_url => question.respondent_url, :status => question.status)
     end
+
   end
 
   def exists?

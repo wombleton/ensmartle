@@ -1,8 +1,8 @@
 class WrittenQuestionsController < ApplicationController
-  layout "pages"
+  layout "questions"
 
   def index
-    @questions = WrittenQuestion.paginate(:all, :page => (params[:page] || 1), :per_page => 50)
+    @questions = WrittenQuestion.paginate(:all, :page => (params[:page] || 1), :per_page => 50, :order => "question_year desc, question_number desc")
   end
 
   def show
