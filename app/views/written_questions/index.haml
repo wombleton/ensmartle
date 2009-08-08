@@ -2,8 +2,6 @@
   .wrapper
     .top
       =will_paginate @questions
-    -@questions.in_groups(2) do |g|
-      .half
-        =render :partial => g
+    =render :partial => @questions
     .bottom
       =will_paginate @questions

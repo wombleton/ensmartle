@@ -5,6 +5,7 @@
     %title=title
     =stylesheet_link_tag 'reset', 'pages', 'jquery'
     =javascript_include_tag :defaults, 'documents'
+    %link{:rel => "alternate", :type => "application/rss+xml", :title => "Written Questions", :href => rss_written_questions_path}
   %body
     #page
       #header.section
@@ -28,5 +29,5 @@
     :javascript
       google.load('search', '1');
       google.setOnLoadCallback(function(){
-        new google.search.CustomSearchControl('015132589256002685844:iazijsyqkcg').draw('cse');
+        new google.search.CustomSearchControl('015132589256002685844:nul006-tsqu').draw('cse');
       }, true);

@@ -89,6 +89,7 @@ class Document < ActiveRecord::Base
   def convert_to_html
     self.pages.each{|page|
       no = page.number
+      puts "pdftohtml -c -noframes #{pdf_path} -f #{no} -l #{no} #{File.join(html_directory, File.basename(pdf_path + "-" + no.to_s, ".pdf"))}"
       puts `pdftohtml -c -noframes #{pdf_path} -f #{no} -l #{no} #{File.join(html_directory, File.basename(pdf_path + "-" + no.to_s, ".pdf"))}`
     }
     puts `mv #{html_directory}/*.png #{background_directory}`

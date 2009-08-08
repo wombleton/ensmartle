@@ -1,8 +1,7 @@
 %div{:class=> type}
   .info
-    =link_to image_tag("mps/#{url}.jpg", :height => 59, :width => 49), "http://theyworkforyou.co.nz/mps/#{url}"
-    -unless name.nil?
-      =link_to name, "http://theyworkforyou.co.nz/mps/#{url}"
-    - unless date.nil?
-      .date=date.strftime('%d %b %Y') unless date.nil?
+    -unless url.nil?
+      %a{:href => "http://theyworkforyou.co.nz/mps/#{url}"}
+        =image_tag("mps/#{url}.jpg", :height => 59, :width => 49)
+        %label=name
   .text=text

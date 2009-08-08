@@ -1,5 +1,12 @@
 .qna
-  %h1=link_to "#{written_question.question_year}::#{written_question.question_number} (#{written_question.subject})", written_question
-  %h2=written_question.portfolio_name
-  =render :partial => "question", :locals => { :type => "question", :name => written_question.asker_name, :url => written_question.asker_url, :text => written_question.question, :date => written_question.date_asked }
-  =render :partial => "question", :locals => { :type => "answer", :name => written_question.respondent_name, :url => written_question.respondent_url, :text => written_question.answer, :date => nil }
+  %h1=link_to "#{written_question.question_year}::#{written_question.question_number} (#{written_question.subject}) #{written_question.short_form}...", written_question
+  %h2
+    =written_question.asker_name
+    asked
+    =written_question.portfolio_name
+    -unless written_question.date_asked.nil?
+      on
+      =written_question.date_asked.strftime('%d %b %Y')
+  =render :partial => "question", :locals => { :type => "question", :name => written_question.asker_name, :url => written_question.asker_url, :text => written_question.question }
+  =render :partial => "question", :locals => { :type => "answer", :name => written_question.respondent_name, :url => written_question.respondent_url, :text => written_question.answer }
+  .original=link_to "Original question", "http://www.parliament.nz/en-NZ/?document=QWA_#{written_question.question_number}_#{written_question.question_year}"

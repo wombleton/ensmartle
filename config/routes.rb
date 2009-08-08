@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :documents, :only => [:create, :index, :new, :show]
   map.resources :pages, :only => :show
 
-  map.resources :written_questions, :only => [:index, :show]
+  map.resources :written_questions, :only => [:index, :show], :collection => {:rss => :get}
 
   map.connect "budget-pages/:id", :controller => "documents", :action => "redirect", :id => nil
 

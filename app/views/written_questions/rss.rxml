@@ -1,0 +1,17 @@
+xml.instruct!
+xml.rss "version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/" do
+ xml.channel do
+
+   xml.title            "NZ Parliament Questions For Written Answer"
+   xml.link             rss_written_questions_path(:only_path => false)
+   xml.description      "NZ Parliament Questions For Written Answer"
+   @questions.each do |q|
+     xml.item do
+       xml.title        "#{q.question_year}::#{q.question_number} From #{q.asker_name} to #{q.portfolio_name} (#{q.status})"
+       xml.description  render :partial => q
+	     xml.pubDate      q.updated_at.strftime("%a, %d %b %Y %H:%M:%S %z")
+       xml.guid         written_question_path(q, :only_path => false, :status => q.status)
+     end
+   end
+ end
+end

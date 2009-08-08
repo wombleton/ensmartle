@@ -149,6 +149,8 @@ h1.page-title {
   background-color: #e9eaea; }
 #html .ui-selecting {
   background-color: #ddd; }
+#html .sctn span {
+  font-size: 8pt; }
 
 .pagination-single {
   background-color: #e9eaea;
@@ -440,14 +442,19 @@ h2.widget-title {
 
 .qna {
   clear: both;
-  padding-top: 1em; }
+  padding-top: 1em;
+  line-height: 1.7;
+  font-size: 12pt; }
+  .qna .original {
+    clear: both; }
   .qna .question {
     clear: both;
     padding-top: 15px; }
     .qna .question .text {
       background-color: #e9eaea;
       float: left;
-      padding: 5px; }
+      padding: 5px;
+      width: 845px; }
     .qna .question .info {
       width: 100px;
       text-align: center; }
@@ -458,12 +465,12 @@ h2.widget-title {
       .qna .question .info a {
         display: block;
         font-weight: bold; }
+        .qna .question .info a label {
+          display: block; }
       .qna .question .info .date {
         font-style: italic; }
     .qna .question .text {
-      font-weight: bold;
-      width: 319px;
-      margin-right: 10px; }
+      font-weight: bold; }
     .qna .question .info {
       float: left; }
   .qna .answer {
@@ -472,7 +479,8 @@ h2.widget-title {
     .qna .answer .text {
       background-color: #e9eaea;
       float: left;
-      padding: 5px; }
+      padding: 5px;
+      width: 845px; }
     .qna .answer .info {
       width: 100px;
       text-align: center; }
@@ -483,11 +491,12 @@ h2.widget-title {
       .qna .answer .info a {
         display: block;
         font-weight: bold; }
+        .qna .answer .info a label {
+          display: block; }
       .qna .answer .info .date {
         font-style: italic; }
     .qna .answer .text {
-      font-style: italic;
-      width: 329px; }
+      font-style: italic; }
     .qna .answer .info {
       float: right; }
 

@@ -30,16 +30,16 @@ class PersistedFile < ActiveRecord::Base
     existing = WrittenQuestion.find(:first, :conditions => {:question_year => question.question_year, :question_number => question.question_number})
     if existing.nil?
       if question.save
-        self.persisted = true
-        self.save
+        self.update_attribute(:persisted, true)
         puts "Question with id #{question.id} saved!"
       else
         puts "Didn't save due to: #{question.errors.inspect}"
       end
     else
       existing.update_attributes(:answer => question.answer, :respondent_name => question.respondent_name, :respondent_url => question.respondent_url, :status => question.status)
+      self.update_attribute(:persisted, true)
+      puts "Question with id #{existing.id} saved!"
     end
-
   end
 
   def exists?
@@ -50,5 +50,14 @@ class PersistedFile < ActiveRecord::Base
     date_path = self.question_date.strftime('%Y/%m/%d')
     name = self.parliament_url.split('/').last
     File.join(PersistedFile.storage_path, date_path, status, name)
+  end
+
+  def url
+    matches = /.+(QWA_\d{5}_\d{4}).+/.match(self.parliament_url)
+    if matches.nil?
+      self.parliament_url
+    else
+      "http://www.parliament.nz/en-NZ/?document=#{matches[1]}"
+    end
   end
 end

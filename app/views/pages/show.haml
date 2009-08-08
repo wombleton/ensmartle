@@ -1,32 +1,34 @@
-#content
-  %h2=link_to @page.document.title, @page.document.url
-  .pagination.alt-text
-    - for page in @page.document.pages
-      =link_to_unless @page == page, "p#{page.number}", page
-    (
-    =link_to "All on #{@page.document.formatted_date}", :controller => "documents", :year => @page.document.date.year, :month => @page.document.date.month, :day => @page.document.date.day
-    )
+#main.section
+  .wrapper
+    #content
+      %h2=link_to @page.document.title, @page.document.url
+      .pagination.alt-text
+        - for page in @page.document.pages
+          =link_to_unless @page == page, "p#{page.number}", page
+        (
+        =link_to "All on #{@page.document.formatted_date}", :controller => "documents", :year => @page.document.date.year, :month => @page.document.date.month, :day => @page.document.date.day
+        )
 
-  #tabs
-    %ul
-      %li
-        %a{:href => "#html"} Chainable
-      %li
-        %a{:href => "#image"} Original Image
-    #html
-      #page
-        =@page.page_html
-        .reset
-          .sections
-            =render :partial => "section", :collection => @page.sections
-    #image
-      =image_tag @page.image_path
-#sidebar
-  #chain-controls
-    %h2 
-      Document "Chain"
-      =button_to_function "New", "new_chain()"
-:javascript
-  $(function() {
-    $("#tabs").tabs();
-  });
+      #tabs
+        %ul
+          %li
+            %a{:href => "#html"} Chainable
+          %li
+            %a{:href => "#image"} Original Image
+        #html
+          #page
+            =@page.page_html
+            .reset
+              .sections
+                =render :partial => "section", :collection => @page.sections
+        #image
+          =image_tag @page.image_path
+    #sidebar
+      #chain-controls
+        %h2
+          Document "Chain"
+          =button_to_function "New", "new_chain()"
+    :javascript
+      $(function() {
+        $("#tabs").tabs();
+      });
