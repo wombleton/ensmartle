@@ -1,5 +1,6 @@
 #main.section
   .wrapper
+    =link_to image_tag("rss.png"), rss_written_questions_path(:subject => @question.subject), :title => "#{@question.subject} feed"
     %h1
       =link_to "Written Questions", written_questions_path
     =render :partial => @question

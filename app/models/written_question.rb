@@ -2,7 +2,7 @@ class WrittenQuestion < ActiveRecord::Base
   validates_presence_of :question, :question_number, :question_year
 
   def to_param
-    "#{self.question_year}-#{self.question_number}-#{self.short_form.parameterize}"
+    "#{self.question_year}-#{self.question_number}-#{self.short_form.gsub(/[^a-zA-Z0-9 -]/, '').parameterize}"
   end
 
   def short_form

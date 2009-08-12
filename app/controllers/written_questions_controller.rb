@@ -15,7 +15,10 @@ class WrittenQuestionsController < ApplicationController
 
   def rss
     options = {:limit => 250, :order => "updated_at desc"}
-    options[:conditions] = ["status = ?", "reply"] unless request.parameters.key?(:all)
+    conditions = {}
+    conditions[:status] = "reply" unless request.parameters.key?(:all)
+    conditions[:subject] = params[:subject] unless params[:subject].nil?
+    options[:conditions] = conditions unless conditions.empty?
 
     @questions = WrittenQuestion.find(:all, options)
     puts @questions.first.inspect
