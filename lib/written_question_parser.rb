@@ -21,7 +21,7 @@ class WrittenQuestionParser
 
     asker_name = matches[3]
     q.asker_name = asker_name
-    q.asker_url = unhonorofic(asker_name)
+    q.asker_url = substitute(asker_name)
 
     q_text = @doc.at(".qandaset .question").inner_html.gsub(/[\t\n]/, " ").squeeze(" ")
     q.question = /.+\(\d{1,2} \w{3} \d{4}\):(.+)/.match(q_text)[1].strip
@@ -40,7 +40,7 @@ class WrittenQuestionParser
     if q.status == "reply"
       respondent_name = answer.at(".Minister").inner_html.gsub(/[\n\t]/, "").squeeze(" ").strip
       q.respondent_name = respondent_name
-      q.respondent_url = unhonorofic(respondent_name)
+      q.respondent_url = substitute(respondent_name)
     end
     q
   end
@@ -76,8 +76,17 @@ class WrittenQuestionParser
     url
   end
 
+  def substitute s
+    result = unhonorofic(s)
+    substitutions = {
+      "luamanuvao_winnie_laban" => "luamanuvao_laban"
+    }
+    result = substitutions[result] if substitutions.has_key?(result)
+    result
+  end
+
   def unhonorofic s
-    tokens = %W(hon dr h v)
+    tokens = %W(hon dr h v sir)
     re = Regexp.new(tokens.map{|key| "\\b#{key}\\b"}.join("|"))
 
     unpunctuate(s).downcase.gsub(re, '').split(' ').join('_')
