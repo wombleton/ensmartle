@@ -1,0 +1,60 @@
+<h1>Listing sheets</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Home</th>
+    <th>Rank</th>
+    <th>Cloak</th>
+    <th>Parents</th>
+    <th>Artisan</th>
+    <th>Mentor</th>
+    <th>Friend</th>
+    <th>Enemy</th>
+    <th>Fate</th>
+    <th>Persona</th>
+    <th>Hungry</th>
+    <th>Angry</th>
+    <th>Tired</th>
+    <th>Injured</th>
+    <th>Sick</th>
+    <th>Belief</th>
+    <th>Goal</th>
+    <th>Instinct</th>
+    <th>Gear</th>
+  </tr>
+
+<% for sheet in @sheets %>
+  <tr>
+    <td><%=h sheet.name %></td>
+    <td><%=h sheet.age %></td>
+    <td><%=h sheet.home %></td>
+    <td><%=h sheet.rank %></td>
+    <td><%=h sheet.cloak %></td>
+    <td><%=h sheet.parents %></td>
+    <td><%=h sheet.artisan %></td>
+    <td><%=h sheet.mentor %></td>
+    <td><%=h sheet.friend %></td>
+    <td><%=h sheet.enemy %></td>
+    <td><%=h sheet.fate %></td>
+    <td><%=h sheet.persona %></td>
+    <td><%=h sheet.hungry %></td>
+    <td><%=h sheet.angry %></td>
+    <td><%=h sheet.tired %></td>
+    <td><%=h sheet.injured %></td>
+    <td><%=h sheet.sick %></td>
+    <td><%=h sheet.belief %></td>
+    <td><%=h sheet.goal %></td>
+    <td><%=h sheet.instinct %></td>
+    <td><%=h sheet.gear %></td>
+    <td><%= link_to 'Show', sheet %></td>
+    <td><%= link_to 'Edit', edit_sheet_path(sheet) %></td>
+    <td><%= link_to 'Destroy', sheet, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sheet', new_sheet_path %>

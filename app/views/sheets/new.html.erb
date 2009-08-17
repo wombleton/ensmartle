@@ -1,0 +1,95 @@
+<h1>New sheet</h1>
+
+<% form_for(@sheet) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :home %><br />
+    <%= f.text_field :home %>
+  </p>
+  <p>
+    <%= f.label :rank %><br />
+    <%= f.text_field :rank %>
+  </p>
+  <p>
+    <%= f.label :cloak %><br />
+    <%= f.text_field :cloak %>
+  </p>
+  <p>
+    <%= f.label :parents %><br />
+    <%= f.text_field :parents %>
+  </p>
+  <p>
+    <%= f.label :artisan %><br />
+    <%= f.text_field :artisan %>
+  </p>
+  <p>
+    <%= f.label :mentor %><br />
+    <%= f.text_field :mentor %>
+  </p>
+  <p>
+    <%= f.label :friend %><br />
+    <%= f.text_field :friend %>
+  </p>
+  <p>
+    <%= f.label :enemy %><br />
+    <%= f.text_field :enemy %>
+  </p>
+  <p>
+    <%= f.label :fate %><br />
+    <%= f.text_field :fate %>
+  </p>
+  <p>
+    <%= f.label :persona %><br />
+    <%= f.text_field :persona %>
+  </p>
+  <p>
+    <%= f.label :hungry %><br />
+    <%= f.check_box :hungry %>
+  </p>
+  <p>
+    <%= f.label :angry %><br />
+    <%= f.check_box :angry %>
+  </p>
+  <p>
+    <%= f.label :tired %><br />
+    <%= f.check_box :tired %>
+  </p>
+  <p>
+    <%= f.label :injured %><br />
+    <%= f.check_box :injured %>
+  </p>
+  <p>
+    <%= f.label :sick %><br />
+    <%= f.check_box :sick %>
+  </p>
+  <p>
+    <%= f.label :belief %><br />
+    <%= f.text_area :belief %>
+  </p>
+  <p>
+    <%= f.label :goal %><br />
+    <%= f.text_area :goal %>
+  </p>
+  <p>
+    <%= f.label :instinct %><br />
+    <%= f.text_area :instinct %>
+  </p>
+  <p>
+    <%= f.label :gear %><br />
+    <%= f.text_field :gear %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', sheets_path %>

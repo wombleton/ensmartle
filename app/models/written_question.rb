@@ -10,6 +10,6 @@ class WrittenQuestion < ActiveRecord::Base
   end
 
   def parliament_link
-    "http://www.parliament.nz/en-NZ/?document=QWA_#{self.question_number}_#{self.question_year}"
+    "http://www.parliament.nz/en-NZ/?document=QWA_#{self.question_number.to_s.rjust(5, '0')}_#{self.question_year}"
   end
 end

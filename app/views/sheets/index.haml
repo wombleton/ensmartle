@@ -1,0 +1,99 @@
+%h1
+  Listing sheets
+%table
+  %tr
+    %th
+      Name
+    %th
+      Age
+    %th
+      Home
+    %th
+      Rank
+    %th
+      Cloak
+    %th
+      Parents
+    %th
+      Artisan
+    %th
+      Mentor
+    %th
+      Friend
+    %th
+      Enemy
+    %th
+      Fate
+    %th
+      Persona
+    %th
+      Hungry
+    %th
+      Angry
+    %th
+      Tired
+    %th
+      Injured
+    %th
+      Sick
+    %th
+      Belief
+    %th
+      Goal
+    %th
+      Instinct
+    %th
+      Gear
+  - for sheet in @sheets
+  %tr
+    %td
+      = h sheet.name
+    %td
+      = h sheet.age
+    %td
+      = h sheet.home
+    %td
+      = h sheet.rank
+    %td
+      = h sheet.cloak
+    %td
+      = h sheet.parents
+    %td
+      = h sheet.artisan
+    %td
+      = h sheet.mentor
+    %td
+      = h sheet.friend
+    %td
+      = h sheet.enemy
+    %td
+      = h sheet.fate
+    %td
+      = h sheet.persona
+    %td
+      = h sheet.hungry
+    %td
+      = h sheet.angry
+    %td
+      = h sheet.tired
+    %td
+      = h sheet.injured
+    %td
+      = h sheet.sick
+    %td
+      = h sheet.belief
+    %td
+      = h sheet.goal
+    %td
+      = h sheet.instinct
+    %td
+      = h sheet.gear
+    %td
+      = link_to 'Show', sheet
+    %td
+      = link_to 'Edit', edit_sheet_path(sheet)
+    %td
+      = link_to 'Destroy', sheet, :confirm => 'Are you sure?', :method => :delete
+  - end
+%br
+= link_to 'New sheet', new_sheet_path

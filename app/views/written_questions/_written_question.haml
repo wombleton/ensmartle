@@ -9,4 +9,4 @@
       =written_question.date_asked.strftime('%d %b %Y')
   =render :partial => "question", :locals => { :type => "question", :name => written_question.asker_name, :url => written_question.asker_url, :text => written_question.question }
   =render :partial => "question", :locals => { :type => "answer", :name => written_question.respondent_name, :url => written_question.respondent_url, :text => written_question.answer }
-  .original=link_to "Original question", "http://www.parliament.nz/en-NZ/?document=QWA_#{written_question.question_number}_#{written_question.question_year}"
+  .original=link_to "Original question", written_question.parliament_link
