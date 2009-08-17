@@ -3,7 +3,8 @@ class MissionsController < ApplicationController
   # GET /missions
   # GET /missions.xml
   def index
-    @missions = Mission.all
+    @missions = Mission.count(:all)
+    @rolls = Roll.count(:all)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -42,7 +43,6 @@ class MissionsController < ApplicationController
   # POST /missions.xml
   def create
     @mission = Mission.new(params[:mission])
-    @mission.game = Game.find_by_permalink params[:game_id]
 
     respond_to do |format|
       if @mission.save
@@ -90,10 +90,8 @@ class MissionsController < ApplicationController
 
   def roll
     session[:by] = params[:by]
-    unless params[:roll] == ""
-      roll = Roll.create(:mission => @mission, :by => params[:by], :exploded => false, :dice => params[:roll], :ip_address => request.remote_ip)
-      @mission.rolls << roll
-    end
+    roll = Roll.create(:mission => @mission, :by => params[:by], :exploded => false, :dice => params[:roll], :ip_address => request.remote_ip)
+    @mission.rolls << roll
     latest = Time.parse(params[:latest]).utc unless params[:latest].empty?
     render :partial => "roll", :collection => @mission.rolls.find(:all, :conditions => ["updated_at > ?", latest || 1.week.ago])
   end

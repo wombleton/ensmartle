@@ -2,44 +2,17 @@
   %blockquote
     %p What's this all about?
     %p="This is a site to help with skype gaming for #{link_to "Mouse Guard", "http://archaiasp.com/mouse_guard_rpg.php"}."
-    %p In brief, to roll dice online with your friends, all you need is the same game code. You can hit the "New Game" button, or enter an existing code and get taken to an existing game.
+    %p In brief, to roll dice online with your friends, all you need is the same mission code. You can hit the "New Mission" button, or enter an existing code and get taken to an existing mission.
     %p="Now ... #{link_to "Go Play", "http://go-play.org/?p=3"}."
   %cite=link_to "wombleton", "http://twitter.com/wombleton"
 #tracking
-  Tracking
-  %span.num=@games
-  Games,
   %span.num=@missions
-  Missions, and
+  Missions and
   %span.num=@rolls
   Rolls
 %h1
-  =button_to "New Game"
+  =button_to "New Mission"
 %h1
-  -form_tag @game, :method => :get, :id => "existing_game" do |f|
-    =text_field_tag "game_code", "Existing Game", :class => "default"
+  -form_tag @mission, :method => :get, :id => "existing_mission" do |f|
+    =text_field_tag "mission_code", "Existing Mission", :class => "default"
     =submit_tag "Go", :id => "go_button"
-
-:javascript
-  Event.observe(window, 'load', function() {
-    Event.observe('game_code', 'focus', function() {
-      var input = $('game_code');
-      if (input.value == 'Existing Game') {
-        input.value = '';
-        input.removeClassName('default');
-      }
-    });
-
-    Event.observe('game_code', 'blur', function() {
-      var input = $('game_code');
-      if (input.value == '') {
-        input.value = 'Existing Game';
-        input.addClassName('default');
-      }
-    });
-
-    Event.observe('go_button', 'click', function(e) {
-      Event.stop(e);
-      window.location = $('existing_game').action + '/' + $('game_code').value;
-    });
-  });

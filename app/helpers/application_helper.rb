@@ -14,7 +14,7 @@ end
 CHARACTERS = ((0..9).to_a + ('a'..'z').to_a + ('A'..'Z').to_a).flatten
 class Bignum
   def base62
-    num = self
+    num = self.abs
     len = CHARACTERS.length
     result = []
     while num >= len

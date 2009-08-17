@@ -1,6 +1,3 @@
--menu do
-  =link_to "Game", game_path(@mission.game)
-
 %h1=@mission.title
 %blockquote=textilize(@mission.summary)
 #new-roll
@@ -10,10 +7,9 @@
     =text_field_tag "by", session[:by], :size => 8, :title => "Character Name"
     %label#dice
       \# Dice
-      - for i in 1..12
-        =link_to i, "?roll=#{i}d6", :title => "Roll #{i} six-sided dice."
+      - for i in 1..18
+        =link_to i, {:roll => "#{i}d6"}, :title => "Roll #{i} six-sided dice.", :class => "roll"
 %ul#rolls
   =render :partial => "roll", :collection => @mission.rolls
-=link_to "Back to game #{@mission.game.permalink}", @mission.game
 -form_for @mission, :html => {:id=> "explode_form"} do |f|
   =hidden_field_tag "explode", ""

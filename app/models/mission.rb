@@ -8,7 +8,7 @@ class Mission < ActiveRecord::Base
 
   def after_create
     if permalink.nil?
-      self.permalink = "#{self.game.permalink}-#{(self.id * self.created_at.hash).base62}"
+      self.permalink = "#{(self.id * self.created_at.hash).base62}"
       self.save
     end
   end

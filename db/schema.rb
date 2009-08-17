@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090702103905) do
+ActiveRecord::Schema.define(:version => 20090812115336) do
 
   create_table "categories", :force => true do |t|
     t.string   "search"
@@ -18,30 +18,6 @@ ActiveRecord::Schema.define(:version => 20090702103905) do
     t.datetime "updated_at"
     t.boolean  "location_aware", :default => false
     t.integer  "scan_count",     :default => 0
-  end
-
-  create_table "characters", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "pseudo_id"
-    t.integer  "realm_id"
-    t.string   "guild"
-    t.string   "armoury_url"
-  end
-
-  create_table "components", :force => true do |t|
-    t.integer "item_id"
-    t.integer "reagent_id"
-  end
-
-  create_table "details", :force => true do |t|
-    t.string   "user_name"
-    t.string   "comment"
-    t.integer  "budgetpage_id"
-    t.string   "remote_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "documents", :force => true do |t|
@@ -60,18 +36,6 @@ ActiveRecord::Schema.define(:version => 20090702103905) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "items", :force => true do |t|
-    t.string   "name"
-    t.string   "icon_base"
-    t.integer  "level"
-    t.string   "quality"
-    t.string   "profession_name"
-    t.boolean  "populated",       :default => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "armory_id"
   end
 
   create_table "missions", :force => true do |t|
@@ -104,36 +68,12 @@ ActiveRecord::Schema.define(:version => 20090702103905) do
     t.datetime "updated_at"
   end
 
-  create_table "professions", :force => true do |t|
-    t.integer  "character_id"
-    t.integer  "max"
-    t.integer  "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "name"
-    t.string   "pseudo_id"
-  end
-
   create_table "profiles", :force => true do |t|
     t.string   "screen_name"
     t.string   "location"
     t.string   "mapped_location"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "realms", :force => true do |t|
-    t.string   "name"
-    t.string   "pseudo_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "recipes", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "spell_id",      :null => false
-    t.integer  "profession_id", :null => false
   end
 
   create_table "rolls", :force => true do |t|
@@ -147,21 +87,47 @@ ActiveRecord::Schema.define(:version => 20090702103905) do
     t.datetime "updated_at"
   end
 
-  create_table "sockpuppets", :force => true do |t|
-    t.string   "screen_name"
+  create_table "sections", :force => true do |t|
+    t.integer  "page_id"
+    t.text     "content"
+    t.integer  "x"
+    t.integer  "y"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "spells", :force => true do |t|
+  create_table "sheets", :force => true do |t|
     t.string   "name"
-    t.string   "icon_base"
-    t.integer  "spell_id"
-    t.string   "tradeskill"
+    t.integer  "age"
+    t.string   "home"
+    t.string   "colour"
+    t.string   "rank"
+    t.string   "cloak"
+    t.string   "parents"
+    t.string   "artisan"
+    t.string   "mentor"
+    t.string   "friend"
+    t.string   "enemy"
+    t.integer  "fate"
+    t.integer  "persona"
+    t.boolean  "hungry"
+    t.boolean  "angry"
+    t.boolean  "tired"
+    t.boolean  "injured"
+    t.boolean  "sick"
+    t.string   "belief",     :limit => 1024
+    t.string   "goal",       :limit => 1024
+    t.string   "instinct",   :limit => 1024
+    t.string   "gear",       :limit => 1024
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "tooltip"
-    t.string   "category"
+  end
+
+  create_table "sockpuppets", :force => true do |t|
+    t.string   "screen_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "tweets", :force => true do |t|
@@ -208,5 +174,8 @@ ActiveRecord::Schema.define(:version => 20090702103905) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "written_questions", ["question_year", "question_number"], :name => "index_written_questions_on_question_year_and_question_number"
+  add_index "written_questions", ["updated_at"], :name => "index_written_questions_on_updated_at"
 
 end
