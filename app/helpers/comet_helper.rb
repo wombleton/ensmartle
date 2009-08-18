@@ -1,0 +1,2 @@
+module CometHelper
+end

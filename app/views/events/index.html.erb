@@ -1,0 +1,24 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Mission</th>
+    <th>By</th>
+  </tr>
+
+<% for event in @events %>
+  <tr>
+    <td><%=h event.data %></td>
+    <td><%=h event.mission %></td>
+    <td><%=h event.by %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New event', new_event_path %>

@@ -15,7 +15,8 @@ class MissionsController < ApplicationController
   # GET /missions/1
   # GET /missions/1.xml
   def show
-    @mission = Mission.find_by_permalink(params[:id], :include => :rolls)
+    @mission = Mission.find_by_permalink(params[:id], :include => :events)
+    @event = Event.new
 
     respond_to do |format|
       format.html # show.html.erb

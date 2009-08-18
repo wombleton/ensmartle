@@ -1,6 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :sheets
 
+  map.resources :comet, :only => :index
+
   map.connect 'documents/:year/:month/:day', :controller => 'documents',
      :month => nil, :day=> nil, :requirements => { :year => /\d{4}/ }
 
@@ -11,8 +13,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect "budget-pages/:id", :controller => "documents", :action => "redirect", :id => nil
 
-  map.resources :missions, :except => [:destroy], :shallow => true do |mission|
-    mission.resources :rolls, :only => [:create]
+  map.resources :missions, :except => [:destroy] do |mission|
+    mission.resources :events, :only => [:create]
   end
 
   map.games "/games", :controller => "missions"

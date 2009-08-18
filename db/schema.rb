@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090812115336) do
+ActiveRecord::Schema.define(:version => 20090816123758) do
 
   create_table "categories", :force => true do |t|
     t.string   "search"
@@ -42,10 +42,12 @@ ActiveRecord::Schema.define(:version => 20090812115336) do
     t.string   "title"
     t.text     "summary"
     t.integer  "game_id"
-    t.string   "permalink"
+    t.string   "permalink",  :limit => 60
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "missions", ["permalink"], :name => "index_missions_on_permalink"
 
   create_table "pages", :force => true do |t|
     t.string   "image_path"
@@ -86,6 +88,8 @@ ActiveRecord::Schema.define(:version => 20090812115336) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "rolls", ["mission_id"], :name => "index_rolls_on_mission_id"
 
   create_table "sections", :force => true do |t|
     t.integer  "page_id"

@@ -1,15 +1,13 @@
 %h1=@mission.title
 %blockquote=textilize(@mission.summary)
-#new-roll
-  -form_for @mission, :html => {:id => 'make_roll'} do |f|
-    =hidden_field_tag "roll", ""
-    =hidden_field_tag "latest", ""
-    =text_field_tag "by", session[:by], :size => 8, :title => "Character Name"
-    %label#dice
-      \# Dice
-      - for i in 1..18
-        =link_to i, {:roll => "#{i}d6"}, :title => "Roll #{i} six-sided dice.", :class => "roll"
-%ul#rolls
-  =render :partial => "roll", :collection => @mission.rolls
--form_for @mission, :html => {:id=> "explode_form"} do |f|
-  =hidden_field_tag "explode", ""
+%ul#events
+  =render :partial => "event", :collection => @mission.events
+%hr
+-form_for [@mission, @event] do |f|
+  %label Who
+  %br
+  =f.text_field :by, :value => session[:by]
+  %br
+  %label Doing What
+  %br
+  =f.text_area :data, :rows => 1, :cols => 60

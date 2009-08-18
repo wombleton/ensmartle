@@ -8,17 +8,8 @@
     #wrap
       #header
         =link_to image_tag("icon.png"), games_path
-        - @menu_items ||= []
-        - @menu_items.unshift(link_to "Home", games_path)
-
-        %ul
-          -for item in (@menu_items)
-            %li=item
       #main
         =yield
       #sidebar
         =image_tag "mouse_panel.jpg"
       #footer
-        %ul
-          -for item in (@menu_items || [])
-            %li=item
