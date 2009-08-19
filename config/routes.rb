@@ -18,17 +18,4 @@ ActionController::Routing::Routes.draw do |map|
   end
 
   map.games "/games", :controller => "missions"
-
-  map.pagesearch "/pagesearch", :controller => "pages", :action => "pagesearch"
-
-  map.resources :users, :except => :destroy
-
-  # election stuffs
-  map.eight '/08', :controller => "election", :action => "index"
-  map.eight_rss '/08/rss', :controller => "election", :action => "rss"
-
-  map.login '/login', :controller => 'sessions', :action => 'new'
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.register '/register', :controller => 'users', :action => 'create'
-  map.signup '/signup', :controller => 'users', :action => 'new'
 end
