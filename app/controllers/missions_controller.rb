@@ -15,7 +15,7 @@ class MissionsController < ApplicationController
   # GET /missions/1
   # GET /missions/1.xml
   def show
-    @mission = Mission.find_by_permalink(params[:id], :include => :events)
+    @mission = Mission.find_or_create_by_permalink(params[:id], :include => :events)
     @event = Event.new
 
     respond_to do |format|
