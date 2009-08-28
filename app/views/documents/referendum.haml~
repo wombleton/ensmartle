@@ -1,0 +1,106 @@
+!!! Transitional
+%html
+  %head
+    %title Referendum
+    =stylesheet_link_tag 'reset', 'pages', 'jquery'
+    =javascript_include_tag :defaults
+  %body
+    #page
+      #header.section
+        .wrapper
+          %strong#page-title=link_to "2009 Referendum"
+
+      #main.section
+        .wrapper
+
+          %table
+            %thead
+              %tr
+                %th Electorate
+                %th No. of Electors on the Roll
+                %th Total Votes Received
+                %th % Turn Out
+                %th Invalid Votes
+                %th Total Valid Votes Received
+                %th For the Response Yes
+                %th For the Response No
+                %th Informal Votes
+            %tbody
+%tr	%td 01 - Auckland Central	%td 44,153	%td 19,214	%td 43.52%	%td 19,200	%td 5,537	%td 28.84%	%td 13,463	%td 70.12%	%td 200	%td 1.04%	%td 14
+%tr	%td 02 - Bay of Plenty	%td 45,222	%td 29,457	%td 65.14%	%td 29,450	%td 2,127	%td 7.22%	%td 27,206	%td 92.38%	%td 117	%td 0.40%	%td 7
+%tr	%td 03 - Botany	%td 42,390	%td 23,258	%td 54.87%	%td 23,250	%td 2,078	%td 8.94%	%td 21,086	%td 90.69%	%td 86	%td 0.37%	%td 8
+%tr	%td 04 - Christchurch Central	%td 41,756	%td 19,615	%td 46.98%	%td 19,600	%td 3,181	%td 16.23%	%td 16,280	%td 83.06%	%td 139	%td 0.71%	%td 15
+%tr	%td 05 - Christchurch East	%td 43,027	%td 23,908	%td 55.57%	%td 23,900	%td 2,561	%td 10.72%	%td 21,214	%td 88.76%	%td 125	%td 0.52%	%td 8
+%tr	%td 06 - Clutha-Southland	%td 42,625	%td 25,418	%td 59.63%	%td 25,400	%td 1,797	%td 7.07%	%td 23,515	%td 92.58%	%td 88	%td 0.35%	%td 18
+%tr	%td 07 - Coromandel	%td 45,245	%td 29,203	%td 64.54%	%td 29,200	%td 2,388	%td 8.18%	%td 26,694	%td 91.42%	%td 118	%td 0.40%	%td 3
+%tr	%td 08 - Dunedin North	%td 40,518	%td 19,156	%td 47.28%	%td 19,150	%td 3,718	%td 19.42%	%td 15,224	%td 79.50%	%td 208	%td 1.09%	%td 6
+%tr	%td 09 - Dunedin South	%td 45,258	%td 26,763	%td 59.13%	%td 26,750	%td 2,996	%td 11.20%	%td 23,558	%td 88.07%	%td 196	%td 0.73%	%td 13
+%tr	%td 10 - East Coast	%td 40,664	%td 23,261	%td 57.20%	%td 23,250	%td 2,033	%td 8.74%	%td 21,118	%td 90.83%	%td 99	%td 0.43%	%td 11
+%tr	%td 11 - East Coast Bays	%td 44,957	%td 25,863	%td 57.53%	%td 25,850	%td 2,614	%td 10.11%	%td 23,104	%td 89.38%	%td 132	%td 0.51%	%td 13
+%tr	%td 12 - Epsom	%td 48,138	%td 24,306	%td 50.49%	%td 24,300	%td 4,500	%td 18.52%	%td 19,588	%td 80.61%	%td 212	%td 0.87%	%td 6
+%tr	%td 13 - Hamilton East	%td 42,872	%td 22,913	%td 53.45%	%td 22,900	%td 3,028	%td 13.22%	%td 19,709	%td 86.07%	%td 163	%td 0.71%	%td 13
+%tr	%td 14 - Hamilton West	%td 43,680	%td 23,361	%td 53.48%	%td 23,350	%td 2,255	%td 9.66%	%td 21,006	%td 89.96%	%td 89	%td 0.38%	%td 11
+%tr	%td 15 - Helensville	%td 45,865	%td 27,010	%td 58.89%	%td 27,000	%td 2,434	%td 9.01%	%td 24,461	%td 90.60%	%td 105	%td 0.39%	%td 10
+%tr	%td 16 - Hunua	%td 43,244	%td 26,312	%td 60.85%	%td 26,300	%td 1,841	%td 7.00%	%td 24,349	%td 92.58%	%td 110	%td 0.42%	%td 12
+%tr	%td 17 - Hutt South	%td 42,744	%td 22,361	%td 52.31%	%td 22,350	%td 3,458	%td 15.47%	%td 18,730	%td 83.80%	%td 162	%td 0.72%	%td 11
+%tr	%td 18 - Ilam	%td 45,382	%td 23,816	%td 52.48%	%td 23,800	%td 3,511	%td 14.75%	%td 20,103	%td 84.47%	%td 186	%td 0.78%	%td 16
+%tr	%td 19 - Invercargill	%td 44,590	%td 25,605	%td 57.42%	%td 25,600	%td 1,915	%td 7.48%	%td 23,596	%td 92.17%	%td 89	%td 0.35%	%td 5
+%tr	%td 20 - Kaikōura	%td 44,049	%td 28,015	%td 63.60%	%td 28,000	%td 2,327	%td 8.31%	%td 25,504	%td 91.09%	%td 169	%td 0.60%	%td 15
+%tr	%td 21 - Mana	%td 42,965	%td 21,916	%td 51.01%	%td 21,900	%td 3,674	%td 16.78%	%td 18,046	%td 82.40%	%td 180	%td 0.82%	%td 16
+%tr	%td 22 - Māngere	%td 36,865	%td 13,456	%td 36.50%	%td 13,450	%td 2,322	%td 17.26%	%td 11,059	%td 82.22%	%td 69	%td 0.51%	%td 6
+%tr	%td 23 - Manukau East	%td 39,597	%td 15,156	%td 38.28%	%td 15,150	%td 2,390	%td 15.78%	%td 12,678	%td 83.68%	%td 82	%td 0.54%	%td 6
+%tr	%td 24 - Manurewa	%td 37,070	%td 15,660	%td 42.24%	%td 15,650	%td 1,818	%td 11.62%	%td 13,766	%td 87.96%	%td 66	%td 0.42%	%td 10
+%tr	%td 25 - Maungakiekie	%td 45,014	%td 21,665	%td 48.13%	%td 21,650	%td 3,355	%td 15.50%	%td 18,185	%td 84.00%	%td 110	%td 0.51%	%td 15
+%tr	%td 26 - Mt Albert	%td 44,400	%td 20,160	%td 45.41%	%td 20,150	%td 4,568	%td 22.67%	%td 15,403	%td 76.44%	%td 179	%td 0.89%	%td 10
+%tr	%td 27 - Mt Roskill	%td 44,746	%td 21,514	%td 48.08%	%td 21,500	%td 2,956	%td 13.75%	%td 18,436	%td 85.75%	%td 108	%td 0.50%	%td 14
+%tr	%td 28 - Napier	%td 43,843	%td 26,212	%td 59.79%	%td 26,200	%td 2,422	%td 9.24%	%td 23,635	%td 90.21%	%td 143	%td 0.55%	%td 12
+%tr	%td 29 - Nelson	%td 45,229	%td 26,157	%td 57.83%	%td 26,150	%td 3,976	%td 15.20%	%td 21,997	%td 84.12%	%td 177	%td 0.68%	%td 7
+%tr	%td 30 - New Lynn	%td 44,409	%td 23,260	%td 52.38%	%td 23,250	%td 3,583	%td 15.41%	%td 19,515	%td 83.94%	%td 152	%td 0.65%	%td 10
+%tr	%td 31 - New Plymouth	%td 44,705	%td 26,162	%td 58.52%	%td 26,150	%td 2,242	%td 8.57%	%td 23,789	%td 90.97%	%td 119	%td 0.46%	%td 12
+%tr	%td 32 - North Shore	%td 47,842	%td 27,019	%td 56.48%	%td 27,000	%td 3,933	%td 14.57%	%td 22,864	%td 84.68%	%td 203	%td 0.75%	%td 19
+%tr	%td 33 - Northcote	%td 44,844	%td 23,811	%td 53.10%	%td 23,800	%td 3,247	%td 13.64%	%td 20,377	%td 85.62%	%td 176	%td 0.74%	%td 11
+%tr	%td 34 - Northland	%td 43,293	%td 26,563	%td 61.36%	%td 26,550	%td 2,276	%td 8.57%	%td 24,126	%td 90.87%	%td 148	%td 0.56%	%td 13
+%tr	%td 35 - Ōhariu	%td 45,792	%td 24,759	%td 54.07%	%td 24,750	%td 4,883	%td 19.73%	%td 19,593	%td 79.16%	%td 274	%td 1.11%	%td 9
+%tr	%td 36 - Ōtaki	%td 46,518	%td 28,213	%td 60.65%	%td 28,200	%td 2,951	%td 10.46%	%td 25,047	%td 88.82%	%td 202	%td 0.72%	%td 13
+%tr	%td 37 - Pakuranga	%td 45,245	%td 26,414	%td 58.38%	%td 26,400	%td 2,449	%td 9.28%	%td 23,842	%td 90.31%	%td 109	%td 0.41%	%td 14
+%tr	%td 38 - Palmerston North	%td 43,287	%td 24,063	%td 55.59%	%td 24,050	%td 2,771	%td 11.52%	%td 21,079	%td 87.65%	%td 200	%td 0.83%	%td 13
+%tr	%td 39 - Papakura	%td 41,957	%td 23,260	%td 55.44%	%td 23,250	%td 1,921	%td 8.26%	%td 21,234	%td 91.33%	%td 95	%td 0.41%	%td 10
+%tr	%td 40 - Port Hills	%td 44,487	%td 23,810	%td 53.52%	%td 23,800	%td 4,239	%td 17.81%	%td 19,329	%td 81.21%	%td 232	%td 0.97%	%td 10
+%tr	%td 41 - Rangitata	%td 47,473	%td 29,072	%td 61.24%	%td 29,050	%td 2,151	%td 7.40%	%td 26,790	%td 92.22%	%td 109	%td 0.38%	%td 22
+%tr	%td 42 - Rangitīkei	%td 41,415	%td 25,660	%td 61.96%	%td 25,650	%td 2,049	%td 7.99%	%td 23,465	%td 91.48%	%td 136	%td 0.53%	%td 10
+%tr	%td 43 - Rimutaka	%td 43,566	%td 24,611	%td 56.49%	%td 24,600	%td 2,872	%td 11.67%	%td 21,595	%td 87.78%	%td 133	%td 0.54%	%td 11
+%tr	%td 44 - Rodney	%td 46,219	%td 29,673	%td 64.20%	%td 29,650	%td 2,624	%td 8.85%	%td 26,869	%td 90.62%	%td 157	%td 0.53%	%td 23
+%tr	%td 45 - Rongotai	%td 45,713	%td 21,413	%td 46.84%	%td 21,400	%td 6,254	%td 29.22%	%td 14,886	%td 69.56%	%td 260	%td 1.21%	%td 13
+%tr	%td 46 - Rotorua	%td 42,371	%td 24,567	%td 57.98%	%td 24,550	%td 1,880	%td 7.66%	%td 22,557	%td 91.88%	%td 113	%td 0.46%	%td 17
+%tr	%td 47 - Selwyn	%td 44,450	%td 27,459	%td 61.78%	%td 27,450	%td 2,714	%td 9.89%	%td 24,586	%td 89.57%	%td 150	%td 0.55%	%td 9
+%tr	%td 48 - Tāmaki	%td 47,490	%td 26,016	%td 54.78%	%td 26,000	%td 3,708	%td 14.26%	%td 22,091	%td 84.97%	%td 201	%td 0.77%	%td 16
+%tr	%td 49 - Taranaki-King Country	%td 40,815	%td 25,508	%td 62.50%	%td 25,500	%td 1,816	%td 7.12%	%td 23,606	%td 92.57%	%td 78	%td 0.31%	%td 8
+%tr	%td 50 - Taupō	%td 45,077	%td 27,105	%td 60.13%	%td 27,100	%td 1,926	%td 7.11%	%td 25,066	%td 92.49%	%td 108	%td 0.40%	%td 5
+%tr	%td 51 - Tauranga	%td 46,140	%td 28,615	%td 62.02%	%td 28,600	%td 2,408	%td 8.42%	%td 26,058	%td 91.11%	%td 134	%td 0.47%	%td 15
+%tr	%td 52 - Te Atatū	%td 41,871	%td 21,913	%td 52.33%	%td 21,900	%td 2,356	%td 10.76%	%td 19,441	%td 88.77%	%td 103	%td 0.47%	%td 13
+%tr	%td 53 - Tukituki	%td 44,138	%td 26,006	%td 58.92%	%td 26,000	%td 2,415	%td 9.29%	%td 23,453	%td 90.20%	%td 132	%td 0.51%	%td 6
+%tr	%td 54 - Waikato	%td 40,604	%td 25,256	%td 62.20%	%td 25,250	%td 1,746	%td 6.91%	%td 23,392	%td 92.64%	%td 112	%td 0.44%	%td 6
+%tr	%td 55 - Waimakariri	%td 46,026	%td 28,107	%td 61.07%	%td 28,100	%td 2,192	%td 7.80%	%td 25,797	%td 91.80%	%td 111	%td 0.40%	%td 7
+%tr	%td 56 - Wairarapa	%td 45,630	%td 28,108	%td 61.60%	%td 28,100	%td 2,405	%td 8.56%	%td 25,529	%td 90.85%	%td 166	%td 0.59%	%td 8
+%tr	%td 57 - Waitakere	%td 40,522	%td 20,908	%td 51.60%	%td 20,900	%td 2,567	%td 12.28%	%td 18,225	%td 87.20%	%td 108	%td 0.52%	%td 8
+%tr	%td 58 - Waitaki	%td 48,451	%td 30,461	%td 62.87%	%td 30,450	%td 2,264	%td 7.44%	%td 28,004	%td 91.97%	%td 182	%td 0.60%	%td 11
+%tr	%td 59 - Wellington Central	%td 48,664	%td 21,022	%td 43.20%	%td 21,000	%td 7,538	%td 35.90%	%td 13,050	%td 62.14%	%td 412	%td 1.96%	%td 22
+%tr	%td 60 - West Coast-Tasman	%td 43,083	%td 26,017	%td 60.39%	%td 26,000	%td 2,994	%td 11.52%	%td 22,854	%td 87.90%	%td 152	%td 0.58%	%td 17
+%tr	%td 61 - Whanganui	%td 43,717	%td 25,867	%td 59.17%	%td 25,850	%td 2,071	%td 8.01%	%td 23,669	%td 91.56%	%td 110	%td 0.43%	%td 17
+%tr	%td 62 - Whangarei	%td 45,566	%td 27,313	%td 59.94%	%td 27,300	%td 2,475	%td 9.07%	%td 24,687	%td 90.43%	%td 138	%td 0.51%	%td 13
+%tr	%td 63 - Wigram	%td 44,849	%td 23,062	%td 51.42%	%td 23,050	%td 2,770	%td 12.02%	%td 20,130	%td 87.33%	%td 150	%td 0.65%	%td 12
+%tr	%td 64 - Hauraki-Waikato	%td 32,296	%td 10,756	%td 33.30%	%td 10,750	%td 1,145	%td 10.65%	%td 9,558	%td 88.91%	%td 47	%td 0.44%	%td 6
+%tr	%td 65 - Ikaroa-Rāwhiti	%td 32,796	%td 11,509	%td 35.09%	%td 11,500	%td 1,154	%td 10.03%	%td 10,288	%td 89.46%	%td 58	%td 0.50%	%td 9
+%tr	%td 66 - Tāmaki Makaurau	%td 35,542	%td 11,657	%td 32.80%	%td 11,650	%td 1,411	%td 12.11%	%td 10,171	%td 87.30%	%td 68	%td 0.58%	%td 7
+%tr	%td 67 - Te Tai Hauāuru	%td 32,683	%td 11,866	%td 36.31%	%td 11,850	%td 1,326	%td 11.19%	%td 10,454	%td 88.22%	%td 70	%td 0.59%	%td 16
+%tr	%td 68 - Te Tai Tokerau	%td 33,209	%td 12,113	%td 36.48%	%td 12,100	%td 1,287	%td 10.64%	%td 10,753	%td 88.87%	%td 60	%td 0.50%	%td 13
+%tr	%td 69 - Te Tai Tonga	%td 32,110	%td 11,961	%td 37.25%	%td 11,950	%td 1,709	%td 14.30%	%td 10,173	%td 85.13%	%td 68	%td 0.57%	%td 11
+%tr	%td 70 - Waiariki	%td 31,995	%td 11,306	%td 35.34%	%td 11,300	%td 993	%td 8.79%	%td 10,254	%td 90.74%	%td 53	%td 0.47%	%td 6
+
+
+
+
+      #footer
+        .wrapper
+          Comments? Ideas? Corrections? Twitter
+          =link_to "@wombleton", "http://twitter.com/wombleton"

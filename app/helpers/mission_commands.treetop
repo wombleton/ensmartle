@@ -1,0 +1,23 @@
+grammar MissionCommands
+
+  rule command
+    roll / explode / set_obstacle / quote / set_goal / script / set_disposition / adjust_disposition / comment
+  end
+
+  rule roll
+    value:([\d]+) "d6" bang:"!"? {
+      def is_roll?
+        true
+      end
+
+      def explode?
+        !bang.text_value.empty?
+      end
+
+      def dice
+        value.text_value.to_i
+      end
+    }
+  end
+
+end
