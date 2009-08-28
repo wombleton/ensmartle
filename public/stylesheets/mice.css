@@ -75,6 +75,15 @@ a {
     font-weight: bold; }
     #main h1 .default {
       color: #888888; }
+  #main #hints li {
+    margin-right: 1em;
+    display: inline-block;
+    font-size: 11px; }
+    #main #hints li em {
+      font-weight: bold; }
+  #main form label {
+    display: block;
+    font-weight: bold; }
   #main #new-roll {
     border: 5px solid #888888;
     padding: 5px;

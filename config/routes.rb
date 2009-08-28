@@ -1,4 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.login "login", :controller => "user_sessions", :action => "new"
+  map.logout "logout", :controller => "user_sessions", :action => "destroy"
+
+  map.resources :users
+  map.resources :user_sessions
+
   map.resources :sheets
 
   map.resources :comet, :only => :index
@@ -6,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'documents/:year/:month/:day', :controller => 'documents',
      :month => nil, :day=> nil, :requirements => { :year => /\d{4}/ }
 
+  map.referendum "/referendum", :controller => "documents", :action => "referendum"
   map.resources :documents, :only => [:create, :index, :new, :show]
   map.resources :pages, :only => :show
 
@@ -13,9 +21,9 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect "budget-pages/:id", :controller => "documents", :action => "redirect", :id => nil
 
-  map.resources :missions, :except => [:destroy] do |mission|
-    mission.resources :events, :only => [:create]
-  end
+  map.resources :missions, :has_many => :events
 
   map.games "/games", :controller => "missions"
+
+  map.root :controller => "missions"
 end

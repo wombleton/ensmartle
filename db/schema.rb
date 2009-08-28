@@ -9,16 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090816123758) do
-
-  create_table "categories", :force => true do |t|
-    t.string   "search"
-    t.integer  "latest"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "location_aware", :default => false
-    t.integer  "scan_count",     :default => 0
-  end
+ActiveRecord::Schema.define(:version => 20090828040415) do
 
   create_table "documents", :force => true do |t|
     t.datetime "date"
@@ -29,6 +20,17 @@ ActiveRecord::Schema.define(:version => 20090816123758) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "events", :force => true do |t|
+    t.string   "data",       :limit => 512
+    t.integer  "mission_id"
+    t.string   "by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "events", ["created_at"], :name => "index_events_on_created_at"
+  add_index "events", ["mission_id"], :name => "index_events_on_mission_id"
 
   create_table "games", :force => true do |t|
     t.string   "permalink"
@@ -49,6 +51,21 @@ ActiveRecord::Schema.define(:version => 20090816123758) do
 
   add_index "missions", ["permalink"], :name => "index_missions_on_permalink"
 
+  create_table "open_id_authentication_associations", :force => true do |t|
+    t.integer "issued"
+    t.integer "lifetime"
+    t.string  "handle"
+    t.string  "assoc_type"
+    t.binary  "server_url"
+    t.binary  "secret"
+  end
+
+  create_table "open_id_authentication_nonces", :force => true do |t|
+    t.integer "timestamp",  :null => false
+    t.string  "server_url"
+    t.string  "salt",       :null => false
+  end
+
   create_table "pages", :force => true do |t|
     t.string   "image_path"
     t.integer  "page_no"
@@ -66,14 +83,6 @@ ActiveRecord::Schema.define(:version => 20090816123758) do
     t.string   "status"
     t.boolean  "persisted"
     t.boolean  "downloaded"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "profiles", :force => true do |t|
-    t.string   "screen_name"
-    t.string   "location"
-    t.string   "mapped_location"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -126,40 +135,31 @@ ActiveRecord::Schema.define(:version => 20090816123758) do
     t.string   "gear",       :limit => 1024
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "sockpuppets", :force => true do |t|
-    t.string   "screen_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "tweets", :force => true do |t|
-    t.text     "text"
-    t.string   "profile_image_url"
-    t.string   "iso_language_code"
-    t.integer  "from_user_id"
-    t.string   "from_user"
-    t.integer  "to_user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "original"
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
-    t.string   "login",                     :limit => 40
-    t.string   "name",                      :limit => 100, :default => ""
-    t.string   "email",                     :limit => 100
-    t.string   "crypted_password",          :limit => 40
-    t.string   "salt",                      :limit => 40
+    t.string   "login"
+    t.string   "email",                             :null => false
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token",                 :null => false
+    t.integer  "login_count",        :default => 0, :null => false
+    t.integer  "failed_login_count", :default => 0, :null => false
+    t.datetime "last_request_at"
+    t.datetime "current_login_at"
+    t.datetime "last_login_at"
+    t.string   "current_login_ip"
+    t.string   "last_login_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "remember_token",            :limit => 40
-    t.datetime "remember_token_expires_at"
-    t.string   "pseudo_id"
+    t.string   "oauth_token"
+    t.string   "oauth_secret"
+    t.string   "openid_identifier"
   end
 
-  add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+  add_index "users", ["oauth_token"], :name => "index_users_on_oauth_token"
+  add_index "users", ["openid_identifier"], :name => "index_users_on_openid_identifier"
 
   create_table "written_questions", :force => true do |t|
     t.text     "question"

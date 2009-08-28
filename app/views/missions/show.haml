@@ -1,13 +1,33 @@
 %h1=@mission.title
 %blockquote=textilize(@mission.summary)
-%ul#events
-  =render :partial => "event", :collection => @mission.events
-%hr
--form_for [@mission, @event] do |f|
-  %label Who
-  %br
-  =f.text_field :by, :value => session[:by]
-  %br
-  %label Doing What
-  %br
-  =f.text_field :data
+
+-unless @user.role.nil?
+  %h3
+    Welcome
+    - if @user.role == "GM"
+      Most Terrible One!
+    - else
+      ="#{@user.sheets.first.name}!"
+
+  %ul#events
+    =render :partial => "event", :collection => @mission.events
+
+  =render :partial => "add_event"
+
+  =@user.guid
+
+  =render :partial => "hints"
+-else
+  -remote_form_for @user, :on_success => "update" do |f|
+    %label Player or GM?
+    .left
+      %label
+        =f.radio_button :role, "PC"
+        Player
+      %label Name
+      =text_field_tag :character_name
+    .right
+      %label
+        =f.radio_button :role, "GM"
+        GM
+    =f.submit "Decide!"

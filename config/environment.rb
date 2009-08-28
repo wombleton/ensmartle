@@ -11,11 +11,6 @@ RAILS_GEM_VERSION = '2.2.2' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
-
-  config.gem 'haml'
-
-  config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'
-
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
@@ -71,4 +66,10 @@ Rails::Initializer.run do |config|
   # config.active_record.observers = :cacher, :garbage_collector
 
   config.gem 'will_paginate'
+  config.gem "ruby-openid", :lib => "openid"
+  config.gem "authlogic"
+  config.gem "authlogic-oid", :lib => "authlogic_openid"
+  config.gem 'haml'
+
+  config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'
 end

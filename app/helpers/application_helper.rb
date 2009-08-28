@@ -29,7 +29,7 @@ class Bignum
 end
 class Fixnum
   def base62
-    num = self
+    num = self.abs
     len = CHARACTERS.length
     result = []
     while num >= len

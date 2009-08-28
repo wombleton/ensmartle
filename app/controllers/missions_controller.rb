@@ -1,5 +1,6 @@
 class MissionsController < ApplicationController
   layout "mice"
+
   # GET /missions
   # GET /missions.xml
   def index
@@ -15,6 +16,13 @@ class MissionsController < ApplicationController
   # GET /missions/1
   # GET /missions/1.xml
   def show
+    puts "Session[:user] = > #{session[:user]}"
+    if session[:user].nil?
+      @user = User.create(:guid => "#{request.env['REMOTE_ADDR'].hash.base62}-#{Time.new.to_i.base62}")
+      session[:user] = @user.guid
+    else
+      @user = User.find_or_create_by_guid(session[:user])
+    end
     @mission = Mission.find_or_create_by_permalink(params[:id], :include => :events)
     @event = Event.new
 
@@ -101,5 +109,11 @@ class MissionsController < ApplicationController
     roll = Roll.find(params[:explode])
     roll.explode!
     render :partial => "roll", :locals => { :roll => roll }
+  end
+
+  def check_user
+    unless sessions[:user].nil?
+      
+    end
   end
 end

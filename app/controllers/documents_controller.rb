@@ -1,5 +1,5 @@
 class DocumentsController < ApplicationController
-  layout "pages"
+  layout "pages", :except => :referendum
   # GET /pages
   # GET /pages.xml
   def index

@@ -4,8 +4,7 @@ class EventsController < ApplicationController
   def create
     session[:by] = params[:event][:by]
     @event = Event.new(params[:event])
-    @mission = Mission.find_by_permalink(params[:mission_id])
-    @event.mission = @mission
+    @event.mission = Mission.find_by_permalink(params[:mission_id])
 
     respond_to do |format|
       if @event.save
