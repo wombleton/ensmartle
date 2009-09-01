@@ -140,9 +140,7 @@ ActiveRecord::Schema.define(:version => 20090828040415) do
 
   create_table "users", :force => true do |t|
     t.string   "login"
-    t.string   "email",                             :null => false
-    t.string   "crypted_password"
-    t.string   "password_salt"
+    t.string   "email"
     t.string   "persistence_token",                 :null => false
     t.integer  "login_count",        :default => 0, :null => false
     t.integer  "failed_login_count", :default => 0, :null => false
@@ -153,12 +151,9 @@ ActiveRecord::Schema.define(:version => 20090828040415) do
     t.string   "last_login_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "oauth_token"
-    t.string   "oauth_secret"
     t.string   "openid_identifier"
   end
 
-  add_index "users", ["oauth_token"], :name => "index_users_on_oauth_token"
   add_index "users", ["openid_identifier"], :name => "index_users_on_openid_identifier"
 
   create_table "written_questions", :force => true do |t|
