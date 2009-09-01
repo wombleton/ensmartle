@@ -1,0 +1,12 @@
+-form_for @user do |f|
+  = f.error_messages
+  %p
+    = f.label :login
+    = f.text_field :login
+  %p
+    = f.label :email
+    = f.text_field :email
+  %p
+    = f.label :openid_identifier, "OpenID URL"
+    = f.text_field :openid_identifier
+  %p= f.submit "Submit"

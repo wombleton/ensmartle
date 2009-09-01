@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
+  layout "mice"
   def create
     @user = User.new(params[:user])
     if @user.save do |result|
         if result
           flash[:notice] = "Registration successful."
-          redirect_to root_url
+          redirect_to missions_url
         else
           render :action => 'new'
         end
@@ -18,9 +19,10 @@ class UsersController < ApplicationController
 
   def update
     @user = current_user
-    if @user.update_attributes(params[:user])
+    @user.attributes = params[:user]
+    if @user.save
       flash[:notice] = "Successfully updated profile."
-      redirect_to root_url
+      redirect_to missions_url
     else
       render :action => 'edit'
     end

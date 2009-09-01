@@ -1,5 +1,17 @@
-%h1
-  New user
-- form_for(@user) do |f|
-  = f.error_messages
-  = f.submit "Create"
+%h1 New user
+%p
+  ="Login using #{link_to "OpenID", "http://en.wikipedia.org/wiki/Openid"}!"
+%p
+  You can use, for example:
+  %ul
+    %li
+      A google account:
+      %code https://www.google.com/accounts/o8/id
+    %li
+      A Yahoo! account:
+      %code http://yahoo.com/
+    %li
+      A livejournal account:
+      %code http://yourusername.livejournal.com
+
+=render :partial => "form"

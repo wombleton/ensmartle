@@ -5,8 +5,6 @@ class UserSessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_or_create_by_openid_identifier(params["openid.identity"])
-    @user.save unless @user.openid_identifier.nil?
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save do |result|
         if result
@@ -16,8 +14,6 @@ class UserSessionsController < ApplicationController
           redirect_to missions_url
         end
       end
-    else
-      redirect_to login_url
     end
   end
 

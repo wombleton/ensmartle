@@ -1,9 +1,12 @@
 class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
-      t.string    :login                                              # optional, you can use email instead, or both
+      t.string    :login, :null => false                                              # optional, you can use email instead, or both
       t.string    :email                                              # optional, you can use login instead, or both
       t.string    :persistence_token,   :null => false                # required
+      t.string    :crypted_password
+      t.string    :password_salt
+      t.string    :password_confirmation
 
       # Magic columns, just like ActiveRecord's created_at and updated_at. These are automatically maintained by Authlogic if they are present.
       t.integer   :login_count,         :null => false, :default => 0 # optional, see Authlogic::Session::MagicColumns

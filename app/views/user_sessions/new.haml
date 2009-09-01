@@ -1,20 +1,5 @@
 - unless flash[:notice].nil?
   .error=flash[:notice]
-%p
-  ="Login using #{link_to "OpenID", "http://en.wikipedia.org/wiki/Openid"}!"
-%p
-  You can use, for example:
-  %ul
-    %li 
-      A google account:
-      %code https://www.google.com/accounts/o8/id
-    %li 
-      A Yahoo! account:
-      %code http://yahoo.com/
-    %li 
-      A livejournal account:
-      %code http://yourusername.livejournal.com
-
 
 -form_for @user_session do |f|
   =f.error_messages

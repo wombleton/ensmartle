@@ -139,11 +139,14 @@ ActiveRecord::Schema.define(:version => 20090828040415) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "login"
+    t.string   "login",                                :null => false
     t.string   "email"
-    t.string   "persistence_token",                 :null => false
-    t.integer  "login_count",        :default => 0, :null => false
-    t.integer  "failed_login_count", :default => 0, :null => false
+    t.string   "persistence_token",                    :null => false
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "password_confirmation"
+    t.integer  "login_count",           :default => 0, :null => false
+    t.integer  "failed_login_count",    :default => 0, :null => false
     t.datetime "last_request_at"
     t.datetime "current_login_at"
     t.datetime "last_login_at"
