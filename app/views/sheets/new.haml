@@ -1,0 +1,14 @@
+%h1 New Character
+- form_for @sheet do |f|
+  =f.error_messages
+  %p
+    %label Name
+    =f.text_field :name
+  %p
+    %label Type
+    =f.radio_button :player, :true
+    Player
+    =f.radio_button :player, :false
+    NPC
+  %p
+    =f.submit "Submit"

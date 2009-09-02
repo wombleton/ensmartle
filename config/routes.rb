@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :user_sessions
 
-  map.resources :sheets
+  map.resources :sheets, :as => "characters"
 
   map.resources :comet, :only => :index
 

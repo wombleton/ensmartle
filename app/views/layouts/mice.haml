@@ -7,7 +7,10 @@
   %body
     #wrap
       #header
-        =link_to image_tag("icon.png"), games_path
+        %ul
+          %li=link_to image_tag("icon.png"), games_path
+          %li=link_to "Missions", missions_path
+          %li=link_to "Characters", sheets_path
         #user_nav
           - if current_user
             =current_user.login

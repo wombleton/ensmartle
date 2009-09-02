@@ -1,8 +1,11 @@
 class SheetsController < ApplicationController
+  layout "mice"
   # GET /sheets
   # GET /sheets.xml
   def index
-    @sheets = Sheet.find(:all)
+    options = {:order => "name"}
+    options[:conditions] = { :user_id => current_user.id } if current_user
+    @sheets = Sheet.find(:all, options)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,6 +44,7 @@ class SheetsController < ApplicationController
   # POST /sheets.xml
   def create
     @sheet = Sheet.new(params[:sheet])
+    @sheet.user = current_user
 
     respond_to do |format|
       if @sheet.save
