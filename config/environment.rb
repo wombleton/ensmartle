@@ -65,11 +65,12 @@ Rails::Initializer.run do |config|
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector
 
-  config.gem 'will_paginate'
+  config.gem "treetop"
+  config.gem "will_paginate"
   config.gem "ruby-openid", :lib => "openid"
   config.gem "authlogic"
   config.gem "authlogic-oid", :lib => "authlogic_openid"
-  config.gem 'haml'
+  config.gem "haml"
 
-  config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'
+  config.gem "javan-whenever", :lib => false, :source => "http://gems.github.com"
 end

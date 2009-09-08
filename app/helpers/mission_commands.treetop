@@ -1,15 +1,11 @@
 grammar MissionCommands
 
   rule command
-    roll / explode / set_obstacle / quote / set_goal / script / set_disposition / adjust_disposition / comment
+    roll / explode / set_obstacle / set_goal / quote / script / set_disposition / adjust_disposition / other
   end
 
   rule roll
-    value:([\d]+) "d6" bang:"!"? {
-      def is_roll?
-        true
-      end
-
+    value:number "d6" bang:"!"? {
       def explode?
         !bang.text_value.empty?
       end
@@ -20,4 +16,93 @@ grammar MissionCommands
     }
   end
 
+  rule number
+    [1-9] [0-9]*
+  end
+
+  rule explode
+    "!" {
+      def explode?
+        true
+      end
+    }
+  end
+
+  rule set_obstacle
+    "Ob" value:number {
+      def obstacle
+        value.text_value.to_i
+      end
+    }
+  end
+
+  rule quote
+    from:name ":" ws value:.+ {
+      def speaker
+        from.text_value
+      end
+
+      def quote
+        value.text_value
+      end
+    }
+  end
+
+  rule set_goal
+    "Goal:" ws g:.+ {
+      def goal
+        g.text_value
+      end
+    }
+  end
+
+  rule slash
+    "/"
+  end
+
+  rule script
+    one:(!slash .)+ slash two:(!slash .)+ slash three:(!slash .)+ {
+      def v1
+        one.text_value
+      end
+      def v2
+        two.text_value
+      end
+      def v3
+        three.text_value
+      end
+    }
+  end
+
+  rule set_disposition
+    "D=" value:number {
+      def disposition
+        value.text_value.to_i
+      end
+    }
+  end
+
+  rule adjust_disposition
+    "D" value:([+-] number) {
+      def adjust_disposition
+        value.text_value.to_i
+      end
+    }
+  end
+
+  rule other
+    .* {
+      def other
+        self.text_value
+      end
+    }
+  end
+
+  rule ws
+    " "+
+  end
+
+  rule name
+    [A-Z] [a-z]+
+  end
 end

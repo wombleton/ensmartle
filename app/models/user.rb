@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
     c.validate_password_field = false
     c.openid_required_fields = [:nickname, :email]
   end
+  validates_presence_of :openid_identifier
 
   def map_openid_registration(registration)
     self.email = registration["email"] if email.blank?

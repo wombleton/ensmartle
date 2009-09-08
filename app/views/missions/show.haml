@@ -1,9 +1,21 @@
 %h1=@mission.title
 %blockquote=textilize(@mission.summary)
 
-%ul#events
-  =render :partial => "event", :collection => @mission.events
+#tabs
+  %ul
+    %li=link_to "Session", "#session"
+    %li=link_to "Characters", "#characters"
+    %li=link_to "Help", "#help"
+  #session
+    %ul#events
+      =render :partial => "event", :collection => @mission.events
 
-=render :partial => "add_event"
-
-=render :partial => "hints"
+    =render :partial => "add_event"
+  #characters
+    %ul
+      =render :partial => @sheets
+    =link_to 'New Character', new_sheet_path
+  #help
+    =render :partial => "hints"
+    
+=periodically_call_remote :url => mission_events_path(@mission), :update => "events", :frequency => 3, :method => :get

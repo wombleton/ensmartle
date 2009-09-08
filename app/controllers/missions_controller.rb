@@ -18,7 +18,8 @@ class MissionsController < ApplicationController
   def show
     @mission = Mission.find_or_create_by_permalink(params[:id], :include => :events)
     @event = Event.new
-
+    @sheets = Sheet.find_all_by_user_id(current_user, :order => "name")
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @mission }
@@ -101,7 +102,7 @@ class MissionsController < ApplicationController
   def explode
     roll = Roll.find(params[:explode])
     roll.explode!
-    render :partial => "roll", :locals => { :roll => roll }
+    render :partial => "roll", :locals => { :roll => roll } 
   end
 
   def check_user

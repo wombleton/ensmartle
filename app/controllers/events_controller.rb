@@ -1,4 +1,9 @@
 class EventsController < ApplicationController
+  def index
+    @mission = Mission.find_by_permalink(params[:mission_id])
+    @events = @mission.events
+  end
+  
   # POST /events
   # POST /events.xml
   def create

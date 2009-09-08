@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090828040415) do
+ActiveRecord::Schema.define(:version => 20090901110903) do
 
   create_table "documents", :force => true do |t|
     t.datetime "date"
@@ -136,6 +136,7 @@ ActiveRecord::Schema.define(:version => 20090828040415) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.boolean  "player",                     :default => true, :null => false
   end
 
   create_table "users", :force => true do |t|
