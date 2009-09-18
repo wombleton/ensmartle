@@ -10,6 +10,7 @@ describe MissionsHelper do
     parse = p("3d6")
     parse.should_not be_nil
     parse.dice.should eql(3)
+    parse.event_type.should eql("roll")
   end
 
   it "should accept 100d6 as 100 dice" do

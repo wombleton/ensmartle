@@ -19,6 +19,7 @@ class MissionsController < ApplicationController
     @mission = Mission.find_or_create_by_permalink(params[:id], :include => :events)
     @event = Event.new
     @sheets = Sheet.find_all_by_user_id(current_user, :order => "name")
+    @sheet = Sheet.find(session[:sheet]) if session[:sheet]
     
     respond_to do |format|
       format.html # show.html.erb

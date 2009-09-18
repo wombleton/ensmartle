@@ -8,7 +8,7 @@ class Roll < ActiveRecord::Base
   def dice= dice
     self.number = dice.to_i
     values = []
-    self.number.to_i.times{ values << roll_one}
+    self.number.to_i.times{ values << rand(6) + 1}
     values.sort!{|a, b| a.to_i <=> b.to_i}
     self.value = values.join('')
   end

@@ -4,7 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
   map.register "register", :controller => "users", :action => "new"
 
-  map.resources :users
+  map.resources :users, :collection => {:use_sheet => :post}
   map.resources :user_sessions
 
   map.resources :sheets, :as => "characters"

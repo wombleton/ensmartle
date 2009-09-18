@@ -31,4 +31,10 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+
+  def use_sheet
+    @sheet = Sheet.find(params[:sheet])
+    session[:sheet] = @sheet.id unless @sheet.nil?
+    render :text => "Now using #{@sheet.name} as your character!"
+  end
 end

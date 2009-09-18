@@ -7,9 +7,9 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.xml
   def create
-    session[:by] = params[:event][:by]
     @event = Event.new(params[:event])
     @event.mission = Mission.find_by_permalink(params[:mission_id])
+    @event.sheet = Sheet.find(session[:sheet])
 
     respond_to do |format|
       if @event.save

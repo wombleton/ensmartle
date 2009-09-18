@@ -5,13 +5,16 @@ grammar MissionCommands
   end
 
   rule roll
-    value:number "d6" bang:"!"? {
+    value:number "d" [6]? bang:"!"? {
       def explode?
         !bang.text_value.empty?
       end
 
       def dice
         value.text_value.to_i
+      end
+      def event_type
+        "roll"
       end
     }
   end
@@ -25,6 +28,9 @@ grammar MissionCommands
       def explode?
         true
       end
+      def event_type
+        "explode"
+      end
     }
   end
 
@@ -33,6 +39,10 @@ grammar MissionCommands
       def obstacle
         value.text_value.to_i
       end
+      def event_type
+        "set_obstacle"
+      end
+
     }
   end
 
@@ -45,6 +55,10 @@ grammar MissionCommands
       def quote
         value.text_value
       end
+      def event_type
+        "quote"
+      end
+
     }
   end
 
@@ -53,6 +67,10 @@ grammar MissionCommands
       def goal
         g.text_value
       end
+      def event_type
+        "set_goal"
+      end
+
     }
   end
 
@@ -71,6 +89,10 @@ grammar MissionCommands
       def v3
         three.text_value
       end
+      def event_type
+        "script"
+      end
+
     }
   end
 
@@ -79,6 +101,10 @@ grammar MissionCommands
       def disposition
         value.text_value.to_i
       end
+      def event_type
+        "set_disposition"
+      end
+
     }
   end
 
@@ -87,6 +113,10 @@ grammar MissionCommands
       def adjust_disposition
         value.text_value.to_i
       end
+      def event_type
+        "adjust_disposition"
+      end
+
     }
   end
 
@@ -95,6 +125,10 @@ grammar MissionCommands
       def other
         self.text_value
       end
+      def event_type
+        "other"
+      end
+
     }
   end
 

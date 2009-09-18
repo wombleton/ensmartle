@@ -15,6 +15,18 @@ $(document).ready(function() {
     }
   });
 
+  $('#characters').click(function(e) {
+    var target = $(e.target)[0];
+    var form = $(target).closest('form')[0];
+    if ($(target).is('input[type=radio]')) {
+      $.ajax({
+        data: $.param($(form).serializeArray()),
+        type: form.method,
+        url: form.action
+      });
+    }
+  });
+
   $('#tabs').tabs();
   
   $('#event_data').focus();
