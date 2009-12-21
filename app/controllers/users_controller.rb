@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_filter :authenticate
 
-  layout "mice"
+  layout "mention"
   def create
     @user = User.new(params[:user])
     if @user.save do |result|

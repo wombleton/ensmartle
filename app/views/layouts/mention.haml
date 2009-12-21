@@ -1,0 +1,24 @@
+-title = "Don't Mention It"
+!!! Transitional
+%html
+  %head
+    %title=title
+    =stylesheet_link_tag 'reset', 'pages', 'jquery'
+    =javascript_include_tag :defaults, 'documents'
+    %link{:rel => "alternate", :type => "application/rss+xml", :title => "Written Questions", :href => rss_written_questions_path}
+  %body
+    #page
+      #header.section
+        .wrapper
+          %strong#page-title=link_to title, documents_path, :rel => "home"
+          %p#page-description Preventing @mention spam
+      #sub-header.section.clearfix
+        .wrapper
+          #all-categories
+            %strong#all-categories-title Pages
+            %ul.nav
+      =yield
+      #footer
+        .wrapper
+          Comments? Ideas? Corrections? Twitter
+          =link_to "@wombleton", "http://twitter.com/wombleton"
