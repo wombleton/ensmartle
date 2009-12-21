@@ -14,13 +14,10 @@
         #user_nav
           - if current_user
             =current_user.screen_name
-            =link_to "Edit", edit_user_path(current_user)
-            |
+
             =link_to "Logout", logout_path
           -else
-            =link_to "Login", login_path
-            |
-            =link_to "Register", register_path
+            =link_to "Login using twitter", login_path
       #main
         =yield
       #sidebar
