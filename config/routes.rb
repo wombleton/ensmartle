@@ -1,15 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-
-  map.login "login", :controller => "user_sessions", :action => "new"
-  map.logout "logout", :controller => "user_sessions", :action => "destroy"
-  map.register "register", :controller => "users", :action => "new"
+  map.logout "logout", :controller => "sessions", :action => "destroy"
+  map.login "login", :controller => "sessions", :action => "new"
 
   map.resources :users, :collection => {:use_sheet => :post}
-  map.resources :user_sessions
 
   map.resources :sheets, :as => "characters"
-
-  map.resources :comet, :only => :index
 
   map.connect 'documents/:year/:month/:day', :controller => 'documents',
      :month => nil, :day=> nil, :requirements => { :year => /\d{4}/ }
@@ -26,8 +21,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.games "/games", :controller => "missions"
 
-
   map.resource :session
+
   map.finalize_session 'session/finalize', :controller => 'sessions', :action => 'finalize'
 
   map.root :controller => "missions"
