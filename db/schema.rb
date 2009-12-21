@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091221060311) do
+ActiveRecord::Schema.define(:version => 20091221111103) do
 
   create_table "documents", :force => true do |t|
     t.datetime "date"
@@ -144,8 +144,8 @@ ActiveRecord::Schema.define(:version => 20091221060311) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
-    t.integer  "login_count",                      :default => 0, :null => false
-    t.integer  "failed_login_count",               :default => 0, :null => false
+    t.integer  "login_count",                       :default => 0, :null => false
+    t.integer  "failed_login_count",                :default => 0, :null => false
     t.datetime "last_request_at"
     t.datetime "current_login_at"
     t.datetime "last_login_at"
@@ -156,7 +156,14 @@ ActiveRecord::Schema.define(:version => 20091221060311) do
     t.string   "openid_identifier"
     t.string   "atoken"
     t.string   "asecret"
-    t.string   "screen_name",        :limit => 30
+    t.string   "screen_name",         :limit => 30
+    t.string   "stance"
+    t.string   "name"
+    t.string   "url"
+    t.string   "profile_image_url"
+    t.boolean  "bad_url"
+    t.string   "tweetblocker_rating", :limit => 5
+    t.boolean  "forgiven"
   end
 
   add_index "users", ["openid_identifier"], :name => "index_users_on_openid_identifier"

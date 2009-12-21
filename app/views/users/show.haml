@@ -1,0 +1,5 @@
+#main.section
+  .wrapper
+    =image_tag @user.profile_image_url unless @user.profile_image_url.nil?
+    =@user.screen_name
+    =@user.name

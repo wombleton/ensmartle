@@ -1,19 +1,7 @@
 class UsersController < ApplicationController
-  before_filter :authenticate
+  before_filter :authenticate, :only => :edit
 
   layout "mention"
-  def create
-    @user = User.new(params[:user])
-    if @user.save do |result|
-        if result
-          flash[:notice] = "Registration successful."
-          redirect_to missions_url
-        else
-          render :action => 'new'
-        end
-      end
-    end
-  end
 
   def edit
     @user = current_user
@@ -24,14 +12,14 @@ class UsersController < ApplicationController
     @user.attributes = params[:user]
     if @user.save
       flash[:notice] = "Successfully updated profile."
-      redirect_to missions_url
     else
-      render :action => 'edit'
+      flash[:notice] = "Failed to update stance."
     end
+    redirect_to mention_index_path
   end
 
-  def index
-    
+  def show
+    @user = User.find_by_screen_name(params[:id])
   end
 
   def new

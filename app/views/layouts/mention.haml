@@ -4,19 +4,23 @@
   %head
     %title=title
     =stylesheet_link_tag 'reset', 'pages', 'jquery'
-    =javascript_include_tag :defaults, 'documents'
-    %link{:rel => "alternate", :type => "application/rss+xml", :title => "Written Questions", :href => rss_written_questions_path}
+    =javascript_include_tag :defaults
   %body
     #page
       #header.section
         .wrapper
           %strong#page-title=link_to title, documents_path, :rel => "home"
-          %p#page-description Preventing @mention spam
+          %p#page-description Fighting @mention spam with the flaming sword of API
       #sub-header.section.clearfix
         .wrapper
           #all-categories
-            %strong#all-categories-title Pages
-            %ul.nav
+            - if current_user
+              =current_user.screen_name
+
+              =link_to "Logout", logout_path
+            -else
+              =link_to "Login using twitter", login_path
+
       =yield
       #footer
         .wrapper

@@ -1,0 +1,16 @@
+#main.section
+  .wrapper
+
+    -form_for current_user do |f|
+      %h2 @mention spam stance
+      %label
+        =f.radio_button :stance, ""
+        Disabled
+      %label
+        =f.radio_button :stance, "conservative"
+        Conservative
+      %label
+        =f.radio_button :stance, "aggressive"
+        Aggressive
+      =f.submit "Update"
+

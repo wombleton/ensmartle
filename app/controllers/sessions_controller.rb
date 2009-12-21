@@ -1,5 +1,7 @@
-class SessionsController < ApplicationController  
+class SessionsController < ApplicationController
+  layout "mention"
   def new
+    redirect_to user_path(current_user) if current_user
   end
   
   def create
@@ -8,14 +10,12 @@ class SessionsController < ApplicationController
     session['rtoken']  = oauth.request_token.token
     session['rsecret'] = oauth.request_token.secret
 
-    puts oauth.request_token.authorize_url
-    
     redirect_to oauth.request_token.authorize_url
   end
   
   def destroy
     reset_session
-    redirect_to new_session_path
+    redirect_to login_path
   end
   
   def finalize
@@ -30,6 +30,9 @@ class SessionsController < ApplicationController
     user.update_attributes({
       :atoken => oauth.access_token.token, 
       :asecret => oauth.access_token.secret,
+      :profile_image_url => profile.profile_image_url,
+      :url => profile.url,
+      :name => profile.name
     })
     
     sign_in(user)
@@ -38,7 +41,6 @@ class SessionsController < ApplicationController
   
   private
     def oauth
-      puts "'#{ConsumerConfig['token']}' '#{ConsumerConfig['secret']}'"
       @oauth ||= Twitter::OAuth.new(ConsumerConfig['token'], ConsumerConfig['secret'], :sign_in => true)
     end
 end
