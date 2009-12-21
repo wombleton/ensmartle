@@ -1,5 +1,6 @@
 log
 config/database.yml
+config/consumer.yml
 nbproject
 files
 index
