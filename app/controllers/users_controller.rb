@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_filter :authenticate
+
   layout "mice"
   def create
     @user = User.new(params[:user])
@@ -26,6 +28,10 @@ class UsersController < ApplicationController
     else
       render :action => 'edit'
     end
+  end
+
+  def index
+    
   end
 
   def new

@@ -13,7 +13,7 @@
           %li=link_to "Characters", sheets_path
         #user_nav
           - if current_user
-            =current_user.login
+            =current_user.screen_name
             =link_to "Edit", edit_user_path(current_user)
             |
             =link_to "Logout", logout_path
