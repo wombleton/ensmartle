@@ -72,5 +72,5 @@ Rails::Initializer.run do |config|
   config.gem "authlogic-oid", :lib => "authlogic_openid"
   config.gem "haml"
 
-  config.gem "javan-whenever", :lib => false, :source => "http://gems.github.com"
+#  config.gem "javan-whenever", :lib => false, :source => "http://gems.github.com"
 end
