@@ -18,6 +18,11 @@ class ApplicationController < ActionController::Base
   rescue_from Twitter::Unauthorized, :with => :force_sign_in
 
   private
+
+  def current_user
+    User.find_by_screen_name('wombleton')
+  end
+
   def force_sign_in(exception)
     reset_session
     flash[:error] = 'Seems your credentials are not good anymore. Please sign in again.'
