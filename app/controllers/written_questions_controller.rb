@@ -21,6 +21,5 @@ class WrittenQuestionsController < ApplicationController
     options[:conditions] = conditions unless conditions.empty?
 
     @questions = WrittenQuestion.find(:all, options)
-    puts @questions.first.inspect
   end
 end
