@@ -10,3 +10,4 @@ vendor/plugins/query_reviewer
 test
 db/*.sqlite3
 tmp
+public/stylesheets/mice.css
