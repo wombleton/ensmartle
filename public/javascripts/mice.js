@@ -31,3 +31,20 @@ $(document).ready(function() {
   
   $('#event_data').focus();
 });
+
+(function() {
+  function getTransport() {
+    return new XMLHttpRequest();
+  }
+
+  $.listen = function(url, callback) {
+    var transport = getTransport();
+    transport.open('GET', url, true);
+    transport.onreadystatechange = function() {
+      var readyState = transport.readyState;
+      if (readyState > 1 && !readyState == 4) {
+        
+      }
+    }
+  }
+})();
