@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091227100132) do
+ActiveRecord::Schema.define(:version => 20100315053924) do
 
   create_table "blocks", :force => true do |t|
     t.integer  "user_id"
@@ -41,14 +41,6 @@ ActiveRecord::Schema.define(:version => 20091227100132) do
 
   add_index "events", ["created_at"], :name => "index_events_on_created_at"
   add_index "events", ["mission_id"], :name => "index_events_on_mission_id"
-
-  create_table "games", :force => true do |t|
-    t.string   "permalink"
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "missions", :force => true do |t|
     t.string   "title"
