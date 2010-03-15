@@ -9,3 +9,4 @@ public/images/complex
 vendor/plugins/query_reviewer
 test
 db/*.sqlite3
+tmp
