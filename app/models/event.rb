@@ -10,7 +10,7 @@ class Event < ActiveRecord::Base
     self.event_type = p.event_type
     self.exploded = p.explode? if p.respond_to?(:explode?)
     self.result = case self.event_type
-      when "roll" then (1..(p.dice)).inject([]){|result, n| result << rand(6) + 1}.sort!.join('')
+      when "roll" then (1..(p.dice)).inject([]){|result, n| result << rand(6) + 1}.sort!.join(' ')
       when "explode" then "explode!"
       when "set_obstacle" then p.obstacle
       when "set_goal" then p.goal
