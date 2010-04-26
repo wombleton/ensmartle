@@ -7,6 +7,9 @@ $(document).ready(function() {
       $.ajax({
         data: $.param($(form).serializeArray()),
         dataType: 'html',
+        success: function() {
+          window.location.reload();
+        },
         type: form.method,
         url: form.action
       });
@@ -30,21 +33,23 @@ $(document).ready(function() {
   $('#tabs').tabs();
   
   $('#event_data').focus();
+
+  function poll() {
+    $.ajax({
+      url: 'http://api.notify.io/v1/listen/daa32ab959b3d0442ba29a1af421c7aa3355513e',
+      success: function(data) {
+        setTimeout(poll, 10);
+      },
+      failure: function() {
+        setTimeout(poll, 10);
+      },
+      timeout: 30000,
+      async: true,
+      cache: false,
+      dataType: 'json',
+      type: 'GET'
+    });
+  }
+
+  poll();
 });
-
-(function() {
-  function getTransport() {
-    return new XMLHttpRequest();
-  }
-
-  $.listen = function(url, callback) {
-    var transport = getTransport();
-    transport.open('GET', url, true);
-    transport.onreadystatechange = function() {
-      var readyState = transport.readyState;
-      if (readyState > 1 && !readyState == 4) {
-        
-      }
-    }
-  }
-})();

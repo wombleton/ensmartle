@@ -1,11 +1,11 @@
 grammar MissionCommands
 
   rule command
-    roll / explode / set_obstacle / set_goal / quote / script / set_disposition / adjust_disposition / other
+    roll / explode
   end
 
   rule roll
-    value:number "d" [6]? bang:"!"? {
+    value:number "d" count:number? bang:"!"? {
       def explode?
         !bang.text_value.empty?
       end
@@ -13,6 +13,11 @@ grammar MissionCommands
       def dice
         value.text_value.to_i
       end
+
+      def dice_size
+        (count.text_value || "6").to_i
+      end
+
       def event_type
         "roll"
       end

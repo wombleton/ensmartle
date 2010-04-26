@@ -6,182 +6,46 @@
 !info = #F0D53F
 !grey = #888
 !white = #fff
+
 html
   :background-color = !grey
-  :height 100%
 
 body
-  :font-family Verdana, sans
+  font-family: DejaVu Sans Mono,courier new,fixed
+
 a
-  :text-decoration none
-  :color = !link
-  &:visited = !dark
-  &:active = !dark
+  color = !info
+  text-decoration: none
   &:hover
-    :text-decoration underline
-
-#events
-  :display table
-  :width 100%
-  li
-    :display table-row
-    &> div
-      :display table-cell
-      :font-size 80%
-      &.data
-        :font-size 120%
-      &.type
-        :display none
-
-#wrap
-  :width 1000px
-  :margin 0 auto
-  :background = !light
-
-#footer
-  :clear both
-  :padding 20px
-  :background = !light
-  ul
-    :margin 0
-    :padding 0
-    :list-style none
-    :display inline
-    :vertical-align top
-  li
-    :display inline
-    :margin 0
-    :padding 0
-    :font-weight bold
+    text-decoration: underline
 
 #header
-  /* http://www.flickr.com/photos/indykethdy/2530686902/
-  :padding 20px
-  img
-    :height 50px
-  ul
-    :margin 0
-    :padding 0
-    :list-style none
-    :display inline
-    :line-height 50px
-    :vertical-align top
-  li
-    :display inline
-    :margin 0
-    :padding 0
-    :font-size 200%
-    :font-weight bold
-
-#sidebar
-  :padding 20px
-  :float left
-  :width 150px
+  background-color = !dark
+  #user_nav
+    text-align: right
+    padding: 0.5em 1em
+    color: white
 
 #main
-  :background-color = !light
-  :padding 20px
-  :float right
-  :width 770px
+  #toolbar
+    position: fixed
+    bottom: 0
+    width: 100%
+    color: #fff
 
-  #tracking
-    :font-size 120%
-    :margin 1em 0
-    .num
-      :color = !info
-      :font-size 150%
-
-  .created_at
-    :font-size 90%
-    :color = !grey
-  h1
-    :font-size 200%
-    :font-weight bold
-    .default
-      :color = !grey
-
-  #hints
-    li
-      :margin-right 1em
-      :display inline-block
-      :font-size 11px
-      em
-        :font-weight bold
-
-  form
-    label
-      :display block
-      :font-weight bold
-
-  #new-roll
-    :border = "5px solid" !grey
-    :padding 5px
-    :background-color = !base
+    ul
+      background-color = !dark
+      padding: 0
+      margin: 0
+      li
+        padding: 5px 0
+        margin-left: 1em
+        display: inline-block
     input
-      :width 150px
-
-  h2
-    :font-size 160%
-    :font-weight bold
-
-  #rolls
-    :padding 10px
-    li
-      :position relative
-      :line-height 1.6
-      :border-bottom = "1px dotted" !info
-      .by
-        :display inline-block
-        :width 150px
-        :margin-right 20px
-        :font-size 120%
-      .at
-        :position absolute
-        :right 0
-        :top 0
-        :font-size 80%
-        :color = !link
-      .successes
-        :display inline-block
-        :font-size 160%
-        :font-weight bold
-        :width 80px
-
-      .dice
-        :display inline-block
-      .traitor
-        :font-size 120%
-        :color #ccc
-      .success
-        :font-size 150%
-      .explodable
-        :font-size 160%
-        :color #f88
-      .exploded_failure
-        :color #ccc
-        :font-size 120%
-      .exploded_success
-        :font-size 120%
-
-  .bubble
-    :width auto
-    :margin-bottom 24px
-    :font-size 0.8em
-
-    blockquote
-      :margin 0
-      :padding 0
-      :border 1px solid #c9c2c1
-      :background-color #fff
-      :font-size 130%
-      p
-        :margin 20px
-        :line-height 1.6
-
-    cite
-      :position relative
-      :margin 0px
-      :padding 7px 0px 0px 15px
-      :top 6px
-      :background transparent url(/images/tip.gif) no-repeat 20px 0
-      :font-style normal
+      background-color = !grey
+      padding: 1em
+      display: block
+      border: 0
+      clear: both
+      font-size: 1em
+      width: 100%

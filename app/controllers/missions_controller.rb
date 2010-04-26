@@ -16,11 +16,8 @@ class MissionsController < ApplicationController
   # GET /missions/1
   # GET /missions/1.xml
   def show
-    @mission = Mission.find_or_create_by_permalink(params[:id], :include => :events)
+    @mission = Mission.find_or_create_by_permalink(params[:id])
     @event = Event.new
-    @sheets = Sheet.find_all_by_user_id(current_user, :order => "name")
-    @sheet = Sheet.find(session[:sheet]) if session[:sheet]
-    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @mission }

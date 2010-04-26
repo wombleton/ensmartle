@@ -1,9 +1,10 @@
-%li.event{:id => event.id}
-  .at{:title => event.created_at.strftime('%I:%M%P %a %d %b %G')}=event.created_at.strftime('%I:%M%P')
+%li.event{:id => event.id, :last => event.created_at.to_i}
+  .data=event.result
   .actor
     - unless event.sheet.nil?
       =event.sheet.name
     - else
       "Noone"
-  .data=event.result
+  .at{:title => event.created_at.strftime('%I:%M%P %a %d %b %G')}
+    ==#{distance_of_time_in_words_to_now(event.created_at)} ago
   .type=event.event_type

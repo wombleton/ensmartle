@@ -19,7 +19,9 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect "budget-pages/:id", :controller => "documents", :action => "redirect", :id => nil
 
-  map.resources :missions, :has_many => :events
+  map.resources :missions, :shallow => true, :only => [:create, :show, :index] do |mission|
+    mission.resources :events, :only => [:create, :index]
+  end
 
   map.games "/games", :controller => "missions"
 

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100315053924) do
+ActiveRecord::Schema.define(:version => 20100426115642) do
 
   create_table "blocks", :force => true do |t|
     t.integer  "user_id"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20100315053924) do
     t.boolean  "exploded"
     t.integer  "sheet_id"
     t.string   "result"
+    t.integer  "user_id"
   end
 
   add_index "events", ["created_at"], :name => "index_events_on_created_at"

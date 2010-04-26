@@ -1,29 +1,14 @@
 %h1=@mission.title
 %blockquote=textilize(@mission.summary)
--if current_user.nil?
+- if current_user.nil?
   %p
     You need to
     =link_to "login", login_path
     to use this screen!
--else
-  #tabs
-    %ul
-      %li=link_to "Session", "#session"
-      %li=link_to "Characters", "#characters"
-      %li=link_to "Help", "#help"
-    #session
-      %ul#events
-        =render :partial => "events/event", :collection => @mission.events
-
-      =render :partial => "add_event"
-    #characters
-      - form_tag use_sheet_users_path do |f|
-        %ul
-          -for sheet in @sheets
-            %li
-              =radio_button_tag "sheet", sheet.id, @sheet == sheet
-              =sheet.display_text
-      =link_to 'New Character', new_sheet_path
-    #help
-      =render :partial => "hints"
-    
+- else
+  #log
+  #toolbar
+    %ul#status
+      %li.character
+      %li.help=link_to "Help", "#"
+    =render :partial => "add_event"

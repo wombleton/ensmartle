@@ -7,16 +7,12 @@
   %body
     #wrap
       #header
-        %ul
         #user_nav
           - if current_user
             =current_user.screen_name
 
-            =link_to "Logout", logout_path
+            =link_to "logout", logout_path
           -else
-            =link_to "Login using twitter", login_path
+            =link_to "login using twitter", login_path
       #main
         =yield
-      #sidebar
-        =image_tag "mouse_panel.jpg"
-      #footer

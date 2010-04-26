@@ -3,9 +3,10 @@ class Event < ActiveRecord::Base
   require "mission_commands"
 
   belongs_to :mission
+  belongs_to :user
   belongs_to :sheet
 
-  def after_create
+  def before_create
     p = parse(self.data)
     self.event_type = p.event_type
     self.exploded = p.explode? if p.respond_to?(:explode?)
