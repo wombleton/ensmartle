@@ -8,23 +8,37 @@ class Event < ActiveRecord::Base
 
   def before_create
     p = parse(self.data)
-    self.event_type = p.event_type
-    self.exploded = p.explode? if p.respond_to?(:explode?)
-    self.result = case self.event_type
-      when "roll" then (1..(p.dice)).inject([]){|result, n| result << rand(6) + 1}.sort!.join(' ')
-      when "explode" then "explode!"
-      when "set_obstacle" then p.obstacle
-      when "set_goal" then p.goal
-      when "quote" then "#{p.speaker} said: #{p.quote}"
-      when "script" then "Has scripted!"
-      when "set_disposition" then p.disposition
-      when "adjust_disposition" then p.adjust_disposition
-      else p.other
+
+    if p.event_type == "roll"
+      self.event_type = p.event_type
+      roll(p.dice, p.dice_size)
+      puts self.inspect
+    elsif p.event_type == "explode"
+      latest.explode!
+      return false
+    else
+      return false
     end
-    self.save
+  end
+
+  def latest
+    self.user.events.find(:first, :conditions => { :mission_id => self.mission}, :order => "created_at" )
+  end
+
+  def explode!
+    
+  end
+
+  def modified
+    self
   end
 
   private
+
+  def roll dice, size
+    self.result = (1..dice).inject([]){|result, n| result << rand(size) + 1}.sort!.join(' ')
+  end
+
   def parse(s)
     @parser ||= MissionCommandsParser.new
     @parser.parse s

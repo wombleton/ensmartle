@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :sheets
+  has_many :events
   has_many :blocks
   has_many :twits, :through => :blocks
 
