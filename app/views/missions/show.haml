@@ -1,14 +1,20 @@
 %h1=@mission.title
 %blockquote=textilize(@mission.summary)
-- if current_user.nil?
+- if @user.nil?
   %p
     You need to
     =link_to "login", login_path
     to use this screen!
 - else
   #log
-  #toolbar
-    %ul#status
-      %li.character
-      %li.help=link_to "Help", "#"
-    =render :partial => "add_event"
+    %ul
+      - for event in @mission.events
+        %li
+          .user=event.user.screen_name
+          .sheet=event.sheet.try(:name)
+          =event.result
+#toolbar
+  %ul#status
+    %li.character=@user.latest_sheet.try(:name)
+    %li.help=link_to "Help", "#"
+  =render :partial => "add_event"

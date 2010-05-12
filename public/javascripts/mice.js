@@ -1,20 +1,8 @@
-$(document).ready(function() {
-  $('#new_event').submit(function() {
-    $.ajax({
-      data: $.param($(this).serializeArray()),
-      dataType: 'json',
-      success: function() {
-        window.location.reload();
-      },
-      type: 'POST',
-      url: $(this).attr('action')
-    });
-    $('input', this).val('');
-    return false;
-  });
-  
-  $('#event_data').focus();
-
+(function() {
+  function scroll() {
+    window.scrollBy(0, 9999999999999);
+    $('#event_data').focus();
+  }
   function fetch() {
     var form = $('#new_event');
     $.ajax({
@@ -44,5 +32,24 @@ $(document).ready(function() {
     });
   }
 
-  poll();
-});
+  $(document).ready(function() {
+    scroll();
+    
+    $('#new_event').submit(function() {
+      $.ajax({
+        data: $.param($(this).serializeArray()),
+        dataType: 'json',
+        success: function() {
+          window.location.reload();
+        },
+        type: 'POST',
+        url: $(this).attr('action')
+      });
+      $('input', this).val('');
+      return false;
+    });
+    poll();
+  });
+
+})();
+

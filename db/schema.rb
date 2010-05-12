@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100426115642) do
+ActiveRecord::Schema.define(:version => 20100512110849) do
 
   create_table "blocks", :force => true do |t|
     t.integer  "user_id"
@@ -166,6 +166,7 @@ ActiveRecord::Schema.define(:version => 20100426115642) do
     t.boolean  "forgiven"
     t.integer  "last_tweet_id"
     t.string   "last_tweet"
+    t.integer  "latest_sheet_id"
   end
 
   add_index "users", ["openid_identifier"], :name => "index_users_on_openid_identifier"

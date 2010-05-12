@@ -3,6 +3,7 @@
 
 class ApplicationController < ActionController::Base
   include Twitter::AuthenticationHelpers
+  extend ActiveSupport::Memoizable
   
   helper :all # include all helpers, all the time
   filter_parameter_logging :password, :password_confirmation
@@ -18,10 +19,6 @@ class ApplicationController < ActionController::Base
   rescue_from Twitter::Unauthorized, :with => :force_sign_in
 
   private
-
-  def current_user
-    User.find_by_screen_name('wombleton')
-  end
 
   def force_sign_in(exception)
     reset_session

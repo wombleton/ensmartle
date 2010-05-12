@@ -1,7 +1,7 @@
 grammar MissionCommands
 
   rule command
-    roll / explode
+    roll / setname
   end
 
   rule roll
@@ -26,6 +26,17 @@ grammar MissionCommands
 
   rule number
     [1-9] [0-9]*
+  end
+
+  rule setname
+    "setname" ws value:.+ {
+      def name
+        value.text_value
+      end
+      def event_type
+        "setname"
+      end
+    }
   end
 
   rule explode

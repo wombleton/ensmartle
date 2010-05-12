@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
   has_many :events
   has_many :blocks
   has_many :twits, :through => :blocks
-
+  belongs_to :latest_sheet, :class_name => "Sheet"
+  
   def to_param
     self.screen_name.parameterize
   end

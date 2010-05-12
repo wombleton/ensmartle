@@ -1,2 +1,2 @@
--form_for [@mission, @event], :datatype => "text" do |f|
-  =f.text_field :data, :size => ""
+-form_for [@mission, @event] do |f|
+  =f.text_field :data, :size => nil, :autocomplete => :off
