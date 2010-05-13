@@ -1,14 +1,17 @@
 (function() {
+  var force = true;
   function scroll() {
-    window.scrollBy(0, 9999999999999);
-    $('#event_data').focus();
+    if (force || window.innerHeight + window.pageYOffset + $('#log li:last').height() >= document.body.offsetHeight) {
+      force = false;
+      window.scrollBy(0, document.body.offsetHeight);
+      $('#event_data').focus();
+    }
   }
 
   $.extend({
     interpolate: function(s, data) {
       return s.replace(/\{(.+?)\}/g, function(m, i) {
-        values = $.val(data, i);
-        return values === undefined ? '' : values;
+        return data[i] === undefined || data[i] === null ? '' : data[i];
       });
     }
   });
@@ -16,10 +19,11 @@
 
   function update(events) {
     $.each(events, function(i, event) {
-      $('#log').append($.interpolate('<li id="event-{id}"><div class="user">{user}</div><div class="sheet">{sheet}</div><div>{result}</div></li>', event));
+      $('#log').append($.interpolate('<li id="event-{id}"><div class="user">{user}</div><div class="sheet">{sheet}</div>{result}</li>', event));
     });
     if (events.length) {
       $(document).data('mice-since', events[events.length - 1]['updated_at']);
+      scroll();
     }
   }
 
@@ -38,14 +42,12 @@ function fetch() {
         setTimeout(fetch, 3000);
       },
       failure: function() {
-        setTimeout(poll, 10000);
+        setTimeout(fetch, 15000);
       }
     });
   }
 
   $(document).ready(function() {
-    scroll();
-    
     $('#new_event').submit(function() {
       $.ajax({
         data: $.param($(this).serializeArray()),

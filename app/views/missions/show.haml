@@ -8,11 +8,6 @@
 - else
   #log
     %ul
-      - for event in @mission.events
-        %li{ :id => "event-#{event.id}" }
-          .user=event.user.screen_name
-          .sheet=event.sheet.name if event.sheet
-          =event.result
 #toolbar
   %ul#status
     %li.character=@user.try(:latest_sheet).try(:name)

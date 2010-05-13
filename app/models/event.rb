@@ -41,7 +41,7 @@ class Event < ActiveRecord::Base
   def roll(parse)
     dice = parse.dice
     size = parse.dice_size
-    self.result = (1..dice).inject([]){|result, n| result << rand(size) + 1}.sort!.join(' ')
+    self.result = "#{(1..dice).inject([]){|result, n| result << rand(size) + 1}.sort!.join(' ')} (#{self.data})"
   end
 
   def setname(parse)

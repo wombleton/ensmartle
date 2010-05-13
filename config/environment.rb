@@ -26,3 +26,20 @@ Rails::Initializer.run do |config|
 end
 
 ConsumerConfig = YAML.load(File.read(File.join(RAILS_ROOT, 'config', 'consumer.yml')))
+
+# monkeypatch in Time.ms for milliseconds on a time
+Time.instance_eval do
+  def from_ms ms
+    Time.at(ms / 1000, (ms % 1000) * 1000)
+  end
+end
+Time.class_eval do
+  def to_ms
+    self.to_i * 1000 + self.usec / 1000
+  end
+
+  def bump millis = 1
+    Time.from_ms(self.to_ms + millis)
+  end
+end
+
