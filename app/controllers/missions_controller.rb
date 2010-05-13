@@ -89,24 +89,4 @@ class MissionsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-
-  def roll
-    session[:by] = params[:by]
-    roll = Roll.create(:mission => @mission, :by => params[:by], :exploded => false, :dice => params[:roll], :ip_address => request.remote_ip)
-    @mission.rolls << roll
-    latest = Time.parse(params[:latest]).utc unless params[:latest].empty?
-    render :partial => "roll", :collection => @mission.rolls.find(:all, :conditions => ["updated_at > ?", latest || 1.week.ago])
-  end
-
-  def explode
-    roll = Roll.find(params[:explode])
-    roll.explode!
-    render :partial => "roll", :locals => { :roll => roll } 
-  end
-
-  def check_user
-    unless sessions[:user].nil?
-      
-    end
-  end
 end
