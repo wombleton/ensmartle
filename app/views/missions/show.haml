@@ -9,12 +9,12 @@
   #log
     %ul
       - for event in @mission.events
-        %li
+        %li{ :id => "event-#{event.id}" }
           .user=event.user.screen_name
-          .sheet=event.sheet.try(:name)
+          .sheet=event.sheet.name if event.sheet
           =event.result
 #toolbar
   %ul#status
-    %li.character=@user.latest_sheet.try(:name)
+    %li.character=@user.try(:latest_sheet).try(:name)
     %li.help=link_to "Help", "#"
   =render :partial => "add_event"

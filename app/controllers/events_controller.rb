@@ -3,7 +3,16 @@ class EventsController < ApplicationController
   def index
     @mission = Mission.find_by_permalink(params[:mission_id], :include => :events)
     respond_to do |format|
-      format.json render :json => @events
+      since = Time.at(params[:since] || 0)
+      events = @mission.events.find(:all, :conditions => ["updated_at > ?", since])
+      results = events.map{|event| {
+          :id => event.id,
+          :user => event.user.screen_name,
+          :result => event.result,
+          :sheet => event.sheet.try(:name),
+          :updated_at => event.updated_at.to_i
+      }}
+      format.json { render :json => results }
     end
   end
   

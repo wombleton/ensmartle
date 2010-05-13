@@ -1,6 +1,6 @@
 class Mission < ActiveRecord::Base
   belongs_to :game
-  has_many :events, :order => "created_at"
+  has_many :events, :order => "updated_at"
 
   def to_param
     permalink
