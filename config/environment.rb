@@ -12,8 +12,8 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
   config.action_controller.session = {
-    :session_key => '_ensmartle_session',
-    :secret      => 'secret_session_id'
+    :session_key => db[RAILS_ENV]['session_key'],
+    :secret      => db[RAILS_ENV]['secret']
   }
 
   config.gem "treetop"
