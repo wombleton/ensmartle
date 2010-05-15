@@ -16,6 +16,11 @@
     }
   });
 
+  $('li.help a').qtip({
+    content: 'test',
+    show: 'mouseover',
+    hide: 'mouseout'
+  });
 
   function update(events) {
     $.each(events, function(i, event) {
