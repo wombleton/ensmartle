@@ -12,7 +12,9 @@
             =current_user.screen_name
 
             =link_to "logout", logout_path
-          -else
+          -elsif !(controller.controller_name == "sessions" and controller.action_name == "new")
             =link_to "login using twitter", login_path
+          -else
+            &nbsp;
       #main
         =yield

@@ -1,6 +1,7 @@
 class MissionsController < ApplicationController
   layout "mice"
 
+  before_filter :authenticate
   # GET /missions
   # GET /missions.xml
   def index
