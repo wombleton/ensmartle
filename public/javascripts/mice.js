@@ -16,12 +16,6 @@
     }
   });
 
-  $('li.help a').qtip({
-    content: 'test',
-    show: 'mouseover',
-    hide: 'mouseout'
-  });
-
   function update(events) {
     $.each(events, function(i, event) {
       $('#log').append($.interpolate('<li id="event-{id}"><div class="user">{user}</div><div class="sheet">{sheet}</div>{result}</li>', event));
@@ -67,7 +61,16 @@ function fetch() {
       return false;
     });
     fetch();
-  });
+
+    $('li.help a').tooltip({
+      delay: 300,
+      offset: [-0, -50],
+      position: 'top right',
+      tip: '#help',
+      effect: 'fade'
+    });
+  }).click(function() { return false; });
+
 
 })();
 

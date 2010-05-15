@@ -8,22 +8,23 @@
 - else
   #log
     %ul
+  #help
+    %h2 Things You Can Do!
+    %ul
+      %li
+        Roll dice! Just type
+        %code 10d6
+        and hit enter. Works for any sized dice.
+      %li
+        Set your name! Try it out with
+        %code setname Hiro
+      %li
+        Anything else! Anything which I don't understand will just be echoed back.
+
 #toolbar
   %ul#status
     %li.character=@user.try(:latest_sheet).try(:name)
     %li.help
       =link_to "Help", "#"
-      #helptext
-        %h2 Things You Can Do!
-        %ul
-          %li
-            Roll dice! Just type
-            %code 10d6
-            and hit enter. Works for any sized dice.
-          %li
-            Set your name! Try it out with
-            %code setname Hiro
-          %li
-            Anything else! Anything which I don't understand will just be echoed back.
 
   =render :partial => "add_event"
