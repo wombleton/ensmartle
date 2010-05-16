@@ -29,9 +29,8 @@
 function fetch() {
     var form = $('#new_event');
     $.ajax({
-      url: $.interpolate('{url}?{params}&since={since}', {
+      url: $.interpolate('{url}?since={since}', {
         url: form.attr('action'),
-        params: $.param($(this).serializeArray()),
         since: $(document).data('mice-since') || ''
       }),
       type: 'GET',
@@ -68,8 +67,8 @@ function fetch() {
       position: 'top right',
       tip: '#help',
       effect: 'fade'
-    });
-  }).click(function() { return false; });
+    }).click(function() { return false; });
+  });
 
 
 })();
