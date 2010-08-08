@@ -47,6 +47,7 @@ class Event < ActiveRecord::Base
   def setname(parse)
     name = parse.name
     sheet = self.user.sheets.find_or_create_by_name(name)
+    sheet.update_attribute("name", name) unless sheet.name == name
     self.user.update_attribute("latest_sheet_id", sheet.id) unless sheet.id.nil?
     self.sheet = sheet
     self.result = "set name to #{sheet.name}"
