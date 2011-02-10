@@ -17,8 +17,19 @@
   });
 
   function update(events) {
+    var username = $('span.username').html();
     $.each(events, function(i, event) {
-      $('#log').append($.interpolate('<li id="event-{id}"><div class="user">{user}</div><div class="sheet">{sheet}</div>{result}</li>', event));
+      var roll = event.event_type === 'roll',
+          template;
+      if (roll) {
+        template = '<li id="event-{id}" class="{event_type}"><div class="user">{user}</div><div class="sheet">{sheet}</div>[Roll] {result}</li>';
+      } else {
+        template = '<li id="event-{id}" class="{event_type}"><div class="user">{user}</div><div class="sheet">{sheet}</div>{result}</li>';
+      }
+      $('#log').append($.interpolate(template, event));
+      if (event.event_type === 'setname' && event.user === username) {
+        $('.character').html(event.sheet);
+      }
     });
     if (events.length) {
       $(document).data('mice-since', events[events.length - 1]['updated_at']);
@@ -67,7 +78,7 @@ function fetch() {
       position: 'top right',
       tip: '#help',
       effect: 'fade'
-    }).click(function() { return false; });
+    }).click(function() {return false;});
   });
 
 

@@ -9,7 +9,8 @@
       #header
         #user_nav
           - if current_user
-            =current_user.screen_name
+            %span.user
+              =current_user.screen_name
 
             =link_to "logout", logout_path
           -elsif !(controller.controller_name == "sessions" and controller.action_name == "new")

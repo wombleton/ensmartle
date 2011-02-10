@@ -10,6 +10,7 @@ class EventsController < ApplicationController
           :user => event.user.screen_name,
           :result => event.result,
           :sheet => event.sheet.try(:name),
+          :event_type => event.event_type,
           :updated_at => event.updated_at.to_ms
       }}
 
