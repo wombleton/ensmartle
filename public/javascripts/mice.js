@@ -17,7 +17,7 @@
   });
 
   function update(events) {
-    var username = $('span.user').html();
+    var username = $('span.user').html().trim();
     $.each(events, function(i, event) {
       var roll = event.event_type === 'roll',
           template;
